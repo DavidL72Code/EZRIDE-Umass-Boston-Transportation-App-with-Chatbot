@@ -168,6 +168,20 @@ def mbta_predictions():
         return jsonify({"error": str(e)}), 500
 
 
+@app.route("/api/walk-route", methods=["POST"])
+def walk_route():
+    try:
+        import requests as http
+        r = http.post(
+            "https://valhalla1.openstreetmap.de/route",
+            json=request.get_json(),
+            timeout=15,
+        )
+        return Response(r.content, status=r.status_code, mimetype="application/json")
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 @app.route("/api/transit/arrivals")
 def transit_arrivals():
     stop_id = request.args.get("stop_id", "")
