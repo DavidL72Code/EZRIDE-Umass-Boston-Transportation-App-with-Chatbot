@@ -169,6 +169,23 @@ def mbta_predictions():
 
 
 
+@app.route("/api/walk-route", methods=["POST"])
+def walk_route():
+    api_key = os.getenv("STADIA_API_KEY", "")
+    if not api_key:
+        return jsonify({"error": "STADIA_API_KEY not configured"}), 503
+    try:
+        import requests as http
+        r = http.post(
+            f"https://valhalla.stadiamaps.com/route?api_key={api_key}",
+            json=request.get_json(),
+            timeout=15,
+        )
+        return Response(r.content, status=r.status_code, mimetype="application/json")
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 @app.route("/api/transit/arrivals")
 def transit_arrivals():
     stop_id = request.args.get("stop_id", "")

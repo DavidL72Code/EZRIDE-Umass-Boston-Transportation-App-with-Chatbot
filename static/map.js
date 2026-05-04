@@ -704,37 +704,61 @@ function fmtTime(s) {
   return rem ? `${h} hr ${rem} min` : `${h} hr`;
 }
 
-const _footwayCache = new Map();
-
-async function snapToFootway(lat, lng) {
-  const key = `${lat.toFixed(4)},${lng.toFixed(4)}`;
-  if (_footwayCache.has(key)) return _footwayCache.get(key);
-
-  const pad = 0.0015;
-  const query = `[out:json][timeout:25];way["highway"~"^(footway|path)$"](${lat - pad},${lng - pad},${lat + pad},${lng + pad});node(w);out;`;
-  let result = null;
-  try {
-    const res = await fetch(`https://overpass-api.de/api/interpreter?data=${encodeURIComponent(query)}`);
-    if (res.ok) {
-      const data = await res.json();
-      let best = null, bestDist = Infinity;
-      for (const el of data.elements) {
-        if (el.type !== "node") continue;
-        const d = haversine(lat, lng, el.lat, el.lon);
-        if (d < bestDist) { bestDist = d; best = [el.lat, el.lon]; }
-      }
-      result = best;
-    }
-  } catch {}
-
-  _footwayCache.set(key, result);
-  return result;
+// Valhalla polyline6 decoder → [[lng, lat], ...]
+function decodePolyline6(str) {
+  const coords = [];
+  let index = 0, lat = 0, lng = 0;
+  while (index < str.length) {
+    let b, shift = 0, result = 0;
+    do { b = str.charCodeAt(index++) - 63; result |= (b & 0x1f) << shift; shift += 5; } while (b >= 0x20);
+    lat += result & 1 ? ~(result >> 1) : result >> 1;
+    shift = 0; result = 0;
+    do { b = str.charCodeAt(index++) - 63; result |= (b & 0x1f) << shift; shift += 5; } while (b >= 0x20);
+    lng += result & 1 ? ~(result >> 1) : result >> 1;
+    coords.push([lng / 1e6, lat / 1e6]);
+  }
+  return coords;
 }
 
 async function valhallaWalkRoute(from, to) {
-  const snapped = await snapToFootway(to[0], to[1]).catch(() => null);
-  const dest = snapped || to;
-  return osrmRoute("foot", from, dest);
+  const res = await fetch(`${window.API_BASE || ""}/api/walk-route`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      locations: [
+        { lat: from[0], lon: from[1] },
+        { lat: to[0],   lon: to[1]   },
+      ],
+      costing: "pedestrian",
+      costing_options: {
+        pedestrian: {
+          shortest: true,
+          walkway_factor: 0.1,
+          use_tracks: 1.0,
+          service_penalty: 0,
+          alley_factor: 1.0,
+          driveway_factor: 1.0,
+        },
+      },
+      directions_options: { units: "kilometers" },
+    }),
+  });
+  if (!res.ok) throw new Error(`walk-route ${res.status}`);
+  const data = await res.json();
+  if (!data.trip) throw new Error("No route found");
+  const leg = data.trip.legs[0];
+  const summary = data.trip.summary;
+  return {
+    distance: summary.length * 1000,
+    duration: summary.time,
+    geometry: decodePolyline6(leg.shape),
+    steps: leg.maneuvers.map(m => ({
+      distance: (m.length || 0) * 1000,
+      _instruction: m.instruction,
+      maneuver: { type: m.type, modifier: "" },
+      name: m.street_names?.[0] || "",
+    })),
+  };
 }
 
 function stepArrow(type, modifier) {
