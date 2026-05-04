@@ -292,11 +292,12 @@
           },
           "commuter": {
             label: "Commuter Rail (Purple)",
-            note: "Commuter Rail does not stop at JFK/UMass. Take the Red Line 1 stop inbound to South Station.",
+            note: "The Fairmount Line stops at JFK/UMass. Other lines stop at South Station (1 Red Line stop away).",
             routes: [
-              { label: "Greenbush Line",            api: "mbta", stop: "place-sstat", route: "CR-Greenbush" },
-              { label: "Kingston / Plymouth",       api: "mbta", stop: "place-sstat", route: "CR-Kingston" },
-              { label: "Middleborough / Lakeville", api: "mbta", stop: "place-sstat", route: "CR-Middleborough" },
+              { label: "Fairmount Line (at JFK/UMass)", api: "mbta", stop: "place-jfk", route: "CR-Fairmount" },
+              { label: "Greenbush Line (at South Station)",            api: "mbta", stop: "place-sstat", route: "CR-Greenbush" },
+              { label: "Kingston / Plymouth (at South Station)",       api: "mbta", stop: "place-sstat", route: "CR-Kingston" },
+              { label: "Middleborough / Lakeville (at South Station)", api: "mbta", stop: "place-sstat", route: "CR-Middleborough" },
             ]
           },
           "bus": {
