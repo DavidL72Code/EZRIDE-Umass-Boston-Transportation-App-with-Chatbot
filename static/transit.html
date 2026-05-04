@@ -292,12 +292,12 @@
           },
           "commuter": {
             label: "Commuter Rail (Purple)",
-            note: "The Fairmount Line stops at JFK/UMass. Other lines stop at South Station (1 Red Line stop away).",
+            note: "Greenbush, Kingston, and Fall River/New Bedford lines stop at JFK/UMass during peak hours. Midday and evening trains may skip JFK/UMass — take the Red Line to South Station if no arrival shows.",
             routes: [
-              { label: "Fairmount Line (at JFK/UMass)", api: "mbta", stop: "place-jfk", route: "CR-Fairmount" },
-              { label: "Greenbush Line (at South Station)",            api: "mbta", stop: "place-sstat", route: "CR-Greenbush" },
-              { label: "Kingston / Plymouth (at South Station)",       api: "mbta", stop: "place-sstat", route: "CR-Kingston" },
-              { label: "Middleborough / Lakeville (at South Station)", api: "mbta", stop: "place-sstat", route: "CR-Middleborough" },
+              { label: "Greenbush Line",              api: "mbta", stop: "place-jfk", route: "CR-Greenbush" },
+              { label: "Kingston / Plymouth",         api: "mbta", stop: "place-jfk", route: "CR-Kingston" },
+              { label: "Fall River / New Bedford",    api: "mbta", stop: "place-jfk", route: "CR-NewBedford" },
+              { label: "Middleborough / Lakeville (South Station only)", api: "mbta", stop: "place-sstat", route: "CR-Middleborough" },
             ]
           },
           "bus": {
