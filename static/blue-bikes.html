@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue Bikes &amp; Scooters — UMass Boston</title>
+  <link rel="icon" href="/umb_icon.png" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="info-page">
+
+  <header class="header">
+    <button id="hamburgerBtn" class="hamburger-btn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <img src="/umb_icon.png" alt="UMass Boston" class="header-logo" />
+    <div class="header-text">
+      <h1>RIDE EZ · UMass Boston</h1>
+      <p>Campus map · parking lots · shuttle stops · buildings</p>
+    </div>
+    <nav class="header-nav">
+      <a href="/" class="nav-link">Map</a>
+    </nav>
+  </header>
+
+  <!-- Side info menu -->
+  <div class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+      <span>Campus Info</span>
+      <button id="closeMenu" class="side-menu-close" aria-label="Close">✕</button>
+    </div>
+    <nav class="side-menu-nav">
+      <a href="/parking-rates" class="side-menu-link">
+        <span>Parking Rates</span>
+        <span class="side-menu-arrow">›</span>
+      </a>
+      <a href="/blue-bikes" class="side-menu-link active">
+        <span>Blue Bikes &amp; Scooters</span>
+        <span class="side-menu-arrow">›</span>
+      </a>
+      <a href="/transit" class="side-menu-link">
+        <span>Buses &amp; Train</span>
+        <span class="side-menu-arrow">›</span>
+      </a>
+    </nav>
+  </div>
+
+  <main class="info-main">
+    <div class="info-container">
+      <a href="/" class="back-link">&#8592; Back to Map</a>
+      <h2 class="info-title">Blue Bikes &amp; Scooters</h2>
+      <p class="info-subtitle">Bike-share and micro-mobility options near UMass Boston campus.</p>
+
+      <div class="info-grid">
+
+        <div class="info-card">
+          <div class="info-card-header bluebike">
+            <div>
+              <h3>Bluebikes</h3>
+              <span class="info-tag">Boston Bike Share</span>
+            </div>
+          </div>
+          <p class="info-card-desc">Bluebikes is the Metro Boston area's public bike share program with docking stations near campus. Classic and e-bikes available.</p>
+
+          <h4 class="info-section-label">Nearest Stations</h4>
+          <ul class="info-list">
+            <li>JFK/UMass Station — Columbia Rd &amp; Mt Vernon St</li>
+            <li>Columbia Rd &amp; Hamilton St</li>
+            <li>Old Colony Ave &amp; Dorchester Ave</li>
+          </ul>
+
+          <h4 class="info-section-label">Single Trip Rates</h4>
+          <table class="info-table">
+            <tr><td>Classic bike — 30 min</td><td>$2.95</td></tr>
+            <tr><td>Classic bike — extra minute</td><td>$0.20/min</td></tr>
+            <tr><td>E-bike — 30 min</td><td>$4.95</td></tr>
+            <tr><td>E-bike — extra minute</td><td>$0.20/min</td></tr>
+          </table>
+
+          <h4 class="info-section-label">Membership Plans</h4>
+          <table class="info-table">
+            <tr><td>Day pass (unlimited 30-min trips)</td><td>$15.00</td></tr>
+            <tr><td>Monthly membership</td><td>$20.00/mo</td></tr>
+            <tr><td>Annual membership</td><td>$105.00/yr</td></tr>
+            <tr><td>Reduced-fare annual (income-based)</td><td>$5.00/yr</td></tr>
+          </table>
+
+          <div class="info-payment">Bluebikes app · bluebikes.com</div>
+          <div class="info-links">
+            <a class="info-link" href="https://www.bluebikes.com/" target="_blank" rel="noopener">bluebikes.com ↗</a>
+            <a class="info-link" href="https://apps.apple.com/us/app/bluebikes/id1451048621" target="_blank" rel="noopener">iOS App ↗</a>
+            <a class="info-link" href="https://play.google.com/store/apps/details?id=com.motivateco.bluebikes" target="_blank" rel="noopener">Android App ↗</a>
+            <a class="info-link" href="https://www.umb.edu/transportation/" target="_blank" rel="noopener">UMass Discount info ↗</a>
+          </div>
+          <div class="info-note-card">UMass Boston students may qualify for a discounted Bluebikes membership through the Transportation office. Contact <a href="mailto:transportation@umb.edu">transportation@umb.edu</a> to inquire.</div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header scooter">
+            <div>
+              <h3>E-Scooters</h3>
+              <span class="info-tag">Lime &amp; Spin</span>
+            </div>
+          </div>
+          <p class="info-card-desc">Lime and Spin dockless electric scooters are available near and around campus. Use the respective app to locate, unlock, and pay.</p>
+
+          <h4 class="info-section-label">Lime Scooters</h4>
+          <table class="info-table">
+            <tr><td>Unlock fee</td><td>$1.00</td></tr>
+            <tr><td>Per minute</td><td>$0.39/min</td></tr>
+            <tr><td>E-bike per minute</td><td>$0.25/min</td></tr>
+          </table>
+
+          <h4 class="info-section-label">Spin Scooters</h4>
+          <table class="info-table">
+            <tr><td>Unlock fee</td><td>$1.00</td></tr>
+            <tr><td>Per minute</td><td>$0.39/min</td></tr>
+          </table>
+
+          <h4 class="info-section-label">Campus Rules</h4>
+          <ul class="info-list">
+            <li>Maximum speed 15 mph on campus roads</li>
+            <li>No riding on sidewalks or inside buildings</li>
+            <li>Park only in designated scooter zones — do not block walkways</li>
+            <li>Helmet strongly recommended</li>
+            <li>Must be 18+ and have a valid driver's license</li>
+          </ul>
+
+          <div class="info-payment">Lime app · Spin app</div>
+          <div class="info-links">
+            <a class="info-link" href="https://www.li.me/" target="_blank" rel="noopener">Lime ↗</a>
+            <a class="info-link" href="https://www.spin.app/" target="_blank" rel="noopener">Spin ↗</a>
+            <a class="info-link" href="https://www.umb.edu/transportation/" target="_blank" rel="noopener">UMass Campus Rules ↗</a>
+          </div>
+        </div>
+
+        <div class="info-card info-card-full">
+          <div class="info-card-header tips">
+            <div>
+              <h3>Tips for Commuters</h3>
+              <span class="info-tag">Getting to Campus</span>
+            </div>
+          </div>
+          <ul class="info-list">
+            <li><strong>JFK/UMass Station</strong> is the closest MBTA stop — only a 5-minute bike ride from the main campus buildings.</li>
+            <li>Lock bikes at the <strong>designated bike racks</strong> near Campus Center and Healey Library — do not lock to handrails or fences.</li>
+            <li>Combine Bluebikes with the <strong>Red Line</strong> for a faster commute from downtown Boston.</li>
+            <li>Check the Bluebikes app before leaving — station availability varies during peak hours (8–10 AM, 4–6 PM).</li>
+            <li>The <strong>UMass Shuttle</strong> is free with your UMass ID and runs continuously between JFK/UMass Station and campus — a reliable backup.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="/api-config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="/widget.js"></script>
+  <script>
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const sideMenu = document.getElementById("sideMenu");
+    const closeMenu = document.getElementById("closeMenu");
+    hamburgerBtn.addEventListener("click", () => sideMenu.classList.toggle("open"));
+    closeMenu.addEventListener("click", () => sideMenu.classList.remove("open"));
+  </script>
+</body>
+</html>

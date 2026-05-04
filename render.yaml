@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: rideezy-umass
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn server:app --workers 1 --timeout 120
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false   # set manually in Render dashboard
+    disk:
+      name: model-cache
+      mountPath: /opt/render/project/src/.cache
+      sizeGB: 2

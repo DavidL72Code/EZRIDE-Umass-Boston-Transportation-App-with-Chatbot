@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buses &amp; Train — RIDE EZ · UMass Boston</title>
+  <link rel="icon" href="/umb_icon.png" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="info-page">
+
+  <header class="header">
+    <button id="hamburgerBtn" class="hamburger-btn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <img src="/umb_icon.png" alt="UMass Boston" class="header-logo" />
+    <div class="header-text">
+      <h1>RIDE EZ · UMass Boston</h1>
+      <p>Campus map · parking lots · shuttle stops · buildings</p>
+    </div>
+    <nav class="header-nav">
+      <a href="/" class="nav-link">Map</a>
+    </nav>
+  </header>
+
+  <!-- Side info menu -->
+  <div class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+      <span>Campus Info</span>
+      <button id="closeMenu" class="side-menu-close" aria-label="Close">✕</button>
+    </div>
+    <nav class="side-menu-nav">
+      <a href="/parking-rates" class="side-menu-link">
+        <span>Parking Rates</span>
+        <span class="side-menu-arrow">›</span>
+      </a>
+      <a href="/blue-bikes" class="side-menu-link">
+        <span>Blue Bikes &amp; Scooters</span>
+        <span class="side-menu-arrow">›</span>
+      </a>
+      <a href="/transit" class="side-menu-link active">
+        <span>Buses &amp; Train</span>
+        <span class="side-menu-arrow">›</span>
+      </a>
+    </nav>
+  </div>
+
+  <main class="info-main">
+    <div class="info-container">
+      <a href="/" class="back-link">&#8592; Back to Map</a>
+      <h2 class="info-title">Buses &amp; Train</h2>
+      <p class="info-subtitle">Real-time arrivals and transit options at UMass Boston.</p>
+
+      <!-- ── Real-Time Arrivals Search ───────────────────────── -->
+      <div class="rt-card">
+        <div class="rt-card-header">
+          <span class="rt-card-title">Real-Time Arrivals</span>
+          <span class="live-dot" id="liveDot"></span>
+        </div>
+
+        <div class="rt-controls">
+          <div class="rt-field">
+            <label for="stopSelect">Location</label>
+            <select id="stopSelect">
+              <option value="">Select a stop…</option>
+              <option value="jfk">JFK/UMass Station</option>
+              <option value="bayside-in">Bayside (Inbound)</option>
+              <option value="mt-vernon-in">Mt Vernon St (Inbound)</option>
+              <option value="campus-center">Campus Center</option>
+              <option value="jfk-library">JFK Library / Commonwealth Museum</option>
+              <option value="univ-drive-west">University Drive West (Outbound)</option>
+              <option value="mt-vernon-out">Mt Vernon St (Outbound)</option>
+              <option value="bayside-out">Bayside (Outbound)</option>
+            </select>
+          </div>
+
+          <div class="rt-field" id="modeField">
+            <label for="modeSelect">Mode</label>
+            <select id="modeSelect" disabled>
+              <option value="">Select mode…</option>
+            </select>
+          </div>
+
+          <div class="rt-field" id="routeField" style="display:none">
+            <label for="routeSelect">Route</label>
+            <select id="routeSelect" disabled>
+              <option value="">Select route…</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="rtResults" class="rt-results">
+          <p class="rt-placeholder">Select a location to see live arrivals.</p>
+        </div>
+      </div>
+
+      <!-- ── Static Info Cards ───────────────────────────────── -->
+      <div class="info-grid" style="margin-top:24px">
+
+        <div class="info-card">
+          <div class="info-card-header redline">
+            <div>
+              <h3>MBTA Red Line</h3>
+              <span class="info-tag">JFK/UMass Station</span>
+            </div>
+          </div>
+          <p class="info-card-desc">The closest T stop to campus. The free UMass Shuttle connects JFK/UMass Station directly to campus buildings.</p>
+
+          <h4 class="info-section-label">Service Hours</h4>
+          <table class="info-table">
+            <tr><td>Monday – Friday</td><td>5:15 AM – 1:00 AM</td></tr>
+            <tr><td>Saturday</td><td>6:00 AM – 1:00 AM</td></tr>
+            <tr><td>Sunday</td><td>7:00 AM – 1:00 AM</td></tr>
+          </table>
+
+          <h4 class="info-section-label">Fares</h4>
+          <table class="info-table">
+            <tr><td>CharlieCard (stored value)</td><td>$2.40</td></tr>
+            <tr><td>CharlieTicket / cash</td><td>$2.90</td></tr>
+            <tr><td>Monthly LinkPass</td><td>$90.00</td></tr>
+          </table>
+
+          <h4 class="info-section-label">Destinations (Inbound)</h4>
+          <ul class="info-list">
+            <li>Andrew &rarr; South Station &rarr; Downtown Crossing &rarr; Park St &rarr; Charles/MGH &rarr; Kendall/MIT &rarr; Central &rarr; Harvard &rarr; Alewife</li>
+          </ul>
+          <h4 class="info-section-label">Destinations (Outbound)</h4>
+          <ul class="info-list">
+            <li>North Quincy &rarr; Quincy Center &rarr; Quincy Adams &rarr; Braintree <em>(Braintree branch)</em></li>
+            <li>Savin Hill &rarr; Fields Corner &rarr; Shawmut &rarr; Ashmont <em>(Ashmont branch)</em></li>
+          </ul>
+          <div class="info-payment">mbta.com/schedules/Red</div>
+          <div class="info-links">
+            <a class="info-link" href="https://www.mbta.com/schedules/Red" target="_blank" rel="noopener">Red Line schedule ↗</a>
+            <a class="info-link" href="https://www.mbta.com/fares/subway-fares" target="_blank" rel="noopener">Fares ↗</a>
+            <a class="info-link" href="https://www.mbta.com/stops/place-jfk" target="_blank" rel="noopener">JFK/UMass stop ↗</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header shuttle">
+            <div>
+              <h3>UMass Boston Shuttle</h3>
+              <span class="info-tag">Free with UMass ID</span>
+            </div>
+          </div>
+          <p class="info-card-desc">Continuous loop connecting JFK/UMass T Station, the Bayside parking lot, and all major campus stops.</p>
+
+          <h4 class="info-section-label">Operating Hours</h4>
+          <table class="info-table">
+            <tr><td>Monday – Friday</td><td>5:30 AM – 1:30 AM</td></tr>
+            <tr><td>Saturday – Sunday</td><td>7:30 AM – 1:30 AM</td></tr>
+            <tr><td>Frequency</td><td>~10–15 minutes</td></tr>
+          </table>
+
+          <h4 class="info-section-label">Route Stops (Inbound)</h4>
+          <ol class="info-list info-list-ordered">
+            <li>JFK/UMass T Station</li>
+            <li>Bayside Inbound</li>
+            <li>Mt Vernon St @ South Point Dr</li>
+            <li>Campus Center</li>
+            <li>JFK Library / Commonwealth Museum</li>
+          </ol>
+          <h4 class="info-section-label">Route Stops (Outbound)</h4>
+          <ol class="info-list info-list-ordered">
+            <li>University Drive West</li>
+            <li>Mt Vernon St opp South Point Dr</li>
+            <li>Bayside Outbound</li>
+            <li>JFK/UMass T Station</li>
+          </ol>
+          <div class="info-payment">Free · UMass ID required</div>
+          <div class="info-links">
+            <a class="info-link" href="https://www.umb.edu/transportation/shuttle/" target="_blank" rel="noopener">Shuttle info ↗</a>
+            <a class="info-link" href="https://www.umb.edu/transportation/" target="_blank" rel="noopener">Transportation Office ↗</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header bus">
+            <div>
+              <h3>MBTA Bus Routes</h3>
+              <span class="info-tag">Stops at JFK/UMass</span>
+            </div>
+          </div>
+          <p class="info-card-desc">Bus routes that stop at or originate from JFK/UMass Station.</p>
+
+          <h4 class="info-section-label">Routes</h4>
+          <table class="info-table">
+            <tr><td><strong>Route 8</strong></td><td>JFK/UMass &rarr; Kenmore</td></tr>
+            <tr><td><strong>Route 16</strong></td><td>Forest Hills &rarr; JFK/UMass</td></tr>
+            <tr><td><strong>Route 41</strong></td><td>Centre &amp; Eliot Sts &rarr; JFK/UMass</td></tr>
+          </table>
+
+          <h4 class="info-section-label">Bus Fares</h4>
+          <table class="info-table">
+            <tr><td>CharlieCard (stored value)</td><td>$1.70</td></tr>
+            <tr><td>CharlieTicket / cash</td><td>$2.00</td></tr>
+            <tr><td>Free transfer from subway within 2 hrs</td><td>$0.00</td></tr>
+          </table>
+          <div class="info-payment">mbta.com/schedules · MBTA app for real-time</div>
+          <div class="info-links">
+            <a class="info-link" href="https://www.mbta.com/schedules/8" target="_blank" rel="noopener">Route 8 ↗</a>
+            <a class="info-link" href="https://www.mbta.com/schedules/16" target="_blank" rel="noopener">Route 16 ↗</a>
+            <a class="info-link" href="https://www.mbta.com/schedules/41" target="_blank" rel="noopener">Route 41 ↗</a>
+            <a class="info-link" href="https://www.mbta.com/fares/bus-fares" target="_blank" rel="noopener">Bus fares ↗</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header commuter">
+            <div>
+              <h3>Commuter Rail (Purple)</h3>
+              <span class="info-tag">via South Station</span>
+            </div>
+          </div>
+          <p class="info-card-desc">Conveniently located just a mile from JFK/UMass Station, the campus is served by the Red Line as well as the Greenbush, Kingston, and Middleborough/Lakeville commuter rail lines — all accessible via a 1-stop Red Line ride to South Station.</p>
+
+          <h4 class="info-section-label">Connection</h4>
+          <table class="info-table">
+            <tr><td>JFK/UMass → South Station</td><td>1 Red Line stop (~3 min)</td></tr>
+            <tr><td>Fare (with transfer)</td><td>Included with CharlieCard</td></tr>
+          </table>
+
+          <h4 class="info-section-label">Lines from South Station</h4>
+          <table class="info-table">
+            <tr><td>Greenbush Line</td><td>Scituate</td></tr>
+            <tr><td>Kingston / Plymouth</td><td>Kingston / Plymouth</td></tr>
+            <tr><td>Middleborough / Lakeville</td><td>Middleborough</td></tr>
+          </table>
+
+          <h4 class="info-section-label">Fares</h4>
+          <table class="info-table">
+            <tr><td>Zone 1A (inner)</td><td>$2.40</td></tr>
+            <tr><td>Zone 1–10 (varies by distance)</td><td>$6.50 – $15.00</td></tr>
+            <tr><td>Monthly pass (Zone 1A)</td><td>$90.00</td></tr>
+          </table>
+          <div class="info-payment">mbta.com/schedules/commuter-rail</div>
+          <div class="info-links">
+            <a class="info-link" href="https://www.mbta.com/schedules/CR-Greenbush" target="_blank" rel="noopener">Greenbush ↗</a>
+            <a class="info-link" href="https://www.mbta.com/schedules/CR-Kingston" target="_blank" rel="noopener">Kingston/Plymouth ↗</a>
+            <a class="info-link" href="https://www.mbta.com/schedules/CR-Middleborough" target="_blank" rel="noopener">Middleborough ↗</a>
+            <a class="info-link" href="https://www.mbta.com/fares/commuter-rail-fares" target="_blank" rel="noopener">CR Fares ↗</a>
+          </div>
+        </div>
+
+        <div class="info-card info-card-full">
+          <div class="info-card-header tips">
+            <div>
+              <h3>Commuter Tips</h3>
+              <span class="info-tag">Getting Here Faster</span>
+            </div>
+          </div>
+          <ul class="info-list">
+            <li><strong>Best combo:</strong> Red Line to JFK/UMass, then free UMass Shuttle to Campus Center — about 25 min from Downtown Crossing.</li>
+            <li><strong>Monthly LinkPass ($90)</strong> covers all subway and local bus rides — more economical if you commute 3+ days/week.</li>
+            <li><strong>Avoid peak hours</strong> (8–9 AM inbound, 5–6 PM outbound) if possible — trains run every 4–6 min but can be crowded.</li>
+            <li>Use the search above for live arrival times at any stop, or click any shuttle marker on the Map for real-time shuttle data.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="/api-config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="/widget.js"></script>
+  <script>
+    // ── Hamburger ───────────────────────────────────────────────
+    document.getElementById("hamburgerBtn").addEventListener("click", () =>
+      document.getElementById("sideMenu").classList.toggle("open"));
+    document.getElementById("closeMenu").addEventListener("click", () =>
+      document.getElementById("sideMenu").classList.remove("open"));
+
+    // ── Transit data config ─────────────────────────────────────
+    const STOPS = {
+      "jfk": {
+        name: "JFK/UMass Station",
+        modes: {
+          "shuttle": {
+            label: "UMass Shuttle",
+            routes: [{ label: "UMass Shuttle", api: "transloc", stopId: 104 }]
+          },
+          "train": {
+            label: "Red Line",
+            routes: [
+              { label: "Inbound — Alewife",           api: "mbta", stop: "place-jfk", route: "Red", direction: 1 },
+              { label: "Outbound — Braintree",        api: "mbta", stop: "place-jfk", route: "Red", direction: 0, headsignFilter: "Braintree" },
+              { label: "Outbound — Ashmont",          api: "mbta", stop: "place-jfk", route: "Red", direction: 0, headsignFilter: "Ashmont"   },
+              { label: "All directions",              api: "mbta", stop: "place-jfk", route: "Red" },
+            ]
+          },
+          "commuter": {
+            label: "Commuter Rail (Purple)",
+            note: "Commuter Rail does not stop at JFK/UMass. Take the Red Line 1 stop inbound to South Station.",
+            routes: [
+              { label: "Greenbush Line",            api: "mbta", stop: "place-sstat", route: "CR-Greenbush" },
+              { label: "Kingston / Plymouth",       api: "mbta", stop: "place-sstat", route: "CR-Kingston" },
+              { label: "Middleborough / Lakeville", api: "mbta", stop: "place-sstat", route: "CR-Middleborough" },
+            ]
+          },
+          "bus": {
+            label: "Bus",
+            routes: [
+              { label: "Route 8 — JFK/UMass → Kenmore",   api: "mbta", stop: "place-jfk", route: "8"  },
+              { label: "Route 16 — Forest Hills → JFK",   api: "mbta", stop: "place-jfk", route: "16" },
+              { label: "Route 41 — Centre St → JFK",      api: "mbta", stop: "place-jfk", route: "41" },
+            ]
+          }
+        }
+      },
+      "bayside-in":     { name: "Bayside (Inbound)",                   shuttle: 109 },
+      "mt-vernon-in":   { name: "Mt Vernon St (Inbound)",               shuttle: 110 },
+      "campus-center":  { name: "Campus Center",                        shuttle: 105 },
+      "jfk-library":    { name: "JFK Library / Commonwealth Museum",    shuttle: 108 },
+      "univ-drive-west":{ name: "University Drive West (Outbound)",     shuttle: 112 },
+      "mt-vernon-out":  { name: "Mt Vernon St (Outbound)",              shuttle: 111 },
+      "bayside-out":    { name: "Bayside (Outbound)",                   shuttle: 107 },
+    };
+
+    // ── DOM refs ────────────────────────────────────────────────
+    const stopSel  = document.getElementById("stopSelect");
+    const modeSel  = document.getElementById("modeSelect");
+    const routeSel = document.getElementById("routeSelect");
+    const routeField = document.getElementById("routeField");
+    const rtResults  = document.getElementById("rtResults");
+    const liveDot    = document.getElementById("liveDot");
+
+    let refreshTimer = null;
+    let currentConfig = null;
+
+    // ── Helpers ─────────────────────────────────────────────────
+    function secsToLabel(secs) {
+      if (secs <= 60) return '<span class="rt-now">Arriving</span>';
+      return `<span class="rt-min">${Math.round(secs / 60)} min</span>`;
+    }
+
+    function setLoading() {
+      rtResults.innerHTML = '<div class="rt-loading">Loading arrivals…</div>';
+      liveDot.classList.add("pulsing");
+    }
+
+    function setError(msg) {
+      rtResults.innerHTML = `<div class="rt-empty">${msg}</div>`;
+      liveDot.classList.remove("pulsing");
+    }
+
+    // ── Fetch TransLoc (shuttle) ────────────────────────────────
+    async function fetchTransloc(stopId) {
+      const res = await fetch(`${window.API_BASE || ""}/api/transit/arrivals?stop_id=${stopId}`);
+      const data = await res.json();
+      if (!Array.isArray(data) || data.length === 0) return [];
+      const arrivals = [];
+      for (const stop of data) {
+        if (!stop.Times) continue;
+        for (const t of stop.Times) {
+          const secs = t.Seconds != null ? t.Seconds : null;
+          const raw = t.EstimateTime;
+          const dt = raw ? new Date(parseInt(String(raw).match(/\d+/)[0])) : null;
+          if (secs !== null) arrivals.push({ secs, dt });
+        }
+      }
+      return arrivals.sort((a, b) => a.secs - b.secs).slice(0, 5);
+    }
+
+    function renderTransloc(arrivals) {
+      if (!arrivals || arrivals.length === 0)
+        return '<div class="rt-empty">No shuttle arrivals scheduled</div>';
+      return arrivals.map(a => {
+        const t = a.dt ? a.dt.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }) : "";
+        return `<div class="rt-row">${secsToLabel(a.secs)}<span class="rt-headsign">UMass Shuttle</span>${t ? `<span class="rt-time">${t}</span>` : ""}</div>`;
+      }).join("");
+    }
+
+    // ── Fetch MBTA ──────────────────────────────────────────────
+    async function fetchMbta(cfg) {
+      const stop = cfg.stop || "place-jfk";
+      let url = `${window.API_BASE || ""}/api/mbta/predictions?stop=${encodeURIComponent(stop)}`;
+      if (cfg.route)     url += `&route=${encodeURIComponent(cfg.route)}`;
+      if (cfg.routeType) url += `&route_type=${cfg.routeType}`;
+      if (cfg.direction !== undefined && cfg.direction !== "") url += `&direction=${cfg.direction}`;
+      const res = await fetch(url);
+      const data = await res.json();
+      if (!data.data) return [];
+
+      const tripMap = {};
+      for (const item of (data.included || []))
+        if (item.type === "trip") tripMap[item.id] = item.attributes.headsign || "";
+
+      const now = Date.now();
+      let preds = data.data
+        .map(pred => {
+          const t = pred.attributes.departure_time || pred.attributes.arrival_time;
+          if (!t) return null;
+          const dt = new Date(t);
+          const secs = Math.round((dt - now) / 1000);
+          const headsign = tripMap[pred.relationships?.trip?.data?.id] || "";
+          return { secs, headsign, dt };
+        })
+        .filter(p => p && p.secs > -60)
+        .sort((a, b) => a.secs - b.secs);
+
+      if (cfg.headsignFilter) {
+        preds = preds.filter(p =>
+          p.headsign.toLowerCase().includes(cfg.headsignFilter.toLowerCase()));
+      }
+      return preds.slice(0, 8);
+    }
+
+    function renderMbta(preds, routeLabel) {
+      if (!preds || preds.length === 0)
+        return '<div class="rt-empty">No departures scheduled</div>';
+      return preds.map(p => {
+        const t = p.dt.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+        const dest = p.headsign || routeLabel;
+        return `<div class="rt-row">${secsToLabel(p.secs)}<span class="rt-headsign">${dest}</span><span class="rt-time">${t}</span></div>`;
+      }).join("");
+    }
+
+    // ── Main fetch + render ─────────────────────────────────────
+    async function loadArrivals(cfg) {
+      setLoading();
+      // Show commuter rail access note
+      const modeId = modeSel.value;
+      const stopId = stopSel.value;
+      const modeNote = STOPS[stopId]?.modes?.[modeId]?.note;
+      try {
+        let html = modeNote
+          ? `<div class="rt-note">${modeNote}</div>`
+          : "";
+        if (cfg.api === "transloc") {
+          const arr = await fetchTransloc(cfg.stopId);
+          html += renderTransloc(arr);
+        } else {
+          const arr = await fetchMbta(cfg);
+          html += renderMbta(arr, cfg.label);
+        }
+        rtResults.innerHTML = html || '<div class="rt-empty">No results</div>';
+        liveDot.classList.remove("pulsing");
+      } catch (e) {
+        setError("Could not load arrivals. Check your connection.");
+      }
+    }
+
+    function scheduleRefresh(cfg) {
+      clearInterval(refreshTimer);
+      refreshTimer = setInterval(() => loadArrivals(cfg), 30000);
+    }
+
+    // ── Cascade selectors ───────────────────────────────────────
+    stopSel.addEventListener("change", () => {
+      clearInterval(refreshTimer);
+      modeSel.innerHTML = '<option value="">Select mode…</option>';
+      modeSel.disabled = true;
+      routeSel.innerHTML = '<option value="">Select route…</option>';
+      routeField.style.display = "none";
+      rtResults.innerHTML = '<p class="rt-placeholder">Select a mode to see arrivals.</p>';
+      liveDot.classList.remove("pulsing");
+
+      const stopId = stopSel.value;
+      if (!stopId) { rtResults.innerHTML = '<p class="rt-placeholder">Select a location to see live arrivals.</p>'; return; }
+
+      const stop = STOPS[stopId];
+      if (!stop) return;
+
+      if (stop.shuttle !== undefined) {
+        // Shuttle-only stop — skip mode selector, fetch directly
+        modeSel.innerHTML = '<option value="shuttle" selected>UMass Shuttle</option>';
+        routeField.style.display = "none";
+        currentConfig = { api: "transloc", stopId: stop.shuttle, label: "UMass Shuttle" };
+        loadArrivals(currentConfig);
+        scheduleRefresh(currentConfig);
+      } else {
+        // JFK — show mode choices
+        Object.entries(stop.modes).forEach(([key, m]) => {
+          const opt = document.createElement("option");
+          opt.value = key; opt.textContent = m.label;
+          modeSel.appendChild(opt);
+        });
+        modeSel.disabled = false;
+      }
+    });
+
+    modeSel.addEventListener("change", () => {
+      clearInterval(refreshTimer);
+      routeSel.innerHTML = '<option value="">Select route…</option>';
+      routeField.style.display = "none";
+      rtResults.innerHTML = '<p class="rt-placeholder">Select a route to see arrivals.</p>';
+
+      const stopId = stopSel.value;
+      const modeId = modeSel.value;
+      if (!stopId || !modeId) return;
+
+      const mode = STOPS[stopId]?.modes?.[modeId];
+      if (!mode) return;
+
+      if (mode.routes.length === 1) {
+        // Only one route — fetch directly
+        routeField.style.display = "none";
+        const r = mode.routes[0];
+        currentConfig = { ...r };
+        loadArrivals(currentConfig);
+        scheduleRefresh(currentConfig);
+      } else {
+        // Multiple routes — show route picker
+        routeField.style.display = "";
+        mode.routes.forEach((r, i) => {
+          const opt = document.createElement("option");
+          opt.value = i; opt.textContent = r.label;
+          routeSel.appendChild(opt);
+        });
+        routeSel.disabled = false;
+      }
+    });
+
+    routeSel.addEventListener("change", () => {
+      clearInterval(refreshTimer);
+      const stopId = stopSel.value;
+      const modeId = modeSel.value;
+      const idx = parseInt(routeSel.value);
+      if (isNaN(idx)) return;
+
+      const r = STOPS[stopId]?.modes?.[modeId]?.routes?.[idx];
+      if (!r) return;
+      currentConfig = { ...r };
+      loadArrivals(currentConfig);
+      scheduleRefresh(currentConfig);
+    });
+  </script>
+</body>
+</html>

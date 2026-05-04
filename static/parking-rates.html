@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parking Rates — UMass Boston</title>
+  <link rel="icon" href="/umb_icon.png" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="info-page">
+
+  <header class="header">
+    <button id="hamburgerBtn" class="hamburger-btn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <img src="/umb_icon.png" alt="UMass Boston" class="header-logo" />
+    <div class="header-text">
+      <h1>RIDE EZ · UMass Boston</h1>
+      <p>Campus map · parking lots · shuttle stops · buildings</p>
+    </div>
+    <nav class="header-nav">
+      <a href="/" class="nav-link">Map</a>
+    </nav>
+  </header>
+
+  <!-- Side info menu -->
+  <div class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+      <span>Campus Info</span>
+      <button id="closeMenu" class="side-menu-close" aria-label="Close">✕</button>
+    </div>
+    <nav class="side-menu-nav">
+      <a href="/parking-rates" class="side-menu-link active">
+        <span>Parking Rates</span>
+        <span class="side-menu-arrow">›</span>
+      </a>
+      <a href="/blue-bikes" class="side-menu-link">
+        <span>Blue Bikes &amp; Scooters</span>
+        <span class="side-menu-arrow">›</span>
+      </a>
+      <a href="/transit" class="side-menu-link">
+        <span>Buses &amp; Train</span>
+        <span class="side-menu-arrow">›</span>
+      </a>
+    </nav>
+  </div>
+
+  <main class="info-main">
+    <div class="info-container">
+      <a href="/" class="back-link">&#8592; Back to Map</a>
+      <h2 class="info-title">Parking Rates</h2>
+      <p class="info-subtitle">All rates for UMass Boston campus parking facilities. Gated lots require a permit or daily fee payment before exit.</p>
+
+      <div class="info-grid">
+
+        <div class="info-card">
+          <div class="info-card-header garage">
+            <div>
+              <h3>West Garage</h3>
+              <span class="info-tag">Multi-Level Garage</span>
+            </div>
+          </div>
+          <p class="info-card-desc">Pay-on-foot kiosks accept cash or credit. Reserved spaces available on upper levels.</p>
+          <h4 class="info-section-label">Daily Rates</h4>
+          <table class="info-table">
+            <tr><td>1 hour (minimum)</td><td>$7.00</td></tr>
+            <tr><td>1–1.5 hours</td><td>$8.00</td></tr>
+            <tr><td>2 hours</td><td>$9.00</td></tr>
+            <tr><td>2–2.5 hours</td><td>$10.00</td></tr>
+            <tr><td>3 hours</td><td>$11.00</td></tr>
+            <tr><td>Over 3 hours / daily max</td><td>$15.00</td></tr>
+            <tr><td>Evening &amp; Weekend (after 4 pm)</td><td>$10.00</td></tr>
+          </table>
+          <h4 class="info-section-label">Permit Rates</h4>
+          <table class="info-table">
+            <tr><td>Commuter Student — semester</td><td>$550</td></tr>
+            <tr><td>Faculty — semester</td><td>$550</td></tr>
+            <tr><td>Reserved (West Garage only)</td><td>$1,200/sem</td></tr>
+            <tr><td>Summer session</td><td>$70</td></tr>
+          </table>
+          <div class="info-payment">Pay-on-foot · cash or credit</div>
+          <div class="info-links">
+            <a class="info-link" href="https://www.umb.edu/transportation/parking-rates/" target="_blank" rel="noopener">Rates &amp; Permits ↗</a>
+            <a class="info-link" href="https://www.umb.edu/transportation/" target="_blank" rel="noopener">Transportation Office ↗</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header garage">
+            <div>
+              <h3>Campus Center Garage</h3>
+              <span class="info-tag">Underground Garage</span>
+            </div>
+          </div>
+          <p class="info-card-desc">Underground gated garage adjacent to the Campus Center. Credit only.</p>
+          <h4 class="info-section-label">Daily Rates</h4>
+          <table class="info-table">
+            <tr><td>Daily rate</td><td>$15.00</td></tr>
+            <tr><td>Evening &amp; Weekend (after 4 pm)</td><td>$10.00</td></tr>
+          </table>
+          <h4 class="info-section-label">Permit Rates</h4>
+          <table class="info-table">
+            <tr><td>Commuter Student — semester</td><td>$550</td></tr>
+            <tr><td>Faculty — semester</td><td>$550</td></tr>
+          </table>
+          <div class="info-payment">Pay-on-foot · credit only</div>
+          <div class="info-links">
+            <a class="info-link" href="https://www.umb.edu/transportation/parking-rates/" target="_blank" rel="noopener">Rates &amp; Permits ↗</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header lot">
+            <div>
+              <h3>Lot D</h3>
+              <span class="info-tag">Surface Lot</span>
+            </div>
+          </div>
+          <p class="info-card-desc">Gated surface parking lot on campus. Credit card only.</p>
+          <h4 class="info-section-label">Daily Rates</h4>
+          <table class="info-table">
+            <tr><td>Daily rate</td><td>$15.00</td></tr>
+            <tr><td>Evening &amp; Weekend (after 4 pm)</td><td>$10.00</td></tr>
+          </table>
+          <h4 class="info-section-label">Permit Rates</h4>
+          <table class="info-table">
+            <tr><td>Commuter Student — semester</td><td>$550</td></tr>
+            <tr><td>Faculty — semester</td><td>$550</td></tr>
+            <tr><td>Summer session</td><td>$70</td></tr>
+          </table>
+          <div class="info-payment">Credit card only</div>
+          <div class="info-links">
+            <a class="info-link" href="https://www.umb.edu/transportation/parking-rates/" target="_blank" rel="noopener">Rates &amp; Permits ↗</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header lot">
+            <div>
+              <h3>Quad Lot</h3>
+              <span class="info-tag">Surface Lot</span>
+            </div>
+          </div>
+          <p class="info-card-desc">Open surface lot next to the Quad. Pay by plate using the Passport Parking app.</p>
+          <h4 class="info-section-label">Daily Rates</h4>
+          <table class="info-table">
+            <tr><td>Daily rate</td><td>$15.00</td></tr>
+            <tr><td>Evening &amp; Weekend (after 4 pm)</td><td>$10.00</td></tr>
+          </table>
+          <div class="info-payment">Passport Parking app · Zone 21266</div>
+          <div class="info-links">
+            <a class="info-link" href="https://www.passportparking.com/" target="_blank" rel="noopener">Passport Parking ↗</a>
+            <a class="info-link" href="https://www.umb.edu/transportation/parking-rates/" target="_blank" rel="noopener">Permit info ↗</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header lot">
+            <div>
+              <h3>Edward M. Kennedy Institute Lot</h3>
+              <span class="info-tag">Surface Lot</span>
+            </div>
+          </div>
+          <p class="info-card-desc">Surface parking lot adjacent to the EMK Institute.</p>
+          <h4 class="info-section-label">Daily Rates</h4>
+          <table class="info-table">
+            <tr><td>Daily rate</td><td>$15.00</td></tr>
+            <tr><td>Evening &amp; Weekend (after 4 pm)</td><td>$10.00</td></tr>
+          </table>
+          <div class="info-payment">See signage on site</div>
+          <div class="info-links">
+            <a class="info-link" href="https://www.umb.edu/transportation/parking-rates/" target="_blank" rel="noopener">UMass Parking info ↗</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header lot">
+            <div>
+              <h3>Massachusetts Archives Parking</h3>
+              <span class="info-tag">Surface Lot</span>
+            </div>
+          </div>
+          <p class="info-card-desc">Surface parking lot serving the Massachusetts Archives and adjacent buildings.</p>
+          <h4 class="info-section-label">Rates</h4>
+          <table class="info-table">
+            <tr><td>See on-site signage</td><td>—</td></tr>
+          </table>
+          <div class="info-payment">See signage on site</div>
+          <div class="info-links">
+            <a class="info-link" href="https://www.sec.state.ma.us/arc/arcidx.htm" target="_blank" rel="noopener">Mass Archives ↗</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header bayside">
+            <div>
+              <h3>Bayside Lot</h3>
+              <span class="info-tag">Off-Campus Surface Lot</span>
+            </div>
+          </div>
+          <p class="info-card-desc">Off-campus lot accessible via Mt. Vernon St. Free UMass shuttle connects to main campus. No overnight parking.</p>
+          <h4 class="info-section-label">Daily Rates</h4>
+          <table class="info-table">
+            <tr><td>Daily rate</td><td>$9.00</td></tr>
+          </table>
+          <h4 class="info-section-label">Permit Rates</h4>
+          <table class="info-table">
+            <tr><td>Commuter Student — semester</td><td>$504</td></tr>
+            <tr><td>Faculty — semester</td><td>$504</td></tr>
+          </table>
+          <div class="info-payment">Passport Parking app · Zone 21251</div>
+          <div class="info-links">
+            <a class="info-link" href="https://www.passportparking.com/" target="_blank" rel="noopener">Passport Parking ↗</a>
+            <a class="info-link" href="https://www.umb.edu/transportation/parking-rates/" target="_blank" rel="noopener">Permit info ↗</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="info-note">
+        <strong>Note:</strong> Permit holders may park in any non-reserved space within the permitted facility. Violations are enforced by the UMass Boston Transportation Office. Contact <a href="mailto:transportation@umb.edu">transportation@umb.edu</a> for permit purchases.
+      </div>
+    </div>
+  </main>
+
+  <script src="/api-config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="/widget.js"></script>
+  <script>
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const sideMenu = document.getElementById("sideMenu");
+    const closeMenu = document.getElementById("closeMenu");
+    hamburgerBtn.addEventListener("click", () => sideMenu.classList.toggle("open"));
+    closeMenu.addEventListener("click", () => sideMenu.classList.remove("open"));
+  </script>
+</body>
+</html>
