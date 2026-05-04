@@ -8,6 +8,6 @@
     { "source": "/blue-bikes", "destination": "/blue-bikes.html" },
     { "source": "/transit", "destination": "/transit.html" },
     { "source": "/chat", "destination": "/chat.html" },
-    { "source": "/(?!api/).*", "destination": "/$1" }
+    { "source": "/(.*)", "destination": "/$1" }
   ]
 }
