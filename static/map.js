@@ -721,7 +721,7 @@ function decodePolyline6(str) {
 }
 
 async function valhallaWalkRoute(from, to) {
-  const res = await fetch(`${window.API_BASE || ""}/api/walk-route`, {
+  const res = await fetch("/api/walk-route", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
