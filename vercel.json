@@ -4,6 +4,10 @@
   "installCommand": "",
   "framework": null,
   "rewrites": [
+    { "source": "/parking-rates", "destination": "/parking-rates.html" },
+    { "source": "/blue-bikes", "destination": "/blue-bikes.html" },
+    { "source": "/transit", "destination": "/transit.html" },
+    { "source": "/chat", "destination": "/chat.html" },
     { "source": "/(.*)", "destination": "/$1" }
   ]
 }
