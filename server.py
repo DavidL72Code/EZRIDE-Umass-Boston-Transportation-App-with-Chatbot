@@ -177,7 +177,7 @@ def walk_route():
     try:
         import requests as http
         r = http.post(
-            f"https://valhalla.stadiamaps.com/route?api_key={api_key}",
+            f"https://api.stadiamaps.com/route/v1?api_key={api_key}",
             json=request.get_json(),
             timeout=15,
         )

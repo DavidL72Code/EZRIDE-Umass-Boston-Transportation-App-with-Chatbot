@@ -20,7 +20,7 @@ export default async function handler(req, res) {
 
   try {
     const upstream = await fetch(
-      `https://valhalla.stadiamaps.com/route?api_key=${apiKey}`,
+      `https://api.stadiamaps.com/route/v1?api_key=${apiKey}`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
