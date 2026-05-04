@@ -13,18 +13,23 @@ export default async function handler(req, res) {
   const apiKey = process.env.STADIA_API_KEY;
   if (!apiKey) return res.status(503).json({ error: "STADIA_API_KEY not configured" });
 
+  let body = req.body;
+  if (typeof body === "string") {
+    try { body = JSON.parse(body); } catch {}
+  }
+
   try {
     const upstream = await fetch(
       `https://valhalla.stadiamaps.com/route?api_key=${apiKey}`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(req.body),
+        body: JSON.stringify(body),
       }
     );
     const data = await upstream.json();
     res.status(upstream.status).json(data);
   } catch (e) {
-    res.status(500).json({ error: e.message });
+    res.status(500).json({ error: e.message, cause: e.cause?.message ?? null });
   }
 }
