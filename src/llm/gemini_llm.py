@@ -94,4 +94,5 @@ class GeminiLLM:
         for chunk in self._client.models.generate_content_stream(
             model=self._model, contents=contents, config=self._config
         ):
-            yield ("token", chunk.text)
+            if chunk.text:
+                yield ("token", chunk.text)
