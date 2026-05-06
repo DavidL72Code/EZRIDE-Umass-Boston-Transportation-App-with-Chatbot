@@ -39,6 +39,7 @@ class GeminiLLM:
             _genai_model = genai.GenerativeModel(
                 model_name=model,
                 system_instruction=SYSTEM_PROMPT,
+                generation_config=genai.GenerationConfig(max_output_tokens=150),
             )
         self._model = _genai_model
 
@@ -47,19 +48,22 @@ class GeminiLLM:
         for i, item in enumerate(chunks, 1):
             c = item["chunk"]
             parts.append(
-                f"[Source {i}] ({c.get('category', '').title()}) {c.get('title', '')}\n"
-                f"URL: {c.get('source_url', '')}\n"
+                f"[{i}] {c.get('title', '')} — {c.get('headings', [''])[0]}\n"
                 f"{c['text']}"
             )
         return "\n\n---\n\n".join(parts)
 
     def _build_prompt(self, query: str, chunks: list) -> str:
         context = self._build_context(chunks)
-        return (
-            f"Use the following information from UMass Boston's website to answer the question.\n\n"
-            f"{context}\n\n"
-            f"Question: {query}"
-        )
+        return f"Context:\n{context}\n\nQuestion: {query}"
+
+    def count_prompt_tokens(self, query: str, chunks: list) -> int:
+        try:
+            prompt = self._build_prompt(query, chunks)
+            result = self._model.count_tokens(prompt)
+            return result.total_tokens
+        except Exception:
+            return -1
 
     def _history_to_genai(self, history: list) -> list:
         result = []
@@ -80,3 +84,8 @@ class GeminiLLM:
         response = chat.send_message(self._build_prompt(query, chunks), stream=True)
         for chunk in response:
             yield chunk.text
+        try:
+            usage = response.usage_metadata
+            print(f"[tokens] input={usage.prompt_token_count} output={usage.candidates_token_count}")
+        except Exception:
+            pass

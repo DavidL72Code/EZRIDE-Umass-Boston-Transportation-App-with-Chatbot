@@ -43,7 +43,7 @@ def step_chunk() -> list[dict]:
     if not raw_path.exists():
         print(f"[ERROR] {raw_path} not found. Run scrape step first.")
         sys.exit(1)
-    chunks = load_and_chunk(raw_path, PROCESSED_DIR, CATEGORIES_DIR)
+    chunks = load_and_chunk(raw_path, PROCESSED_DIR, CATEGORIES_DIR, chunk_size=400, overlap=80)
     return [vars(c) if not isinstance(c, dict) else c for c in chunks]
 
 

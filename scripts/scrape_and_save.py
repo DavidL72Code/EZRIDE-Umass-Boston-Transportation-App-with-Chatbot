@@ -205,7 +205,7 @@ def main() -> None:
     print("Building chunks per category…")
 
     for cat, pages in cat_pages.items():
-        chunks = chunk_pages(pages, chunk_size=400, overlap=80)
+        chunks = chunk_pages(pages, chunk_size=150, overlap=30)
         chunk_dicts = [asdict(c) for c in chunks]
         chunks_path = CAT_DIR / cat / "chunks.json"
         with open(chunks_path, "w") as f:
@@ -221,7 +221,7 @@ def main() -> None:
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
     all_chunks = []
     for pages in cat_pages.values():
-        chunks = chunk_pages(pages, chunk_size=400, overlap=80)
+        chunks = chunk_pages(pages, chunk_size=150, overlap=30)
         all_chunks.extend([asdict(c) for c in chunks])
     with open(PROCESSED_DIR / "chunks.json", "w") as f:
         json.dump(all_chunks, f, indent=2, ensure_ascii=False)
