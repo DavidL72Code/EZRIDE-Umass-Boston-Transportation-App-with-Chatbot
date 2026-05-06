@@ -85,9 +85,10 @@ def chat():
     if not message:
         return jsonify({"error": "empty message"}), 400
 
-    results = _retriever.search(message, top_k=5)
-
     def generate():
+        yield _event("status", text="🔍 Searching knowledge base…")
+        results = _retriever.search(message, top_k=5)
+
         if not results:
             yield _event("status", text="")
             yield _event("token", text=(
