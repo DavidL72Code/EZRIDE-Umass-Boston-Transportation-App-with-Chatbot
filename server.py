@@ -35,7 +35,7 @@ def _init():
         ROOT / "index" / "bm25",
         ROOT / "index" / "faiss",
         Embedder(),
-        semantic_weight=0.6,
+        semantic_weight=0.75,
     )
     print("[startup] Search indexes ready.")
 
@@ -85,7 +85,7 @@ def chat():
     if not message:
         return jsonify({"error": "empty message"}), 400
 
-    results = _retriever.search(message, top_k=3)
+    results = _retriever.search(message, top_k=5)
 
     def generate():
         if not results:
