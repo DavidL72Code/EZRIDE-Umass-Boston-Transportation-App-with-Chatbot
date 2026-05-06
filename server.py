@@ -107,8 +107,6 @@ def chat():
             yield _event("token", text="\n\n".join(parts))
         else:
             try:
-                token_count = _llm.count_prompt_tokens(message, results)
-                print(f"[tokens] prompt={token_count}")
                 for token in _llm.answer_stream(message, results, history=history[-6:]):
                     yield _event("token", text=token)
             except Exception as exc:
