@@ -54,6 +54,38 @@
   const messagesEl = document.getElementById("widgetMessages");
 
   const history = [];
+  const header  = widget.querySelector(".chat-widget-header");
+
+  // ── Drag ───────────────────────────────────────────────────────────────────
+
+  let dragging = false, dragX = 0, dragY = 0;
+
+  header.addEventListener("mousedown", (e) => {
+    if (e.target === closeBtn) return;
+    dragging = true;
+    const rect = widget.getBoundingClientRect();
+    // Switch from bottom/right to top/left so we can freely position
+    widget.style.bottom = "auto";
+    widget.style.right  = "auto";
+    widget.style.top    = rect.top + "px";
+    widget.style.left   = rect.left + "px";
+    dragX = e.clientX - rect.left;
+    dragY = e.clientY - rect.top;
+    widget.classList.add("dragging");
+    e.preventDefault();
+  });
+
+  document.addEventListener("mousemove", (e) => {
+    if (!dragging) return;
+    const maxLeft = window.innerWidth  - widget.offsetWidth;
+    const maxTop  = window.innerHeight - widget.offsetHeight;
+    widget.style.left = Math.min(Math.max(0, e.clientX - dragX), maxLeft) + "px";
+    widget.style.top  = Math.min(Math.max(0, e.clientY - dragY), maxTop)  + "px";
+  });
+
+  document.addEventListener("mouseup", () => {
+    if (dragging) { dragging = false; widget.classList.remove("dragging"); }
+  });
 
   const BADGE_CLASS = {
     permits:     "badge-permits",
