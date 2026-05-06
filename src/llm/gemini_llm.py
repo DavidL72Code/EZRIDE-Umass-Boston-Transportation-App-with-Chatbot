@@ -20,7 +20,7 @@ Guidelines:
 - Do not repeat source URLs in your answer text; they are shown separately to the user.
 """
 
-MODEL = "gemini-2.0-flash-lite"
+MODEL = "gemini-2.5-flash-lite-preview-06-17"
 
 # Module-level singleton — created once when GeminiLLM is first instantiated.
 _genai_model = None
