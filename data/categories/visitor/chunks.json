@@ -14,7 +14,10 @@
       "Campus Shuttle Services"
     ],
     "chunk_index": 0,
-    "total_chunks": 2
+    "total_chunks": 2,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Campus Shuttle Services"
   },
   {
     "chunk_id": "www.umb.edu_transportation_visitor-resources__chunk1",
@@ -31,6 +34,9 @@
       "Campus Shuttle Services"
     ],
     "chunk_index": 1,
-    "total_chunks": 2
+    "total_chunks": 2,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Contact Us"
   }
 ]

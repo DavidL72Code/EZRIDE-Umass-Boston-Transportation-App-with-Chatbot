@@ -15,6 +15,23 @@ class Chunk:
     headings: list
     chunk_index: int
     total_chunks: int
+    price_mentions: list
+    violation_codes: list
+    active_section: Optional[str]
+
+
+def _extract_price_mentions(text: str) -> list[str]:
+    return sorted(set(re.findall(r'\$\d+(?:\.\d{2})?', text)))
+
+
+def _extract_violation_codes(text: str) -> list[int]:
+    codes = re.findall(r'\b(1[012]\d)\b', text)
+    return sorted(set(int(c) for c in codes if 101 <= int(c) <= 129))
+
+
+def _extract_active_section(text: str) -> Optional[str]:
+    matches = re.findall(r'##\s+(.+?)(?:\n|$)', text)
+    return matches[-1].strip() if matches else None
 
 
 def _tokenize_len(text: str) -> int:
@@ -98,6 +115,9 @@ def chunk_pages(
                 headings=headings[:6],
                 chunk_index=i,
                 total_chunks=len(splits),
+                price_mentions=_extract_price_mentions(text),
+                violation_codes=_extract_violation_codes(text),
+                active_section=_extract_active_section(text),
             )))
 
     return chunks

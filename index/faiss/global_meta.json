@@ -14,7 +14,10 @@
       "Contact Us"
     ],
     "chunk_index": 0,
-    "total_chunks": 1
+    "total_chunks": 1,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Contact Us"
   },
   {
     "chunk_id": "www.umb.edu_transportation_commuting__chunk0",
@@ -31,7 +34,14 @@
       "Preferential Carpool Spaces"
     ],
     "chunk_index": 0,
-    "total_chunks": 5
+    "total_chunks": 5,
+    "price_mentions": [
+      "$15",
+      "$25",
+      "$50"
+    ],
+    "violation_codes": [],
+    "active_section": "A Better City TMA"
   },
   {
     "chunk_id": "www.umb.edu_transportation_commuting__chunk1",
@@ -48,7 +58,14 @@
       "Preferential Carpool Spaces"
     ],
     "chunk_index": 1,
-    "total_chunks": 5
+    "total_chunks": 5,
+    "price_mentions": [
+      "$15",
+      "$25",
+      "$50"
+    ],
+    "violation_codes": [],
+    "active_section": "Preferential Carpool Spaces"
   },
   {
     "chunk_id": "www.umb.edu_transportation_commuting__chunk2",
@@ -65,7 +82,13 @@
       "Preferential Carpool Spaces"
     ],
     "chunk_index": 2,
-    "total_chunks": 5
+    "total_chunks": 5,
+    "price_mentions": [
+      "$0.22",
+      "$75"
+    ],
+    "violation_codes": [],
+    "active_section": "Electric Vehicle Charging"
   },
   {
     "chunk_id": "www.umb.edu_transportation_commuting__chunk3",
@@ -82,7 +105,13 @@
       "Preferential Carpool Spaces"
     ],
     "chunk_index": 3,
-    "total_chunks": 5
+    "total_chunks": 5,
+    "price_mentions": [
+      "$0.22",
+      "$75"
+    ],
+    "violation_codes": [],
+    "active_section": null
   },
   {
     "chunk_id": "www.umb.edu_transportation_commuting__chunk4",
@@ -99,7 +128,13 @@
       "Preferential Carpool Spaces"
     ],
     "chunk_index": 4,
-    "total_chunks": 5
+    "total_chunks": 5,
+    "price_mentions": [
+      "$0.22",
+      "$75"
+    ],
+    "violation_codes": [],
+    "active_section": "Contact Us"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk0",
@@ -116,7 +151,10 @@
       "Accessible Parking"
     ],
     "chunk_index": 0,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Parking Portal Instructions & Permit Application"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk1",
@@ -133,7 +171,10 @@
       "Accessible Parking"
     ],
     "chunk_index": 1,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "General Parking Permit Rules"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk2",
@@ -150,7 +191,10 @@
       "Accessible Parking"
     ],
     "chunk_index": 2,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "General Parking Permit Rules"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk3",
@@ -167,7 +211,10 @@
       "Accessible Parking"
     ],
     "chunk_index": 3,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": null
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk4",
@@ -184,7 +231,10 @@
       "Accessible Parking"
     ],
     "chunk_index": 4,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Validated Tickets"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk5",
@@ -201,7 +251,10 @@
       "Accessible Parking"
     ],
     "chunk_index": 5,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Accessible Parking"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk6",
@@ -218,7 +271,13 @@
       "Accessible Parking"
     ],
     "chunk_index": 6,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [
+      "$0.22",
+      "$75"
+    ],
+    "violation_codes": [],
+    "active_section": "Electric Vehicle Charging"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk7",
@@ -235,7 +294,13 @@
       "Accessible Parking"
     ],
     "chunk_index": 7,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [
+      "$0.22",
+      "$75"
+    ],
+    "violation_codes": [],
+    "active_section": null
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk8",
@@ -252,7 +317,13 @@
       "Accessible Parking"
     ],
     "chunk_index": 8,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [
+      "$0.22",
+      "$75"
+    ],
+    "violation_codes": [],
+    "active_section": "Contact Us"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_parking-rates__chunk0",
@@ -269,7 +340,17 @@
       "Commuter Student Permit Rates"
     ],
     "chunk_index": 0,
-    "total_chunks": 4
+    "total_chunks": 4,
+    "price_mentions": [
+      "$10.00",
+      "$11.00",
+      "$15.00",
+      "$7.00",
+      "$8.00",
+      "$9.00"
+    ],
+    "violation_codes": [],
+    "active_section": "On Campus Daily Rates"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_parking-rates__chunk1",
@@ -286,7 +367,17 @@
       "Commuter Student Permit Rates"
     ],
     "chunk_index": 1,
-    "total_chunks": 4
+    "total_chunks": 4,
+    "price_mentions": [
+      "$10.00",
+      "$11.00",
+      "$15.00",
+      "$7.00",
+      "$8.00",
+      "$9.00"
+    ],
+    "violation_codes": [],
+    "active_section": "Off Campus Daily Rates"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_parking-rates__chunk2",
@@ -303,7 +394,20 @@
       "Commuter Student Permit Rates"
     ],
     "chunk_index": 2,
-    "total_chunks": 4
+    "total_chunks": 4,
+    "price_mentions": [
+      "$1",
+      "$1200",
+      "$150",
+      "$360",
+      "$504",
+      "$550",
+      "$70",
+      "$9.00",
+      "$900"
+    ],
+    "violation_codes": [],
+    "active_section": "Part-Time Faculty Permit Rates"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_parking-rates__chunk3",
@@ -320,7 +424,40 @@
       "Commuter Student Permit Rates"
     ],
     "chunk_index": 3,
-    "total_chunks": 4
+    "total_chunks": 4,
+    "price_mentions": [
+      "$112",
+      "$1200",
+      "$122",
+      "$126",
+      "$134",
+      "$144",
+      "$150",
+      "$160",
+      "$180",
+      "$198.08",
+      "$208",
+      "$218.08",
+      "$240",
+      "$300",
+      "$360",
+      "$504",
+      "$536",
+      "$576",
+      "$600",
+      "$640",
+      "$720",
+      "$792.32",
+      "$832",
+      "$872.32",
+      "$960"
+    ],
+    "violation_codes": [
+      112,
+      122,
+      126
+    ],
+    "active_section": "Non-Unit Employees & UMBPD Lts. Permit Rates"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_carpool-registration-form__chunk0",
@@ -333,7 +470,10 @@
       "Complete the Carpool Registration Form"
     ],
     "chunk_index": 0,
-    "total_chunks": 1
+    "total_chunks": 1,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Complete the Carpool Registration Form"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_fines__chunk0",
@@ -350,7 +490,10 @@
       "Towing"
     ],
     "chunk_index": 0,
-    "total_chunks": 6
+    "total_chunks": 6,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Parking Fines"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_fines__chunk1",
@@ -367,7 +510,46 @@
       "Towing"
     ],
     "chunk_index": 1,
-    "total_chunks": 6
+    "total_chunks": 6,
+    "price_mentions": [
+      "$0.00",
+      "$150.00",
+      "$25.00",
+      "$35.00",
+      "$75.00"
+    ],
+    "violation_codes": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129
+    ],
+    "active_section": "Parking Enforcement"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_fines__chunk2",
@@ -384,7 +566,10 @@
       "Towing"
     ],
     "chunk_index": 2,
-    "total_chunks": 6
+    "total_chunks": 6,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Appealing a Parking Ticket"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_fines__chunk3",
@@ -401,7 +586,12 @@
       "Towing"
     ],
     "chunk_index": 3,
-    "total_chunks": 6
+    "total_chunks": 6,
+    "price_mentions": [
+      "$3.95"
+    ],
+    "violation_codes": [],
+    "active_section": "Paying a Parking Fine"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_fines__chunk4",
@@ -418,7 +608,12 @@
       "Towing"
     ],
     "chunk_index": 4,
-    "total_chunks": 6
+    "total_chunks": 6,
+    "price_mentions": [
+      "$3.95"
+    ],
+    "violation_codes": [],
+    "active_section": "RMV Clear Request"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_fines__chunk5",
@@ -435,7 +630,10 @@
       "Towing"
     ],
     "chunk_index": 5,
-    "total_chunks": 6
+    "total_chunks": 6,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Contact Us"
   },
   {
     "chunk_id": "www.umb.edu_transportation_mbta__chunk0",
@@ -452,7 +650,12 @@
       "MBTA Pass Replacement Information"
     ],
     "chunk_index": 0,
-    "total_chunks": 5
+    "total_chunks": 5,
+    "price_mentions": [
+      "$20"
+    ],
+    "violation_codes": [],
+    "active_section": "CLOSED | Spring 2026 Semester Pass Information"
   },
   {
     "chunk_id": "www.umb.edu_transportation_mbta__chunk1",
@@ -469,7 +672,12 @@
       "MBTA Pass Replacement Information"
     ],
     "chunk_index": 1,
-    "total_chunks": 5
+    "total_chunks": 5,
+    "price_mentions": [
+      "$20"
+    ],
+    "violation_codes": [],
+    "active_section": "Need a Pass Now? Monthly MBTA Options"
   },
   {
     "chunk_id": "www.umb.edu_transportation_mbta__chunk2",
@@ -486,7 +694,10 @@
       "MBTA Pass Replacement Information"
     ],
     "chunk_index": 2,
-    "total_chunks": 5
+    "total_chunks": 5,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Subway & Commuter Rail Coverage"
   },
   {
     "chunk_id": "www.umb.edu_transportation_mbta__chunk3",
@@ -503,7 +714,10 @@
       "MBTA Pass Replacement Information"
     ],
     "chunk_index": 3,
-    "total_chunks": 5
+    "total_chunks": 5,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Park & Pedal Facilities"
   },
   {
     "chunk_id": "www.umb.edu_transportation_mbta__chunk4",
@@ -520,7 +734,10 @@
       "MBTA Pass Replacement Information"
     ],
     "chunk_index": 4,
-    "total_chunks": 5
+    "total_chunks": 5,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Contact Us"
   },
   {
     "chunk_id": "hr.umb.edu_benefits_parking-mbta-passes__chunk0",
@@ -533,7 +750,10 @@
       "Transit and (Offsite) Parking FSA"
     ],
     "chunk_index": 0,
-    "total_chunks": 2
+    "total_chunks": 2,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Transit and (Offsite) Parking FSA"
   },
   {
     "chunk_id": "hr.umb.edu_benefits_parking-mbta-passes__chunk1",
@@ -546,7 +766,10 @@
       "Transit and (Offsite) Parking FSA"
     ],
     "chunk_index": 1,
-    "total_chunks": 2
+    "total_chunks": 2,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": null
   },
   {
     "chunk_id": "www.umb.edu_transportation_shuttle-bus-information__chunk0",
@@ -563,7 +786,10 @@
       "Contact Us"
     ],
     "chunk_index": 0,
-    "total_chunks": 3
+    "total_chunks": 3,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Shuttle Bus Advertising"
   },
   {
     "chunk_id": "www.umb.edu_transportation_shuttle-bus-information__chunk1",
@@ -580,7 +806,10 @@
       "Contact Us"
     ],
     "chunk_index": 1,
-    "total_chunks": 3
+    "total_chunks": 3,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": null
   },
   {
     "chunk_id": "www.umb.edu_transportation_shuttle-bus-information__chunk2",
@@ -597,7 +826,10 @@
       "Contact Us"
     ],
     "chunk_index": 2,
-    "total_chunks": 3
+    "total_chunks": 3,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Contact Us"
   },
   {
     "chunk_id": "www.umb.edu_transportation_visitor-resources__chunk0",
@@ -614,7 +846,10 @@
       "Campus Shuttle Services"
     ],
     "chunk_index": 0,
-    "total_chunks": 2
+    "total_chunks": 2,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Campus Shuttle Services"
   },
   {
     "chunk_id": "www.umb.edu_transportation_visitor-resources__chunk1",
@@ -631,7 +866,10 @@
       "Campus Shuttle Services"
     ],
     "chunk_index": 1,
-    "total_chunks": 2
+    "total_chunks": 2,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Contact Us"
   },
   {
     "chunk_id": "www.umb.edu_transportation_biking__chunk0",
@@ -648,7 +886,12 @@
       "Why Register?"
     ],
     "chunk_index": 0,
-    "total_chunks": 6
+    "total_chunks": 6,
+    "price_mentions": [],
+    "violation_codes": [
+      125
+    ],
+    "active_section": "Where to Park Your Bike (Free & Secure!)"
   },
   {
     "chunk_id": "www.umb.edu_transportation_biking__chunk1",
@@ -665,7 +908,10 @@
       "Why Register?"
     ],
     "chunk_index": 1,
-    "total_chunks": 6
+    "total_chunks": 6,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Register Your Bike, E-Bike, Scooter, or E-Scooter"
   },
   {
     "chunk_id": "www.umb.edu_transportation_biking__chunk2",
@@ -682,7 +928,10 @@
       "Why Register?"
     ],
     "chunk_index": 2,
-    "total_chunks": 6
+    "total_chunks": 6,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "What Is a 529 Shield? A tamper-resistant, weatherproof sticker that links your physical device to your 529 Garage registration. It supports theft deterrence and helps with recovery. The 529 Shield is optional but strongly recommended. ## Riding Responsibly on Campus"
   },
   {
     "chunk_id": "www.umb.edu_transportation_biking__chunk3",
@@ -699,7 +948,14 @@
       "Why Register?"
     ],
     "chunk_index": 3,
-    "total_chunks": 6
+    "total_chunks": 6,
+    "price_mentions": [
+      "$101.50"
+    ],
+    "violation_codes": [
+      101
+    ],
+    "active_section": "Bike Maintenance"
   },
   {
     "chunk_id": "www.umb.edu_transportation_biking__chunk4",
@@ -716,7 +972,16 @@
       "Why Register?"
     ],
     "chunk_index": 4,
-    "total_chunks": 6
+    "total_chunks": 6,
+    "price_mentions": [
+      "$101.50",
+      "$25",
+      "$75"
+    ],
+    "violation_codes": [
+      101
+    ],
+    "active_section": "Campus Bike Map & Nearby Routes"
   },
   {
     "chunk_id": "www.umb.edu_transportation_biking__chunk5",
@@ -733,6 +998,9 @@
       "Why Register?"
     ],
     "chunk_index": 5,
-    "total_chunks": 6
+    "total_chunks": 6,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Contact Us"
   }
 ]

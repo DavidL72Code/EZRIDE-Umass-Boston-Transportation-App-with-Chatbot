@@ -14,7 +14,10 @@
       "Accessible Parking"
     ],
     "chunk_index": 0,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Parking Portal Instructions & Permit Application"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk1",
@@ -31,7 +34,10 @@
       "Accessible Parking"
     ],
     "chunk_index": 1,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "General Parking Permit Rules"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk2",
@@ -48,7 +54,10 @@
       "Accessible Parking"
     ],
     "chunk_index": 2,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "General Parking Permit Rules"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk3",
@@ -65,7 +74,10 @@
       "Accessible Parking"
     ],
     "chunk_index": 3,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": null
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk4",
@@ -82,7 +94,10 @@
       "Accessible Parking"
     ],
     "chunk_index": 4,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Validated Tickets"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk5",
@@ -99,7 +114,10 @@
       "Accessible Parking"
     ],
     "chunk_index": 5,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Accessible Parking"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk6",
@@ -116,7 +134,13 @@
       "Accessible Parking"
     ],
     "chunk_index": 6,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [
+      "$0.22",
+      "$75"
+    ],
+    "violation_codes": [],
+    "active_section": "Electric Vehicle Charging"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk7",
@@ -133,7 +157,13 @@
       "Accessible Parking"
     ],
     "chunk_index": 7,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [
+      "$0.22",
+      "$75"
+    ],
+    "violation_codes": [],
+    "active_section": null
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates__chunk8",
@@ -150,7 +180,13 @@
       "Accessible Parking"
     ],
     "chunk_index": 8,
-    "total_chunks": 9
+    "total_chunks": 9,
+    "price_mentions": [
+      "$0.22",
+      "$75"
+    ],
+    "violation_codes": [],
+    "active_section": "Contact Us"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_parking-rates__chunk0",
@@ -167,7 +203,17 @@
       "Commuter Student Permit Rates"
     ],
     "chunk_index": 0,
-    "total_chunks": 4
+    "total_chunks": 4,
+    "price_mentions": [
+      "$10.00",
+      "$11.00",
+      "$15.00",
+      "$7.00",
+      "$8.00",
+      "$9.00"
+    ],
+    "violation_codes": [],
+    "active_section": "On Campus Daily Rates"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_parking-rates__chunk1",
@@ -184,7 +230,17 @@
       "Commuter Student Permit Rates"
     ],
     "chunk_index": 1,
-    "total_chunks": 4
+    "total_chunks": 4,
+    "price_mentions": [
+      "$10.00",
+      "$11.00",
+      "$15.00",
+      "$7.00",
+      "$8.00",
+      "$9.00"
+    ],
+    "violation_codes": [],
+    "active_section": "Off Campus Daily Rates"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_parking-rates__chunk2",
@@ -201,7 +257,20 @@
       "Commuter Student Permit Rates"
     ],
     "chunk_index": 2,
-    "total_chunks": 4
+    "total_chunks": 4,
+    "price_mentions": [
+      "$1",
+      "$1200",
+      "$150",
+      "$360",
+      "$504",
+      "$550",
+      "$70",
+      "$9.00",
+      "$900"
+    ],
+    "violation_codes": [],
+    "active_section": "Part-Time Faculty Permit Rates"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_parking-rates__chunk3",
@@ -218,7 +287,40 @@
       "Commuter Student Permit Rates"
     ],
     "chunk_index": 3,
-    "total_chunks": 4
+    "total_chunks": 4,
+    "price_mentions": [
+      "$112",
+      "$1200",
+      "$122",
+      "$126",
+      "$134",
+      "$144",
+      "$150",
+      "$160",
+      "$180",
+      "$198.08",
+      "$208",
+      "$218.08",
+      "$240",
+      "$300",
+      "$360",
+      "$504",
+      "$536",
+      "$576",
+      "$600",
+      "$640",
+      "$720",
+      "$792.32",
+      "$832",
+      "$872.32",
+      "$960"
+    ],
+    "violation_codes": [
+      112,
+      122,
+      126
+    ],
+    "active_section": "Non-Unit Employees & UMBPD Lts. Permit Rates"
   },
   {
     "chunk_id": "www.umb.edu_transportation_parking-rates_carpool-registration-form__chunk0",
@@ -231,6 +333,9 @@
       "Complete the Carpool Registration Form"
     ],
     "chunk_index": 0,
-    "total_chunks": 1
+    "total_chunks": 1,
+    "price_mentions": [],
+    "violation_codes": [],
+    "active_section": "Complete the Carpool Registration Form"
   }
 ]
