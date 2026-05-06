@@ -292,11 +292,12 @@ if query:
             for m in st.session_state.messages[:-1]
             if m["role"] in ("user", "assistant")
         ]
-        with st.spinner("Generating answer…"):
-            try:
-                answer = llm.answer(query, results, history=history[-6:])
-            except Exception as exc:
-                answer = f"_(Gemini error: {exc})_\n\nHere are the most relevant sources:"
+        try:
+            st.markdown('<div class="chat-bot"><div class="avatar">♻️</div><div class="bubble">', unsafe_allow_html=True)
+            answer = st.write_stream(llm.answer_stream(query, results, history=history[-6:]))
+            st.markdown('</div></div>', unsafe_allow_html=True)
+        except Exception as exc:
+            answer = f"_(Gemini error: {exc})_\n\nHere are the most relevant sources:"
         st.session_state.messages.append({"role": "assistant", "content": answer, "sources": results})
 
     else:
