@@ -41,6 +41,7 @@ class GeminiLLM:
         self._config = types.GenerateContentConfig(
             system_instruction=SYSTEM_PROMPT,
             max_output_tokens=512,
+            thinking_config=types.ThinkingConfig(thinking_budget=0),
         )
 
     def _build_context(self, chunks: list) -> str:
