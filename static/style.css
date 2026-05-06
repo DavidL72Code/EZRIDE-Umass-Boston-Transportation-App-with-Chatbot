@@ -965,6 +965,8 @@ body.info-page { overflow-y: auto; }
 .message.user  { justify-content: flex-end; }
 .message.bot   { justify-content: flex-start; }
 
+
+
 .bubble {
   line-height: 1.6;
   max-width: 76%;

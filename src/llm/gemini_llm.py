@@ -88,10 +88,11 @@ class GeminiLLM:
 
     def answer_stream(
         self, query: str, chunks: list, history: Optional[list] = None
-    ) -> Iterator[str]:
+    ) -> Iterator[tuple[str, str]]:
+        """Yields (event_type, text) tuples where event_type is always 'token'."""
         contents = self._build_contents(query, chunks, history or [])
         for chunk in self._client.models.generate_content_stream(
             model=self._model, contents=contents, config=self._config
         ):
             if chunk.text:
-                yield chunk.text
+                yield ("token", chunk.text)

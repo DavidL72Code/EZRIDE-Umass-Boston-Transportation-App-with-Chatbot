@@ -107,8 +107,8 @@ def chat():
             yield _event("token", text="\n\n".join(parts))
         else:
             try:
-                for token in _llm.answer_stream(message, results, history=history[-6:]):
-                    yield _event("token", text=token)
+                for event_type, text in _llm.answer_stream(message, results, history=history[-6:]):
+                    yield _event(event_type, text=text)
             except Exception as exc:
                 yield _event("token", text=f"_(Error: {exc})_")
 
