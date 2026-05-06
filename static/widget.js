@@ -128,6 +128,16 @@
     scrollBottom();
   }
 
+  const PIPELINE_STEPS = [
+    "🧠 Embedding your query…",
+    "🔍 Searching BM25 keyword index…",
+    "📊 Searching FAISS vector index…",
+    "⚖️  Ranking with RRF fusion…",
+    "📄 Building context from top chunks…",
+    "🤖 Sending context to Gemini…",
+    "⚡ Generating response…",
+  ];
+
   function createBotBubble() {
     const row = document.createElement("div");
     row.className = "message bot";
@@ -141,9 +151,22 @@
       </div>`;
     messagesEl.appendChild(row);
     scrollBottom();
+
+    const statusEl = row.querySelector(".pipeline-status");
+    let stepIdx = 0;
+    statusEl.textContent = PIPELINE_STEPS[0];
+    statusEl.style.display = "";
+
+    const cycleTimer = setInterval(() => {
+      stepIdx = (stepIdx + 1) % PIPELINE_STEPS.length;
+      statusEl.textContent = PIPELINE_STEPS[stepIdx];
+      scrollBottom();
+    }, 700);
+
     return {
       bubble: row.querySelector(".bubble"),
-      status: row.querySelector(".pipeline-status"),
+      status: statusEl,
+      stopCycle: () => clearInterval(cycleTimer),
     };
   }
 
@@ -178,9 +201,10 @@
     history.push({ role: "user", content: text });
     setEnabled(false);
 
-    const { bubble, status } = createBotBubble();
+    const { bubble, status, stopCycle } = createBotBubble();
     let accumulated = "";
     let sourcesEl = null;
+    let cycleRunning = true;
 
     try {
       const res = await fetch(`${window.API_BASE || ""}/api/chat`, {
@@ -212,10 +236,9 @@
           try { evt = JSON.parse(line.slice(6)); } catch { continue; }
 
           if (evt.type === "status") {
-            status.textContent = evt.text;
-            status.style.display = evt.text ? "" : "none";
-            scrollBottom();
+            // server status events ignored — client cycle handles this
           } else if (evt.type === "token") {
+            if (cycleRunning) { stopCycle(); cycleRunning = false; }
             status.style.display = "none";
             accumulated += evt.text;
             bubble.querySelector(".typing-dots")?.remove();
@@ -236,6 +259,8 @@
       history.push({ role: "assistant", content: accumulated });
 
     } catch (err) {
+      if (cycleRunning) { stopCycle(); cycleRunning = false; }
+      status.style.display = "none";
       bubble.textContent = "Connection error. Is the server running?";
       console.error(err);
     }
