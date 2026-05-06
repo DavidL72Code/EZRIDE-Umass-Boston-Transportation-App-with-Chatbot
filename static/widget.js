@@ -133,12 +133,18 @@
     row.className = "message bot";
     row.innerHTML = `
       <div class="avatar">P</div>
-      <div class="bubble">
-        <div class="typing-dots"><span></span><span></span><span></span></div>
+      <div class="bot-content">
+        <div class="pipeline-status"></div>
+        <div class="bubble">
+          <div class="typing-dots"><span></span><span></span><span></span></div>
+        </div>
       </div>`;
     messagesEl.appendChild(row);
     scrollBottom();
-    return row.querySelector(".bubble");
+    return {
+      bubble: row.querySelector(".bubble"),
+      status: row.querySelector(".pipeline-status"),
+    };
   }
 
   function renderSources(sources) {
@@ -172,7 +178,7 @@
     history.push({ role: "user", content: text });
     setEnabled(false);
 
-    const bubble = createBotBubble();
+    const { bubble, status } = createBotBubble();
     let accumulated = "";
     let sourcesEl = null;
 
@@ -205,8 +211,14 @@
           let evt;
           try { evt = JSON.parse(line.slice(6)); } catch { continue; }
 
-          if (evt.type === "token") {
+          if (evt.type === "status") {
+            status.textContent = evt.text;
+            status.style.display = evt.text ? "" : "none";
+            scrollBottom();
+          } else if (evt.type === "token") {
+            status.style.display = "none";
             accumulated += evt.text;
+            bubble.querySelector(".typing-dots")?.remove();
             const md = typeof marked !== "undefined" ? marked.parse(accumulated) : escapeHtml(accumulated);
             bubble.innerHTML = md;
             scrollBottom();
@@ -220,7 +232,7 @@
         ? marked.parse(accumulated || "_(no response)_")
         : escapeHtml(accumulated || "(no response)");
       bubble.innerHTML = finalMd;
-      if (sourcesEl) bubble.parentElement.insertAdjacentElement("afterend", sourcesEl);
+      if (sourcesEl) bubble.parentElement.parentElement.insertAdjacentElement("afterend", sourcesEl);
       history.push({ role: "assistant", content: accumulated });
 
     } catch (err) {

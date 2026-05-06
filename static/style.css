@@ -965,6 +965,21 @@ body.info-page { overflow-y: auto; }
 .message.user  { justify-content: flex-end; }
 .message.bot   { justify-content: flex-start; }
 
+.bot-content { display: flex; flex-direction: column; gap: 4px; max-width: 76%; }
+.bot-content .bubble { max-width: 100%; }
+
+.pipeline-status {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-style: italic;
+  padding: 2px 4px;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.45; }
+}
+
 
 
 .bubble {

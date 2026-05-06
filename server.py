@@ -85,20 +85,25 @@ def chat():
     if not message:
         return jsonify({"error": "empty message"}), 400
 
-    results = _retriever.search(message, top_k=5)
-
     def generate():
+        yield _event("status", text="🔍 Searching knowledge base…")
+        results = _retriever.search(message, top_k=5)
+
         if not results:
-            text = (
+            yield _event("status", text="")
+            yield _event("token", text=(
                 "I couldn't find specific information about that. "
                 "Try rephrasing your question, or visit "
                 "umb.edu/transportation/ directly."
-            )
-            yield _event("token", text=text)
+            ))
             yield _event("done", sources=[])
             return
 
+        categories = list({item["chunk"].get("category", "general") for item in results})
+        yield _event("status", text=f"📄 Found {len(results)} chunks ({', '.join(categories)})")
+
         if _llm is None:
+            yield _event("status", text="")
             parts = []
             for i, item in enumerate(results[:3], 1):
                 c = item["chunk"]
@@ -106,10 +111,13 @@ def chat():
                 parts.append(f"**[{i}] {c.get('title', 'Source')}**\n{snippet}")
             yield _event("token", text="\n\n".join(parts))
         else:
+            yield _event("status", text="⚡ Generating response…")
             try:
                 for event_type, text in _llm.answer_stream(message, results, history=history[-6:]):
+                    yield _event("status", text="")
                     yield _event(event_type, text=text)
             except Exception as exc:
+                yield _event("status", text="")
                 yield _event("token", text=f"_(Error: {exc})_")
 
         seen: set = set()
