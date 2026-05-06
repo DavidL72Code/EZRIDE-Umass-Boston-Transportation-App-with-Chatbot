@@ -28,7 +28,7 @@ class HybridRetriever:
         semantic_weight: float = 0.6,
     ) -> None:
         self.embedder = embedder
-        self.semantic_weight = semantic_weight  # 0 = pure BM25, 1 = pure semantic
+        self.semantic_weight = semantic_weight
         self.bm25_dir = bm25_dir
         self.faiss_dir = faiss_dir
 

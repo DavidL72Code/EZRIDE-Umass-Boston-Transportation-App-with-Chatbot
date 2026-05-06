@@ -39,7 +39,7 @@ class GeminiLLM:
             _genai_model = genai.GenerativeModel(
                 model_name=model,
                 system_instruction=SYSTEM_PROMPT,
-                generation_config=genai.GenerationConfig(max_output_tokens=150),
+                generation_config=genai.GenerationConfig(max_output_tokens=512),
             )
         self._model = _genai_model
 

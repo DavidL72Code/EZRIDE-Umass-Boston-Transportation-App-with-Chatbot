@@ -44,7 +44,7 @@ def step_chunk() -> list[dict]:
         print(f"[ERROR] {raw_path} not found. Run scrape step first.")
         sys.exit(1)
     chunks = load_and_chunk(raw_path, PROCESSED_DIR, CATEGORIES_DIR, chunk_size=400, overlap=80)
-    return [vars(c) if not isinstance(c, dict) else c for c in chunks]
+    return chunks if isinstance(chunks[0], dict) else [vars(c) for c in chunks]
 
 
 def step_embed(chunks: list[dict]) -> "np.ndarray":
