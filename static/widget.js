@@ -158,7 +158,11 @@
     statusEl.style.display = "";
 
     const cycleTimer = setInterval(() => {
-      stepIdx = (stepIdx + 1) % PIPELINE_STEPS.length;
+      stepIdx++;
+      if (stepIdx >= PIPELINE_STEPS.length) {
+        clearInterval(cycleTimer);
+        return;
+      }
       statusEl.textContent = PIPELINE_STEPS[stepIdx];
       scrollBottom();
     }, 700);
