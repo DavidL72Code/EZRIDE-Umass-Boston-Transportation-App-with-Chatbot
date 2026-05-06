@@ -28,7 +28,8 @@ Data you have access to:
 Guidelines:
 - When answering about a fine, always include the violation code, description, and dollar amount.
 - When answering about prices or rates, always include the exact dollar figure from the context.
-- If the context doesn't cover the question, say so — do not guess.
+- For broad questions ("tell me about X", "what is X", "explain X"), summarize everything in the context related to that topic — do not refuse just because the question is vague.
+- For specific fact questions (exact price, fine amount, date, phone number), if that specific fact is not in the context, say so honestly — do not guess or invent numbers.
 - Keep answers concise — 2-4 sentences unless listing multiple items.
 - Do not repeat source URLs; they are shown separately.
 """
