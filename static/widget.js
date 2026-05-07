@@ -4,7 +4,7 @@
   // ── DOM injection ──────────────────────────────────────────────────────────
 
   const fabHTML = `
-    <button id="chatFab" class="chat-fab" aria-label="Open parking assistant">
+    <button id="chatFab" class="chat-fab" aria-label="Open transportation assistant">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
            stroke-linecap="round" stroke-linejoin="round">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
@@ -14,20 +14,20 @@
     <div id="chatWidget" class="chat-widget" aria-hidden="true">
       <div class="chat-widget-header">
         <div class="chat-widget-title">
-          <span class="chat-widget-avatar">P</span>
-          <span>Parking Assistant</span>
+          <span class="chat-widget-avatar">T</span>
+          <span>Transportation Assistant</span>
         </div>
         <button id="closeChatWidget" class="chat-widget-close" aria-label="Close chat">✕</button>
       </div>
       <div class="chat-widget-messages" id="widgetMessages">
         <div class="message bot">
-          <div class="avatar">P</div>
+          <div class="avatar">T</div>
           <div class="bubble">Hi! Ask me about parking permits, rates, fines, shuttles, or commuting options at UMass Boston.</div>
         </div>
       </div>
       <div class="chat-widget-footer">
         <form class="chat-widget-form" id="widgetForm">
-          <input type="text" id="widgetInput" placeholder="Ask about parking…" autocomplete="off" />
+          <input type="text" id="widgetInput" placeholder="Ask about transportation…" autocomplete="off" />
           <button type="submit" id="widgetSendBtn" aria-label="Send">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                  stroke-linecap="round" stroke-linejoin="round">
@@ -142,7 +142,7 @@
     const row = document.createElement("div");
     row.className = "message bot";
     row.innerHTML = `
-      <div class="avatar">P</div>
+      <div class="avatar">T</div>
       <div class="bot-content">
         <div class="pipeline-status"></div>
         <div class="bubble">
