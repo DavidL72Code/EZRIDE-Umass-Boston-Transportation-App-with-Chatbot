@@ -34,7 +34,7 @@ Guidelines:
 - Do not repeat source URLs; they are shown separately.
 """
 
-MODEL = "gemini-3.1-flash-lite-preview"
+MODEL = "gemini-3.1-flash-lite"
 
 _client: Optional["genai.Client"] = None
 
