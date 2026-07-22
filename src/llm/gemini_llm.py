@@ -21,7 +21,7 @@ Data you have access to:
     Group C ($0): violation 129 — no fine
     Also covers: appealing a ticket (online within 21 days), paying fines online or by mail, towing, RMV holds.
 - permits: Permit types, parking rates by lot/garage, carpool registration, accessible parking.
-- transit: MBTA semester passes, subway/commuter rail coverage, shuttle bus schedules and stops.
+- transit: MBTA semester passes, subway/commuter rail coverage, shuttle bus schedules and stops. JFK/UMass is served by the Red Line and has Purple commuter-rail service associated with the Fall River/New Bedford, Greenbush, and Kingston lines.
 - visitor: Visitor parking options, directions, campus map, visitor rates.
 - general: Overview of all transportation services, e-bike/e-scooter charging at West Garage (13 Saris Power Posts).
 
@@ -30,6 +30,7 @@ Guidelines:
 - When answering about prices or rates, always include the exact dollar figure from the context.
 - For broad questions ("tell me about X", "what is X", "explain X"), summarize everything in the context related to that topic — do not refuse just because the question is vague.
 - For specific fact questions (exact price, fine amount, date, phone number), if that specific fact is not in the context, say so honestly — do not guess or invent numbers.
+- Never say that there is no Purple Line at JFK/UMass when live context identifies Purple commuter-rail service. Call it Commuter Rail (Purple) and distinguish it from the Red Line.
 - Keep answers concise — 2-4 sentences unless listing multiple items.
 - Do not repeat source URLs; they are shown separately.
 """
@@ -67,30 +68,32 @@ class GeminiLLM:
             )
         return "\n\n---\n\n".join(parts)
 
-    def _build_prompt(self, query: str, chunks: list) -> str:
+    def _build_prompt(self, query: str, chunks: list, extra_context: str = "") -> str:
         context = self._build_context(chunks)
+        if extra_context:
+            context = f"{context}\n\n{extra_context}" if context else extra_context
         return f"Context:\n{context}\n\nQuestion: {query}"
 
-    def _build_contents(self, query: str, chunks: list, history: list) -> list:
+    def _build_contents(self, query: str, chunks: list, history: list, extra_context: str = "") -> list:
         contents = []
         for msg in history:
             role = "user" if msg["role"] == "user" else "model"
             contents.append(types.Content(role=role, parts=[types.Part(text=msg["content"])]))
-        contents.append(types.Content(role="user", parts=[types.Part(text=self._build_prompt(query, chunks))]))
+        contents.append(types.Content(role="user", parts=[types.Part(text=self._build_prompt(query, chunks, extra_context))]))
         return contents
 
-    def answer(self, query: str, chunks: list, history: Optional[list] = None) -> str:
-        contents = self._build_contents(query, chunks, history or [])
+    def answer(self, query: str, chunks: list, history: Optional[list] = None, extra_context: str = "") -> str:
+        contents = self._build_contents(query, chunks, history or [], extra_context)
         response = self._client.models.generate_content(
             model=self._model, contents=contents, config=self._config
         )
         return response.text
 
     def answer_stream(
-        self, query: str, chunks: list, history: Optional[list] = None
+        self, query: str, chunks: list, history: Optional[list] = None, extra_context: str = ""
     ) -> Iterator[tuple[str, str]]:
         """Yields (event_type, text) tuples where event_type is always 'token'."""
-        contents = self._build_contents(query, chunks, history or [])
+        contents = self._build_contents(query, chunks, history or [], extra_context)
         for chunk in self._client.models.generate_content_stream(
             model=self._model, contents=contents, config=self._config
         ):

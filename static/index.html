@@ -17,7 +17,7 @@
     <img src="/umb_icon.png" alt="UMass Boston" class="header-logo" />
     <div class="header-text">
       <h1>RIDE EZ · UMass Boston</h1>
-      <p>Campus map · parking lots · shuttle stops · buildings</p>
+      <p>Find a stop, arrival, route, parking lot, or building</p>
     </div>
     <nav class="header-nav">
       <a href="/" class="nav-link active">Map</a>
@@ -40,7 +40,7 @@
         <span class="side-menu-arrow">›</span>
       </a>
       <a href="/transit" class="side-menu-link">
-        <span>Buses &amp; Train</span>
+        <span>Buses &amp; Trains</span>
         <span class="side-menu-arrow">›</span>
       </a>
     </nav>
@@ -49,8 +49,7 @@
   <div class="map-wrap">
     <div id="map"></div>
 
-    <!-- Locate me button -->
-    <button id="locateBtn" class="locate-btn" title="Show my location">
+    <button id="locateBtn" class="locate-btn" title="Show my location" aria-label="Show my location">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
            stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="12" r="3"/>
@@ -82,6 +81,7 @@
   <script src="/api-config.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="/map.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="/widget.js"></script>
 </body>

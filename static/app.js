@@ -48,6 +48,7 @@ function renderSources(sources) {
   el.className = "sources";
   el.innerHTML = `<span class="sources-label">Sources:</span>`;
   for (const s of sources) {
+    if (!s || !/^https?:\/\//i.test(s.url || "")) continue;
     const cls = BADGE_CLASS[s.category] || "badge-general";
     const a = document.createElement("a");
     a.className = `badge ${cls}`;
@@ -67,10 +68,40 @@ function escapeHtml(str) {
     .replace(/>/g, "&gt;");
 }
 
+function renderMarkdown(text) {
+  if (typeof marked === "undefined") return escapeHtml(text);
+  const html = marked.parse(text);
+  return typeof DOMPurify !== "undefined"
+    ? DOMPurify.sanitize(html, { USE_PROFILES: { html: true } })
+    : escapeHtml(text);
+}
+
 function setInputEnabled(enabled) {
   userInput.disabled = !enabled;
   sendBtn.disabled   = !enabled;
   if (enabled) userInput.focus();
+}
+
+function isLiveTransitQuestion(text) {
+  const q = text.toLowerCase();
+  return /bus|train|subway|mbta|shuttle|route|line|umass/.test(q) &&
+    /when|next|arriv|depart|soon|live|schedule|what time|nearest|closest|how long|until|come/.test(q);
+}
+
+function requestLocation() {
+  return new Promise((resolve) => {
+    if (!navigator.geolocation) return resolve(null);
+    navigator.geolocation.getCurrentPosition(
+      (pos) => resolve({ latitude: pos.coords.latitude, longitude: pos.coords.longitude }),
+      () => resolve(null),
+      { enableHighAccuracy: true, maximumAge: 60000, timeout: 10000 }
+    );
+  });
+}
+
+function isDirectionsQuestion(text) {
+  const q = text.toLowerCase();
+  return /direction|walk|route|get to|how do i get/.test(q) && /campus center/.test(q);
 }
 
 async function sendMessage(text) {
@@ -84,14 +115,19 @@ async function sendMessage(text) {
   let sourcesEl = null;
 
   try {
+    const location = (isLiveTransitQuestion(text) || isDirectionsQuestion(text)) ? await requestLocation() : null;
     const res = await fetch("/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: text, history: history.slice(-12) }),
+      body: JSON.stringify({ message: text, history: history.slice(-12), location }),
     });
 
     if (!res.ok) {
-      bubble.textContent = "Server error. Please try again.";
+      bubble.textContent = res.status === 429
+        ? "Too many requests right now. Please wait a moment and try again."
+        : res.status === 413
+          ? "That message is too long. Please shorten it and try again."
+          : "Server error. Please try again.";
       setInputEnabled(true);
       return;
     }
@@ -115,7 +151,7 @@ async function sendMessage(text) {
 
         if (evt.type === "token") {
           accumulated += evt.text;
-          bubble.innerHTML = marked.parse(accumulated);
+          bubble.innerHTML = renderMarkdown(accumulated);
           scrollToBottom();
         } else if (evt.type === "done") {
           sourcesEl = renderSources(evt.sources);
@@ -124,7 +160,7 @@ async function sendMessage(text) {
     }
 
     // Final render pass
-    bubble.innerHTML = marked.parse(accumulated || "_(no response)_");
+    bubble.innerHTML = renderMarkdown(accumulated || "_(no response)_");
     if (sourcesEl) bubble.parentElement.insertAdjacentElement("afterend", sourcesEl);
     history.push({ role: "assistant", content: accumulated });
 

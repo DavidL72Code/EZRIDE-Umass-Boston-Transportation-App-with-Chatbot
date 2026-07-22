@@ -221,6 +221,32 @@ const SHUTTLE_STOPS = [
   },
 ];
 
+// MBTA bus stops closest to the UMass Boston campus. These are kept separate
+// from the campus shuttle stops so walking directions do not route through a
+// bus stop as if it were a shuttle stop.
+const MBTA_BUS_STOPS = [
+  {
+    id: "mbta-16-mt-vernon-in",
+    name: "Mt Vernon St @ South Point Dr",
+    coords: [42.317184, -71.040238],
+    type: "mbta-bus",
+    mbtaStopId: "111",
+    route: "16",
+    routes: ["Bus 16"],
+    notes: "MBTA Route 16 stop near the UMass Boston campus.",
+  },
+  {
+    id: "mbta-16-mt-vernon-out",
+    name: "Mt Vernon St opp South Point Dr",
+    coords: [42.317207, -71.040611],
+    type: "mbta-bus",
+    mbtaStopId: "142",
+    route: "16",
+    routes: ["Bus 16"],
+    notes: "MBTA Route 16 stop near the UMass Boston campus.",
+  },
+];
+
 const BUILDINGS = [
   { id: "campus-center",   name: "Campus Center",                      coords: [42.31289, -71.03702], desc: "Main student hub with dining, student services, and the bookstore." },
   { id: "quinn-admin",     name: "Quinn Administration Building",       coords: [42.31426, -71.03989], desc: "University administration and administrative offices." },
@@ -333,6 +359,15 @@ const MBTA_STATIONS = [
 
 // ── Icon factories ────────────────────────────────────────────────────────────
 
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function makeIcon(label, colorClass) {
   return L.divIcon({
     className: "",
@@ -391,9 +426,9 @@ function formatArrival(seconds) {
   return `<span class="arrival-min">${mins} min</span>`;
 }
 
-async function fetchMbtaPredictions(route, direction, headsignFilter) {
+async function fetchMbtaPredictions(route, direction, headsignFilter, stopId = "place-jfk") {
   try {
-    let url = `${window.API_BASE || ""}/api/mbta/predictions?stop=place-jfk&route=${route}`;
+    let url = `${window.API_BASE || ""}/api/mbta/predictions?stop=${encodeURIComponent(stopId)}&route=${route}`;
     if (direction !== undefined && direction !== null) url += `&direction=${direction}`;
     const res = await fetch(url);
     const data = await res.json();
@@ -434,7 +469,7 @@ function renderMbtaArrivals(preds) {
     const timeStr = p.dt.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
     return `<div class="arrival-row">
       ${formatArrival(p.secs)}
-      ${p.headsign ? `<span class="arrival-headsign">${p.headsign}</span>` : ""}
+      ${p.headsign ? `<span class="arrival-headsign">${escapeHtml(p.headsign)}</span>` : ""}
       <span class="arrival-time">${timeStr}</span>
     </div>`;
   }).join("");
@@ -461,21 +496,40 @@ async function fetchArrivals(routeStopId) {
   }
 }
 
-function showStop(stop) {
+function showStop(stop, focusMeta = null) {
   _dirDestCoords = stop.coords;
   _dirDestName = stop.name;
   _lastPanelFn = () => showStop(stop);
-  const isMbta = stop.type === "mbta";
+  const isMbtaStation = stop.type === "mbta";
+  const isMbtaBus = stop.type === "mbta-bus";
+  const isMbta = isMbtaStation || isMbtaBus;
+  const isCommuterRail = isMbtaStation && focusMeta?.transit?.route === "Purple";
   const badge = isMbta ? "badge-mbta" : "badge-shuttle";
-  const label = isMbta ? "MBTA Station" : "Shuttle Stop";
-  const routes = stop.routes.map(r => `<span class="route-chip">${r}</span>`).join(" ");
+  const label = isMbtaStation ? "MBTA Station" : isMbtaBus ? "MBTA Bus Stop" : "Shuttle Stop";
+  const routeLabels = stop.routes || (stop.route ? [stop.route === "Red" ? "Red Line" : `Bus ${stop.route}`] : []);
+  const routes = routeLabels.map(r => `<span class="route-chip">${r}</span>`).join(" ");
+  const stationStopId = stop.mbtaStopId || "place-jfk";
 
   let html = `
     <div class="panel-badge ${badge}">${label}</div>
     <h2>${stop.name}</h2>
     <div class="route-chips">${routes}</div>`;
 
-  if (isMbta) {
+  if (focusMeta?.transit) {
+    const distance = focusMeta.transit.distance_miles != null
+      ? `<span class="stop-distance">${focusMeta.transit.distance_miles} mi away</span>`
+      : "";
+    const checked = focusMeta.transit.checked_at
+      ? `Updated ${focusMeta.transit.checked_at}`
+      : "Live lookup requested";
+    html += `<div class="selected-stop-card"><strong>Closest match for you</strong><span>${distance}</span><small>${checked}</small></div>`;
+  }
+
+  if (isCommuterRail) {
+    html += `
+    <h3>Commuter Rail — Purple</h3>
+    <div id="commuterRailArrivals" class="arrivals-list"><span class="arrival-loading">Loading…</span></div>`;
+  } else if (isMbtaStation) {
     html += `
     <h3>Red Line — Inbound to Alewife</h3>
     <div id="mbtaInbound" class="arrivals-list"><span class="arrival-loading">Loading…</span></div>
@@ -483,39 +537,55 @@ function showStop(stop) {
     <div id="mbtaBraintree" class="arrivals-list"><span class="arrival-loading">Loading…</span></div>
     <h3>Red Line — Outbound to Ashmont</h3>
     <div id="mbtaAshmont" class="arrivals-list"><span class="arrival-loading">Loading…</span></div>
-    <h3>UMass Shuttle</h3>
-    <div id="arrivalsList" class="arrivals-list"><span class="arrival-loading">Loading…</span></div>`;
+    ${stationStopId === "place-jfk" ? `<h3>UMass Shuttle</h3>
+    <div id="arrivalsList" class="arrivals-list"><span class="arrival-loading">Loading…</span></div>` : ""}`;
+  } else if (isMbtaBus) {
+    html += `
+    <h3>Route ${stop.route} arrivals</h3>
+    <div id="busArrivalsList" class="arrivals-list"><span class="arrival-loading">Loading…</span></div>`;
   } else {
     html += `
     <h3>Next Arrivals</h3>
     <div id="arrivalsList" class="arrivals-list"><span class="arrival-loading">Loading…</span></div>`;
   }
 
-  if (isMbta) {
+  if (isMbtaStation && !isCommuterRail) {
     html += `
     <h3>Commuter Rail (Purple)</h3>
     <p class="panel-desc">Take the Red Line <strong>1 stop inbound</strong> to South Station for the Greenbush, Kingston, and Middleborough/Lakeville lines. See <a href="/transit" style="color:var(--navy)">Buses &amp; Train</a> for live departures.</p>`;
   }
 
+  if (isMbtaBus) {
+    fetchMbtaPredictions(stop.route, null, null, stop.mbtaStopId).then(preds => {
+      const el = document.getElementById("busArrivalsList");
+      if (el) el.innerHTML = renderMbtaArrivals(preds);
+    });
+  }
+
   html += `
     <h3>Operating Hours</h3>
-    <p class="panel-desc">${stop.schedule}</p>
+    <p class="panel-desc">${stop.schedule || "Check MBTA for current service hours."}</p>
     <h3>Notes</h3>
     <p class="panel-desc">${stop.notes}</p>
     <button class="directions-btn" onclick="startDirections()">Get Directions</button>`;
 
   openPanel(html);
 
-  if (isMbta) {
-    fetchMbtaPredictions("Red", 1).then(preds => {
+  if (isCommuterRail) {
+    fetchMbtaPredictions("CR-NewBedford,CR-Greenbush,CR-Kingston", null, null, stationStopId).then(preds => {
+      const el = document.getElementById("commuterRailArrivals");
+      if (el) el.innerHTML = renderMbtaArrivals(preds);
+    });
+  } else if (isMbtaStation) {
+    fetchMbtaPredictions("Red", 1, null, stationStopId).then(preds => {
       const el = document.getElementById("mbtaInbound");
       if (el) el.innerHTML = renderMbtaArrivals(preds);
     });
-    fetchMbtaPredictions("Red", 0, "Braintree").then(preds => {
+    fetchMbtaPredictions("Red", 0, "Braintree", stationStopId).then(preds => {
       const el = document.getElementById("mbtaBraintree");
       if (el) el.innerHTML = renderMbtaArrivals(preds);
     });
-    fetchMbtaPredictions("Red", 0, "Ashmont").then(preds => {
+    fetchMbtaPredictions("Red", 0, "Ashmont", stationStopId).then(preds => {
       const el = document.getElementById("mbtaAshmont");
       if (el) el.innerHTML = renderMbtaArrivals(preds);
     });
@@ -624,6 +694,15 @@ function nearestParkingLot(lat, lng) {
 function nearestShuttleStop(lat, lng) {
   let best = null, bestDist = Infinity;
   for (const s of SHUTTLE_STOPS) {
+    const d = haversine(lat, lng, s.coords[0], s.coords[1]);
+    if (d < bestDist) { bestDist = d; best = s; }
+  }
+  return { stop: best, dist: bestDist };
+}
+
+function nearestTransitStop(lat, lng) {
+  let best = null, bestDist = Infinity;
+  for (const s of [...SHUTTLE_STOPS, ...MBTA_BUS_STOPS]) {
     const d = haversine(lat, lng, s.coords[0], s.coords[1]);
     if (d < bestDist) { bestDist = d; best = s; }
   }
@@ -786,7 +865,7 @@ function buildStepsHtml(steps) {
         || s.name
         || (s.maneuver.type === "arrive" || s.maneuver.type === 4 ? "Arrive at destination" : "Continue");
       const distHtml = s.distance > 0 ? `<span class="step-dist">${fmtDist(s.distance)}</span>` : "";
-      return `<div class="dir-step"><span class="step-arrow">${arrow}</span><span class="step-street">${street}</span>${distHtml}</div>`;
+      return `<div class="dir-step"><span class="step-arrow">${arrow}</span><span class="step-street">${escapeHtml(street)}</span>${distHtml}</div>`;
     }).join("");
 }
 
@@ -860,8 +939,8 @@ async function _fetchAutocomplete(q) {
       const sub  = parts.slice(2, 5).join(", ");
       const safe = r.display_name.replace(/\\/g, "\\\\").replace(/'/g, "\\'");
       return `<div class="dir-dd-item" onclick="selectDirFrom(${r.lat},${r.lon},'${safe}')">
-        <div class="dir-dd-main">${main}</div>
-        ${sub ? `<div class="dir-dd-sub">${sub}</div>` : ""}
+        <div class="dir-dd-main">${escapeHtml(main)}</div>
+        ${sub ? `<div class="dir-dd-sub">${escapeHtml(sub)}</div>` : ""}
       </div>`;
     }).join("");
   } catch {
@@ -1016,7 +1095,7 @@ async function loadDirContent(tab, destCoords) {
 function _predsHtml(preds) {
   if (!preds || !preds.length) return '<span class="arrival-none">No schedule</span>';
   return preds.slice(0, 2).map(p =>
-    `${formatArrival(p.secs)}${p.headsign ? ` <span class="arrival-headsign">${p.headsign}</span>` : ""}`
+    `${formatArrival(p.secs)}${p.headsign ? ` <span class="arrival-headsign">${escapeHtml(p.headsign)}</span>` : ""}`
   ).join(" &nbsp;·&nbsp; ");
 }
 
@@ -1327,6 +1406,12 @@ document.addEventListener("DOMContentLoaded", () => {
       .on("click", () => showStop(stop));
   });
 
+  MBTA_BUS_STOPS.forEach(stop => {
+    L.marker(stop.coords, { icon: icons.mbta })
+      .addTo(map)
+      .on("click", () => showStop(stop));
+  });
+
   BUILDINGS.forEach(bldg => {
     L.marker(bldg.coords, { icon: icons.building })
       .addTo(map)
@@ -1370,7 +1455,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("closePanel").addEventListener("click", closePanel);
 
-  // ── Live location ─────────────────────────────────────────────
+  // ── Map location control ────────────────────────────────────
   const locateBtn = document.getElementById("locateBtn");
   let locationMarker = null;
   let locationCircle = null;
@@ -1383,66 +1468,81 @@ document.addEventListener("DOMContentLoaded", () => {
     iconAnchor: [10, 10],
   });
 
-  function stopLocation() {
-    if (watchId !== null) {
-      navigator.geolocation.clearWatch(watchId);
-      watchId = null;
+  function updateLocation(lat, lng, accuracy, recenter = true) {
+    const latlng = [lat, lng];
+    locateBtn.classList.remove("waiting");
+    locateBtn.classList.add("active");
+    locateBtn.title = "Location active — click to stop";
+    if (!locationMarker) {
+      locationMarker = L.marker(latlng, { icon: locationIcon, zIndexOffset: 1000 }).addTo(map);
+      locationCircle = L.circle(latlng, {
+        radius: accuracy || 30,
+        color: "#2563eb",
+        fillColor: "#2563eb",
+        fillOpacity: 0.08,
+        weight: 1,
+      }).addTo(map);
+      if (recenter) map.setView(latlng, Math.max(map.getZoom(), 16));
+    } else {
+      locationMarker.setLatLng(latlng);
+      locationCircle.setLatLng(latlng).setRadius(accuracy || 30);
     }
+  }
+
+  function stopLocation() {
+    if (watchId !== null) navigator.geolocation.clearWatch(watchId);
+    watchId = null;
     if (locationMarker) { map.removeLayer(locationMarker); locationMarker = null; }
     if (locationCircle) { map.removeLayer(locationCircle); locationCircle = null; }
-    locateBtn.classList.remove("active");
+    locateBtn.classList.remove("active", "waiting");
     locateBtn.title = "Show my location";
   }
 
   locateBtn.addEventListener("click", () => {
     if (watchId !== null) { stopLocation(); return; }
-
-    if (!navigator.geolocation) {
-      coordDisplay.textContent = "Geolocation not supported by this browser";
-      setTimeout(() => { coordDisplay.textContent = "Move mouse over map"; }, 3000);
-      return;
-    }
+    if (!navigator.geolocation) return;
 
     locateBtn.classList.add("waiting");
+    watchId = navigator.geolocation.watchPosition((pos) => {
+      updateLocation(pos.coords.latitude, pos.coords.longitude, pos.coords.accuracy, true);
+    }, () => stopLocation(), {
+      enableHighAccuracy: true,
+      maximumAge: 60000,
+      timeout: 12000,
+    });
+  });
 
-    watchId = navigator.geolocation.watchPosition(
-      (pos) => {
-        locateBtn.classList.remove("waiting");
-        locateBtn.classList.add("active");
-        locateBtn.title = "Location active — click to stop";
+  // Chatbot location permission should produce the same visible blue dot as
+  // the map control, without recentering away from the selected transit stop.
+  window.addEventListener("transit:location", (event) => {
+    const location = event.detail;
+    if (location?.latitude == null || location?.longitude == null) return;
+    updateLocation(location.latitude, location.longitude, 30, false);
+  });
 
-        const latlng = [pos.coords.latitude, pos.coords.longitude];
-        lastUserLocation = latlng;
-        const accuracy = pos.coords.accuracy;
+  // ── Chat-driven transit focus ────────────────────────────────
+  window.addEventListener("transit:focus-stop", (event) => {
+    const stopId = event.detail?.stopId;
+    const stop = [...SHUTTLE_STOPS, ...MBTA_BUS_STOPS, ...MBTA_STATIONS].find(item =>
+      item.id === stopId || item.stopId === stopId || (stopId === "stop-jfk" && item.stopId === "place-jfk"))
+      || event.detail?.stop;
+    if (!stop) return;
+    map.setView(stop.coords, 18, { animate: true });
+    showStop(stop, event.detail);
+  });
 
-        if (!locationMarker) {
-          locationMarker = L.marker(latlng, { icon: locationIcon, zIndexOffset: 1000 }).addTo(map);
-          locationCircle = L.circle(latlng, {
-            radius: accuracy,
-            color: "#2563eb",
-            fillColor: "#2563eb",
-            fillOpacity: 0.08,
-            weight: 1,
-          }).addTo(map);
-          map.setView(latlng, Math.max(map.getZoom(), 16));
-        } else {
-          locationMarker.setLatLng(latlng);
-          locationCircle.setLatLng(latlng).setRadius(accuracy);
-        }
-      },
-      (err) => {
-        locateBtn.classList.remove("waiting");
-        stopLocation();
-        const msgs = {
-          1: "Location access denied",
-          2: "Location unavailable",
-          3: "Location request timed out",
-        };
-        coordDisplay.textContent = msgs[err.code] || "Location error";
-        setTimeout(() => { coordDisplay.textContent = "Move mouse over map"; }, 4000);
-      },
-      { enableHighAccuracy: true, maximumAge: 5000, timeout: 12000 }
-    );
+  window.addEventListener("transit:directions", (event) => {
+    const destination = BUILDINGS.find(item => item.id === event.detail?.destinationId)
+      || SHUTTLE_STOPS.find(item => item.id === event.detail?.destinationId);
+    if (!destination) return;
+    if (event.detail?.location) {
+      lastUserLocation = [event.detail.location.latitude, event.detail.location.longitude];
+    }
+    _dirDestCoords = destination.coords;
+    _dirDestName = destination.name;
+    _lastPanelFn = () => showBuilding(destination);
+    map.setView(destination.coords, 17, { animate: true });
+    startDirections();
   });
 
   // Hamburger menu

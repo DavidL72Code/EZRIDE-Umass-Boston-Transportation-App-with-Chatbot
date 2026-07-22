@@ -11,10 +11,10 @@
       </svg>
     </button>
 
-    <div id="chatWidget" class="chat-widget" aria-hidden="true">
+    <div id="chatWidget" class="chat-widget" aria-hidden="true" role="dialog" aria-label="Transportation Assistant">
       <div class="chat-widget-header">
         <div class="chat-widget-title">
-          <span class="chat-widget-avatar">T</span>
+          <span class="chat-widget-avatar" aria-hidden="true">T</span>
           <span>Transportation Assistant</span>
         </div>
         <button id="closeChatWidget" class="chat-widget-close" aria-label="Close chat">✕</button>
@@ -22,12 +22,13 @@
       <div class="chat-widget-messages" id="widgetMessages">
         <div class="message bot">
           <div class="avatar">T</div>
-          <div class="bubble">Hi! Ask me about parking permits, rates, fines, shuttles, or commuting options at UMass Boston.</div>
+          <div class="bubble">Ask me when a bus, train, or UMass shuttle is coming. I can also find the closest stop and open directions on the map.</div>
         </div>
       </div>
       <div class="chat-widget-footer">
         <form class="chat-widget-form" id="widgetForm">
-          <input type="text" id="widgetInput" placeholder="Ask about transportation…" autocomplete="off" />
+          <label class="sr-only" for="widgetInput">Ask a transportation question</label>
+          <input type="text" id="widgetInput" placeholder="Ask about a stop or route…" autocomplete="off" aria-label="Ask a transportation question" />
           <button type="submit" id="widgetSendBtn" aria-label="Send">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                  stroke-linecap="round" stroke-linejoin="round">
@@ -120,6 +121,14 @@
     return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
 
+  function renderMarkdown(text) {
+    if (typeof marked === "undefined") return escapeHtml(text);
+    const html = marked.parse(text);
+    return typeof DOMPurify !== "undefined"
+      ? DOMPurify.sanitize(html, { USE_PROFILES: { html: true } })
+      : escapeHtml(text);
+  }
+
   function addUserMsg(text) {
     const row = document.createElement("div");
     row.className = "message user";
@@ -180,6 +189,7 @@
     el.className = "sources";
     el.innerHTML = `<span class="sources-label">Sources:</span>`;
     for (const s of sources) {
+      if (!s || !/^https?:\/\//i.test(s.url || "")) continue;
       const cls = BADGE_CLASS[s.category] || "badge-general";
       const a = document.createElement("a");
       a.className = `badge ${cls}`;
@@ -200,25 +210,104 @@
 
   // ── Send message ───────────────────────────────────────────────────────────
 
+  function isLiveTransitQuestion(text) {
+    const q = text.toLowerCase();
+    return /bus|train|subway|mbta|shuttle|route|line|umass/.test(q) &&
+      /when|next|arriv|depart|soon|live|schedule|what time|nearest|closest|how long|until|come/.test(q);
+  }
+
+  function requestLocation() {
+    return new Promise((resolve) => {
+      if (!navigator.geolocation) return resolve(null);
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          const location = { latitude: pos.coords.latitude, longitude: pos.coords.longitude };
+          window.dispatchEvent(new CustomEvent("transit:location", { detail: location }));
+          resolve(location);
+        },
+        () => resolve(null),
+        { enableHighAccuracy: true, maximumAge: 60000, timeout: 10000 }
+      );
+    });
+  }
+
+  function addLocationNotice() {
+    if (messagesEl.querySelector(".location-notice")) return;
+    const row = document.createElement("div");
+    row.className = "message bot location-notice";
+    row.innerHTML = '<div class="avatar" aria-hidden="true">T</div><div class="bubble"><strong>Location helps me choose the closest stop.</strong><br>Allow location access when your browser asks. If you decline, I’ll ask you for a stop name instead.</div>';
+    messagesEl.appendChild(row);
+    scrollBottom();
+  }
+
+  function addTransitContext(transit) {
+    if (!transit?.stop) return null;
+    const el = document.createElement("div");
+    el.className = "transit-context";
+    const distance = transit.distance_miles != null ? ` · ${transit.distance_miles} mi away` : "";
+    el.innerHTML = `<span class="transit-context-dot" aria-hidden="true"></span><span><strong>Checking ${escapeHtml(transit.stop)}</strong>${distance}<small>Map opened to this stop${transit.checked_at ? ` · updated ${escapeHtml(transit.checked_at)}` : ""}</small></span>`;
+    return el;
+  }
+
+  function addQuickReplies(options) {
+    const row = document.createElement("div");
+    row.className = "quick-replies";
+    options.forEach((label) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "quick-reply";
+      button.textContent = label;
+      button.addEventListener("click", () => {
+        row.remove();
+        send(label);
+      });
+      row.appendChild(button);
+    });
+    messagesEl.appendChild(row);
+    scrollBottom();
+  }
+
+  function destinationFromText(text) {
+    const q = text.toLowerCase();
+    if (/campus center/.test(q) && /direction|walk|route|get to|how do i get/.test(q)) {
+      return "campus-center";
+    }
+    return null;
+  }
+
   async function send(text) {
     addUserMsg(text);
     history.push({ role: "user", content: text });
     setEnabled(false);
 
+    const needsLocation = isLiveTransitQuestion(text) || Boolean(destinationFromText(text));
+    if (needsLocation) addLocationNotice();
     const { bubble, status, stopCycle } = createBotBubble();
     let accumulated = "";
     let sourcesEl = null;
+    let transitContext = null;
     let cycleRunning = true;
 
     try {
+      const destinationId = destinationFromText(text);
+      const location = (isLiveTransitQuestion(text) || destinationId) ? await requestLocation() : null;
+      if (destinationId) {
+        window.dispatchEvent(new CustomEvent("transit:directions", {
+          detail: { destinationId, location },
+        }));
+      }
       const res = await fetch(`${window.API_BASE || ""}/api/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: text, history: history.slice(-12) }),
+        body: JSON.stringify({ message: text, history: history.slice(-12), location }),
       });
 
       if (!res.ok) {
-        bubble.textContent = "Server error. Please try again.";
+        bubble.textContent = res.status === 429
+          ? "Too many requests right now. Please wait a moment and try again."
+          : res.status === 413
+            ? "That message is too long. Please shorten it and try again."
+            : "Server error. Please try again.";
         setEnabled(true);
         return;
       }
@@ -246,20 +335,27 @@
             status.style.display = "none";
             accumulated += evt.text;
             bubble.querySelector(".typing-dots")?.remove();
-            const md = typeof marked !== "undefined" ? marked.parse(accumulated) : escapeHtml(accumulated);
-            bubble.innerHTML = md;
+            bubble.innerHTML = renderMarkdown(accumulated);
             scrollBottom();
           } else if (evt.type === "done") {
             sourcesEl = renderSources(evt.sources);
+          } else if (evt.type === "map_focus") {
+            transitContext = addTransitContext(evt.transit);
+            window.dispatchEvent(new CustomEvent("transit:focus-stop", {
+              detail: { stopId: evt.stop_id, stop: evt.stop || null, transit: evt.transit || null },
+            }));
           }
         }
       }
 
-      const finalMd = typeof marked !== "undefined"
-        ? marked.parse(accumulated || "_(no response)_")
-        : escapeHtml(accumulated || "(no response)");
+      const finalMd = renderMarkdown(accumulated || "_(no response)_");
       bubble.innerHTML = finalMd;
+      if (transitContext) bubble.parentElement.parentElement.insertAdjacentElement("afterend", transitContext);
       if (sourcesEl) bubble.parentElement.parentElement.insertAdjacentElement("afterend", sourcesEl);
+      const lower = accumulated.toLowerCase();
+      if (lower.includes("inbound or outbound")) {
+        addQuickReplies(["Mt. Vernon inbound", "Mt. Vernon outbound"]);
+      }
       history.push({ role: "assistant", content: accumulated });
 
     } catch (err) {
