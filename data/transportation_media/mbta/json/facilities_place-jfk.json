@@ -1,0 +1,1041 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "latitude": null,
+        "long_name": "JFK/UMass Escalator 322 (Ashmont platform to Columbia Road)",
+        "longitude": null,
+        "properties": [
+          {
+            "name": "direction",
+            "value": "up"
+          },
+          {
+            "name": "excludes-stop",
+            "value": 121
+          },
+          {
+            "name": "excludes-stop",
+            "value": 12101
+          },
+          {
+            "name": "excludes-stop",
+            "value": 70095
+          },
+          {
+            "name": "excludes-stop",
+            "value": 70096
+          },
+          {
+            "name": "excludes-stop",
+            "value": "MM-0023-S"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-busway"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-oldcolony"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneyn"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneys"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-322-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-322-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-830-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-830-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-831-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-831-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashcolfarepaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashcolfareunpaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashcolstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashcolstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashganstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashganstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashgasstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashgasstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashsydstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashsydstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bracolfarepaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bracolfareunpaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bracolstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bracolstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-braganstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-braganstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bragasstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bragasstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-brasydstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-brasydstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-busramp-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-crcolstair-columbia"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-crcolstair-street"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-crramp-cr"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-crramp-street"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-mainfarepaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-mainfareunpaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-oldstaire-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-oldstairw-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-sydfarepaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-sydfareunpaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-sydneynstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-sydneysstair-lobby"
+          }
+        ],
+        "short_name": "Ashmont platform to Columbia Road",
+        "type": "ESCALATOR"
+      },
+      "id": "322",
+      "links": {
+        "self": "/facilities/322"
+      },
+      "relationships": {
+        "stop": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        }
+      },
+      "type": "facility"
+    },
+    {
+      "attributes": {
+        "latitude": null,
+        "long_name": "JFK/UMass Elevator 830 (Braintree branch platform to lobby)",
+        "longitude": null,
+        "properties": [
+          {
+            "name": "alternate-service-text",
+            "value": "To exit when coming from Boston/Cambridge, take an Ashmont-bound train to JFK/UMass, exit onto the Ashmont platform, and use JFK/UMass Elevator 831. To exit when coming from Quincy/Braintree, exit the train at Andrew, then take an Ashmont-bound train to JFK/UMass and use JFK/UMass Elevator 831. To board, use JFK/UMass Elevator 831 to access the Ashmont Branch platform. Take an Alewife-bound train to Andrew, then transfer to an Ashmont-bound train."
+          },
+          {
+            "name": "excludes-stop",
+            "value": 121
+          },
+          {
+            "name": "excludes-stop",
+            "value": 12101
+          },
+          {
+            "name": "excludes-stop",
+            "value": 70085
+          },
+          {
+            "name": "excludes-stop",
+            "value": 70086
+          },
+          {
+            "name": "excludes-stop",
+            "value": "MM-0023-S"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-busway"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-columbia"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-oldcolony"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneyn"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneys"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-322-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-322-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-830-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-830-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-831-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-831-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashcolfarepaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashcolfareunpaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashcolstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashcolstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashganstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashganstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashgasstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashgasstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashsydstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashsydstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bracolfarepaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bracolfareunpaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bracolstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bracolstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-braganstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-braganstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bragasstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bragasstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-brasydstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-brasydstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-busramp-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-crcolstair-columbia"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-crcolstair-street"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-crramp-cr"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-crramp-street"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-mainfarepaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-mainfareunpaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-oldstaire-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-oldstairw-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-sydfarepaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-sydfareunpaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-sydneynstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-sydneysstair-lobby"
+          }
+        ],
+        "short_name": "Braintree branch platform to lobby",
+        "type": "ELEVATOR"
+      },
+      "id": "830",
+      "links": {
+        "self": "/facilities/830"
+      },
+      "relationships": {
+        "stop": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        }
+      },
+      "type": "facility"
+    },
+    {
+      "attributes": {
+        "latitude": null,
+        "long_name": "JFK/UMass Elevator 831 (Ashmont branch platform to lobby)",
+        "longitude": null,
+        "properties": [
+          {
+            "name": "alternate-service-text",
+            "value": "To exit when coming from Boston/Cambridge, take a Braintree-bound train to JFK/UMass, exit onto the Braintree platform, and use JFK/UMass Elevator 830. To exit when traveling from Quincy/Braintree, exit the train at Andrew, then take a Braintree-bound train to JFK/UMass and use JFK/UMass Elevator 830. To board, use JFK/UMass Elevator 830 to access the Braintree Branch platform. Take an Alewife-bound train to Andrew, then transfer to an Braintree-bound train."
+          },
+          {
+            "name": "excludes-stop",
+            "value": 121
+          },
+          {
+            "name": "excludes-stop",
+            "value": 12101
+          },
+          {
+            "name": "excludes-stop",
+            "value": 70085
+          },
+          {
+            "name": "excludes-stop",
+            "value": 70086
+          },
+          {
+            "name": "excludes-stop",
+            "value": "MM-0023-S"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-busway"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-columbia"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-oldcolony"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneyn"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneys"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-322-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-322-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-830-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-830-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-831-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-831-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashcolfarepaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashcolfareunpaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashcolstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashcolstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashganstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashganstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashgasstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashgasstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashsydstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-ashsydstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bracolfarepaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bracolfareunpaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bracolstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bracolstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-braganstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-braganstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bragasstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-bragasstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-brasydstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-brasydstair-platform"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-busramp-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-crcolstair-columbia"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-crcolstair-street"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-crramp-cr"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-crramp-street"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-mainfarepaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-mainfareunpaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-oldstaire-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-oldstairw-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-sydfarepaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-sydfareunpaid"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-sydneynstair-lobby"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "node-jfk-sydneysstair-lobby"
+          }
+        ],
+        "short_name": "Ashmont branch platform to lobby",
+        "type": "ELEVATOR"
+      },
+      "id": "831",
+      "links": {
+        "self": "/facilities/831"
+      },
+      "relationships": {
+        "stop": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        }
+      },
+      "type": "facility"
+    },
+    {
+      "attributes": {
+        "latitude": null,
+        "long_name": "JFK/UMass bike rack",
+        "longitude": null,
+        "properties": [
+          {
+            "name": "capacity",
+            "value": 8
+          },
+          {
+            "name": "enclosed",
+            "value": 2
+          },
+          {
+            "name": "secured",
+            "value": 2
+          }
+        ],
+        "short_name": "Bike rack",
+        "type": "BIKE_STORAGE"
+      },
+      "id": "bike-jfk",
+      "links": {
+        "self": "/facilities/bike-jfk"
+      },
+      "relationships": {
+        "stop": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        }
+      },
+      "type": "facility"
+    },
+    {
+      "attributes": {
+        "latitude": null,
+        "long_name": "JFK/UMass fare vending machine 201148",
+        "longitude": null,
+        "properties": [
+          {
+            "name": "enclosed",
+            "value": 1
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneyn"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneys"
+          },
+          {
+            "name": "payment-form-accepted",
+            "value": "cash"
+          },
+          {
+            "name": "payment-form-accepted",
+            "value": "credit-debit-card"
+          }
+        ],
+        "short_name": "Fare vending machine 201148",
+        "type": "FARE_VENDING_MACHINE"
+      },
+      "id": "fvm-201148",
+      "links": {
+        "self": "/facilities/fvm-201148"
+      },
+      "relationships": {
+        "stop": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        }
+      },
+      "type": "facility"
+    },
+    {
+      "attributes": {
+        "latitude": null,
+        "long_name": "JFK/UMass fare vending machine 201170",
+        "longitude": null,
+        "properties": [
+          {
+            "name": "enclosed",
+            "value": 1
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneyn"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneys"
+          },
+          {
+            "name": "payment-form-accepted",
+            "value": "cash"
+          },
+          {
+            "name": "payment-form-accepted",
+            "value": "credit-debit-card"
+          }
+        ],
+        "short_name": "Fare vending machine 201170",
+        "type": "FARE_VENDING_MACHINE"
+      },
+      "id": "fvm-201170",
+      "links": {
+        "self": "/facilities/fvm-201170"
+      },
+      "relationships": {
+        "stop": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        }
+      },
+      "type": "facility"
+    },
+    {
+      "attributes": {
+        "latitude": null,
+        "long_name": "JFK/UMass fare vending machine 201171",
+        "longitude": null,
+        "properties": [
+          {
+            "name": "enclosed",
+            "value": 1
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneyn"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneys"
+          },
+          {
+            "name": "payment-form-accepted",
+            "value": "cash"
+          },
+          {
+            "name": "payment-form-accepted",
+            "value": "credit-debit-card"
+          }
+        ],
+        "short_name": "Fare vending machine 201171",
+        "type": "FARE_VENDING_MACHINE"
+      },
+      "id": "fvm-201171",
+      "links": {
+        "self": "/facilities/fvm-201171"
+      },
+      "relationships": {
+        "stop": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        }
+      },
+      "type": "facility"
+    },
+    {
+      "attributes": {
+        "latitude": null,
+        "long_name": "JFK/UMass fare vending machine 201172",
+        "longitude": null,
+        "properties": [
+          {
+            "name": "enclosed",
+            "value": 1
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneyn"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneys"
+          },
+          {
+            "name": "payment-form-accepted",
+            "value": "cash"
+          },
+          {
+            "name": "payment-form-accepted",
+            "value": "credit-debit-card"
+          }
+        ],
+        "short_name": "Fare vending machine 201172",
+        "type": "FARE_VENDING_MACHINE"
+      },
+      "id": "fvm-201172",
+      "links": {
+        "self": "/facilities/fvm-201172"
+      },
+      "relationships": {
+        "stop": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        }
+      },
+      "type": "facility"
+    },
+    {
+      "attributes": {
+        "latitude": null,
+        "long_name": "JFK/UMass fare vending machine 202118",
+        "longitude": null,
+        "properties": [
+          {
+            "name": "enclosed",
+            "value": 1
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneyn"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneys"
+          },
+          {
+            "name": "payment-form-accepted",
+            "value": "credit-debit-card"
+          }
+        ],
+        "short_name": "Fare vending machine 202118",
+        "type": "FARE_VENDING_MACHINE"
+      },
+      "id": "fvm-202118",
+      "links": {
+        "self": "/facilities/fvm-202118"
+      },
+      "relationships": {
+        "stop": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        }
+      },
+      "type": "facility"
+    },
+    {
+      "attributes": {
+        "latitude": null,
+        "long_name": "JFK/UMass high-level platform",
+        "longitude": null,
+        "properties": [
+          {
+            "name": "excludes-stop",
+            "value": 121
+          },
+          {
+            "name": "excludes-stop",
+            "value": 70085
+          },
+          {
+            "name": "excludes-stop",
+            "value": 70086
+          },
+          {
+            "name": "excludes-stop",
+            "value": 70095
+          },
+          {
+            "name": "excludes-stop",
+            "value": 70096
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-busway"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-columbia"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-oldcolony"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneyn"
+          },
+          {
+            "name": "excludes-stop",
+            "value": "door-jfk-sydneys"
+          },
+          {
+            "name": "note",
+            "value": "Full high level platform is available to provide level boarding to every car in a train set"
+          }
+        ],
+        "short_name": "High-level platform",
+        "type": "FULLY_ELEVATED_PLATFORM"
+      },
+      "id": "highlevel-jfk-1",
+      "links": {
+        "self": "/facilities/highlevel-jfk-1"
+      },
+      "relationships": {
+        "stop": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        }
+      },
+      "type": "facility"
+    },
+    {
+      "attributes": {
+        "latitude": 42.320588,
+        "long_name": "JFK/UMass Morrissey Boulevard Pick-up/Drop-off",
+        "longitude": -71.051454,
+        "properties": [],
+        "short_name": "Morrissey Boulevard",
+        "type": "PICK_DROP"
+      },
+      "id": "pick-jfk-morrissey",
+      "links": {
+        "self": "/facilities/pick-jfk-morrissey"
+      },
+      "relationships": {
+        "stop": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        }
+      },
+      "type": "facility"
+    },
+    {
+      "attributes": {
+        "latitude": null,
+        "long_name": "JFK/UMass ramp access",
+        "longitude": null,
+        "properties": [],
+        "short_name": "Ramp access",
+        "type": "RAMP"
+      },
+      "id": "ramp-jfk",
+      "links": {
+        "self": "/facilities/ramp-jfk"
+      },
+      "relationships": {
+        "stop": {
+          "data": {
+            "id": "place-jfk",
+            "type": "stop"
+          }
+        }
+      },
+      "type": "facility"
+    }
+  ],
+  "jsonapi": {
+    "version": "1.0"
+  }
+}

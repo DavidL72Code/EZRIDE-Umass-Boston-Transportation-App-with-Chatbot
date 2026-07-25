@@ -1,0 +1,2167 @@
+[
+  {
+    "id": "live_shuttle_campus_center",
+    "type": "live_shuttle_arrival",
+    "question": "when is the campus center shuttle coming",
+    "status_code": 200,
+    "elapsed_ms": 1259,
+    "answer": "The next UMass shuttle at **Campus Center** (0.95 miles away) is **arriving now**. Upcoming after that: 8 min. Live predictions can change.",
+    "sources": [
+      {
+        "url": "https://umb.transloc.com/",
+        "title": "Live shuttle arrivals",
+        "category": "transit"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\ude8c Checking live shuttle arrivals\u2026"
+      },
+      {
+        "type": "token",
+        "text": "The next UMass shuttle at **Campus Center** (0.95 miles away) is **arriving now**. Upcoming after that: 8 min. Live predictions can change."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://umb.transloc.com/",
+            "title": "Live shuttle arrivals",
+            "category": "transit"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true,
+        "must_not_map_focus": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "live_shuttle_jfk",
+    "type": "live_shuttle_arrival",
+    "question": "next UMass shuttle at JFK/UMass station?",
+    "status_code": 200,
+    "elapsed_ms": 478,
+    "answer": "The next UMass shuttle at **JFK/UMass Station** (0.04 miles away) is **arriving in 3 minutes**. Upcoming after that: 8 min. Live predictions can change.",
+    "sources": [
+      {
+        "url": "https://umb.transloc.com/",
+        "title": "Live shuttle arrivals",
+        "category": "transit"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\ude8c Checking live shuttle arrivals\u2026"
+      },
+      {
+        "type": "token",
+        "text": "The next UMass shuttle at **JFK/UMass Station** (0.04 miles away) is **arriving in 3 minutes**. Upcoming after that: 8 min. Live predictions can change."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://umb.transloc.com/",
+            "title": "Live shuttle arrivals",
+            "category": "transit"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true,
+        "must_not_map_focus": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "live_red_line_ashmont",
+    "type": "live_mbta_arrival",
+    "question": "when is the next red line train at Ashmont?",
+    "status_code": 200,
+    "elapsed_ms": 3,
+    "answer": "The next Red Line trains at Ashmont are scheduled as follows:\n\n*   **In 8 minutes (7:59 PM):** Toward Ashmont\n*   **In 9 minutes (8:00 PM):** Toward Park Street\n*   **In 23 minutes (8:14 PM):** Toward Park Street\n\nPlease note that these live results can change, so it is recommended to verify arrival times using the MBTA Trip Planner.",
+    "sources": [
+      {
+        "url": "https://www.mbta.com/",
+        "title": "Live transit arrivals",
+        "category": "transit"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\ude8c Checking live transit arrivals\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (transit, enforcement)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "The next"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " Red Line trains at Ashmont are scheduled as follows:\n\n*   **In 8 minutes ("
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "7:59 PM):** Toward Ashmont\n*   **In 9 minutes (8:00 PM):**"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " Toward Park Street\n*   **In 23 minutes (8:14 PM):** Toward Park Street\n\n"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "Please note that these live results can change, so it is recommended to verify arrival times using the MBTA Trip Planner."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.mbta.com/",
+            "title": "Live transit arrivals",
+            "category": "transit"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "live_route_16_forest_hills",
+    "type": "live_mbta_arrival",
+    "question": "what time is the route 16 bus coming at Forest Hills?",
+    "status_code": 200,
+    "elapsed_ms": 14,
+    "answer": "I need your location or a stop for Route 16 to check live arrivals. Please allow location access, or tell me the stop name.",
+    "sources": [
+      {
+        "url": "https://www.mbta.com/",
+        "title": "MBTA live arrivals",
+        "category": "transit"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "I need your location or a stop for Route 16 to check live arrivals. Please allow location access, or tell me the stop name."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.mbta.com/",
+            "title": "MBTA live arrivals",
+            "category": "transit"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "ambiguous_parking_cost",
+    "type": "parking_clarification",
+    "question": "how much is parking?",
+    "status_code": 200,
+    "elapsed_ms": 1,
+    "answer": "Which parking location do you mean?\n\n- West Garage\n- Campus Center Garage\n- Lot D\n- Quad Lot\n- Bayside Lot",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/",
+        "title": "Parking Rates",
+        "category": "permits"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "Which parking location do you mean?\n\n- West Garage\n- Campus Center Garage\n- Lot D\n- Quad Lot\n- Bayside Lot"
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/",
+            "title": "Parking Rates",
+            "category": "permits"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_all": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "west_garage_cost",
+    "type": "parking_rate_specific",
+    "question": "how much is parking at west garage for 2 hours?",
+    "status_code": 200,
+    "elapsed_ms": 3,
+    "answer": "The cost for parking at the West Garage for 2 hours is $9.00.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/commuting/",
+        "title": "Commuting Options & Resources",
+        "category": "general"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/",
+        "title": "Parking Information",
+        "category": "permits"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/parking-rates/",
+        "title": "Parking Rates",
+        "category": "permits"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (permits, general)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "The cost"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " for parking at the West Garage for 2 hours is $9.00."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/commuting/",
+            "title": "Commuting Options & Resources",
+            "category": "general"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/",
+            "title": "Parking Information",
+            "category": "permits"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/parking-rates/",
+            "title": "Parking Rates",
+            "category": "permits"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_all": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 3,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "quad_lot_cost",
+    "type": "parking_rate_specific",
+    "question": "how much for parking at the Quad Lot?",
+    "status_code": 200,
+    "elapsed_ms": 6,
+    "answer": "Parking at the Quad Lot costs $15.00 for a daily rate or $10.00 for evening/weekend parking (effective at 4:00 PM). The Quad Lot uses a \"Pay by Plate\" system; you can pay the daily rate using the Passport Parking app (Zone 21266) or online at ParkingApp.com.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/parking-rates/",
+        "title": "Parking Rates",
+        "category": "permits"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/visitor-resources/",
+        "title": "Visitor Resources",
+        "category": "visitor"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/",
+        "title": "Parking Information",
+        "category": "permits"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/commuting/",
+        "title": "Commuting Options & Resources",
+        "category": "general"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (permits, general, visitor)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "Parking at"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " the Quad Lot costs $15.00 for a daily rate or $10"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": ".00 for evening/weekend parking (effective at 4:00 PM). The Quad Lot uses a \"Pay by"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " Plate\" system; you can pay the daily rate using the Passport Parking app (Zone 21266) or online"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " at ParkingApp.com."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/parking-rates/",
+            "title": "Parking Rates",
+            "category": "permits"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/visitor-resources/",
+            "title": "Visitor Resources",
+            "category": "visitor"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/",
+            "title": "Parking Information",
+            "category": "permits"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/commuting/",
+            "title": "Commuting Options & Resources",
+            "category": "general"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 4,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "nearest_parking_with_location",
+    "type": "parking_near_me",
+    "question": "where is the closest parking near me?",
+    "status_code": 200,
+    "elapsed_ms": 2,
+    "answer": "The closest parking options from your location are:\n\n- **Quad Lot**: 0.08 miles away; $15.00 daily, $10.00 evening/weekend.\n- **Campus Center Garage**: 0.09 miles away; $15.00 daily, $10.00 evening/weekend.\n- **West Garage**: 0.2 miles away; $7.00 minimum, $15.00 daily max, $10.00 evening/weekend.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/",
+        "title": "Parking Rates",
+        "category": "permits"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "The closest parking options from your location are:\n\n- **Quad Lot**: 0.08 miles away; $15.00 daily, $10.00 evening/weekend.\n- **Campus Center Garage**: 0.09 miles away; $15.00 daily, $10.00 evening/weekend.\n- **West Garage**: 0.2 miles away; $7.00 minimum, $15.00 daily max, $10.00 evening/weekend."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/",
+            "title": "Parking Rates",
+            "category": "permits"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "nearest_parking_without_location",
+    "type": "parking_near_me_no_location",
+    "question": "where is the nearest parking near me?",
+    "status_code": 200,
+    "elapsed_ms": 1,
+    "answer": "I need your location to find the closest parking. Please allow location access, or tell me where you are starting from.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/",
+        "title": "Parking Rates",
+        "category": "permits"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "I need your location to find the closest parking. Please allow location access, or tell me where you are starting from."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/",
+            "title": "Parking Rates",
+            "category": "permits"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "campus_map_media",
+    "type": "media_request",
+    "question": "show me the UMass campus map pdf and image",
+    "status_code": 200,
+    "elapsed_ms": 5,
+    "answer": "Here are the relevant transportation map files: UMass Boston Campus Map, Campus Map Image.",
+    "sources": [
+      {
+        "url": "/media/transportation/pdf/UMassBoston-campusmap.pdf",
+        "title": "UMass Boston Campus Map",
+        "category": "transportation_media",
+        "media_type": "pdf"
+      },
+      {
+        "url": "/media/transportation/image/Campus-Map-1-16-24-900x900-min.png",
+        "title": "Campus Map Image",
+        "category": "transportation_media",
+        "media_type": "image"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "Here are the relevant transportation map files: UMass Boston Campus Map, Campus Map Image."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "/media/transportation/pdf/UMassBoston-campusmap.pdf",
+            "title": "UMass Boston Campus Map",
+            "category": "transportation_media",
+            "media_type": "pdf"
+          },
+          {
+            "url": "/media/transportation/image/Campus-Map-1-16-24-900x900-min.png",
+            "title": "Campus Map Image",
+            "category": "transportation_media",
+            "media_type": "image"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_source_media": true,
+        "must_source_pdf": true,
+        "must_source_image": true
+      },
+      "observed": {
+        "source_count": 2,
+        "media_source_count": 2,
+        "pdf_source_count": 1,
+        "image_source_count": 1,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "mbta_subway_map_media",
+    "type": "media_request",
+    "question": "can you show me the MBTA subway map for red orange and green lines",
+    "status_code": 200,
+    "elapsed_ms": 6,
+    "answer": "Here are the relevant transportation map files: MBTA Subway Map.",
+    "sources": [
+      {
+        "url": "/media/transportation/mbta/pdf/2026-06-14-subway-map-v01.pdf",
+        "title": "MBTA Subway Map",
+        "category": "transportation_media",
+        "media_type": "pdf"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "Here are the relevant transportation map files: MBTA Subway Map."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "/media/transportation/mbta/pdf/2026-06-14-subway-map-v01.pdf",
+            "title": "MBTA Subway Map",
+            "category": "transportation_media",
+            "media_type": "pdf"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_source_media": true,
+        "must_source_pdf": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 1,
+        "pdf_source_count": 1,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "commuter_rail_map_media",
+    "type": "media_request",
+    "question": "show me the purple line commuter rail map",
+    "status_code": 200,
+    "elapsed_ms": 3,
+    "answer": "Here are the relevant transportation map files: MBTA Commuter Rail Map.",
+    "sources": [
+      {
+        "url": "/media/transportation/mbta/pdf/2025-03-24-commuter-rail-map-v.42f.pdf",
+        "title": "MBTA Commuter Rail Map",
+        "category": "transportation_media",
+        "media_type": "pdf"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "Here are the relevant transportation map files: MBTA Commuter Rail Map."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "/media/transportation/mbta/pdf/2025-03-24-commuter-rail-map-v.42f.pdf",
+            "title": "MBTA Commuter Rail Map",
+            "category": "transportation_media",
+            "media_type": "pdf"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_source_media": true,
+        "must_source_pdf": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 1,
+        "pdf_source_count": 1,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "ferry_map_media",
+    "type": "media_request",
+    "question": "do you have the ferry map pdf?",
+    "status_code": 200,
+    "elapsed_ms": 2,
+    "answer": "Here are the relevant transportation map files: MBTA Ferry Map.",
+    "sources": [
+      {
+        "url": "/media/transportation/mbta/pdf/2024-05-ferry-map.pdf",
+        "title": "MBTA Ferry Map",
+        "category": "transportation_media",
+        "media_type": "pdf"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "Here are the relevant transportation map files: MBTA Ferry Map."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "/media/transportation/mbta/pdf/2024-05-ferry-map.pdf",
+            "title": "MBTA Ferry Map",
+            "category": "transportation_media",
+            "media_type": "pdf"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_source_media": true,
+        "must_source_pdf": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 1,
+        "pdf_source_count": 1,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "bike_map_media",
+    "type": "media_request",
+    "question": "show me the UMass Boston bike map",
+    "status_code": 200,
+    "elapsed_ms": 2,
+    "answer": "Here are the relevant transportation map files: UMass Boston Bike Map.",
+    "sources": [
+      {
+        "url": "/media/transportation/pdf/umass-boston-bike-map.pdf",
+        "title": "UMass Boston Bike Map",
+        "category": "transportation_media",
+        "media_type": "pdf"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "Here are the relevant transportation map files: UMass Boston Bike Map."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "/media/transportation/pdf/umass-boston-bike-map.pdf",
+            "title": "UMass Boston Bike Map",
+            "category": "transportation_media",
+            "media_type": "pdf"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_source_media": true,
+        "must_source_pdf": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 1,
+        "pdf_source_count": 1,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "campus_center_directions",
+    "type": "directions_intent",
+    "question": "how do I get directions to campus center?",
+    "status_code": 200,
+    "elapsed_ms": 1,
+    "answer": "To get directions to the Campus Center Garage, please visit the Visitor Parking Options & Directions section of the UMass Boston website and select the link titled \"Get directions to the Campus Center Garage.\" \n\nAdditionally, if you are arriving by ride-share, there is a dedicated drop-off point located behind the Campus Center (Campus Center South), and you can find directions to that specific location via the Ride-share Services section of the visitor resources page.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/visitor-resources/",
+        "title": "Visitor Resources",
+        "category": "visitor"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/",
+        "title": "Parking Information",
+        "category": "permits"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/commuting/",
+        "title": "Commuting Options & Resources",
+        "category": "general"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (visitor, general, permits)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "To get"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " directions to the Campus Center Garage, please visit the Visitor Parking Options & Directions section of the"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " UMass Boston website and select the link titled \"Get directions to the Campus Center Garage.\" \n\nAdditionally, if you are arriving"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " by ride-share, there is a dedicated drop-off point located behind the Campus Center (Campus Center South), and"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " you can find directions to that specific location via the Ride-share Services section of the visitor resources page."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/visitor-resources/",
+            "title": "Visitor Resources",
+            "category": "visitor"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/",
+            "title": "Parking Information",
+            "category": "permits"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/commuting/",
+            "title": "Commuting Options & Resources",
+            "category": "general"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "no_media_unless_explicit": true
+      },
+      "observed": {
+        "source_count": 3,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "ashmont_to_campus_route",
+    "type": "route_knowledge",
+    "question": "how should I get from Ashmont to UMass Boston by transit?",
+    "status_code": 200,
+    "elapsed_ms": 77,
+    "answer": "To get from Ashmont to UMass Boston by transit, you can take the MBTA Red Line to the JFK/UMass station. Once you arrive at JFK/UMass, you can transfer to a UMass Boston shuttle bus to complete your trip to campus.",
+    "sources": [
+      {
+        "url": "https://hr.umb.edu/benefits/parking-mbta-passes",
+        "title": "Pre-Tax Parking & Transit",
+        "category": "transit"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/biking/",
+        "title": "Biking",
+        "category": "transit"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/commuting/",
+        "title": "Commuting Options & Resources",
+        "category": "general"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (general, transit)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "To get"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " from Ashmont to UMass Boston by transit, you can take the MBTA Red Line to"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " the JFK/UMass station. Once you arrive at JFK/UMass, you can transfer to a UMass Boston shuttle"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " bus to complete your trip to campus."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://hr.umb.edu/benefits/parking-mbta-passes",
+            "title": "Pre-Tax Parking & Transit",
+            "category": "transit"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/biking/",
+            "title": "Biking",
+            "category": "transit"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/commuting/",
+            "title": "Commuting Options & Resources",
+            "category": "general"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 3,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "forest_hills_to_campus_route",
+    "type": "route_knowledge",
+    "question": "how do I get from Forest Hills to campus center?",
+    "status_code": 200,
+    "elapsed_ms": 3,
+    "answer": "To travel from Forest Hills to the UMass Boston Campus Center, you can use MBTA Route 16, which is available during peak commuting hours. Once you arrive at the JFK/UMass station, you can take the campus shuttle, which runs regularly between the station and several points on campus, including the Campus Center. Alternatively, you can use the MBTA Trip Planner to find the best route.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/mbta/",
+        "title": "MBTA",
+        "category": "transit"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/visitor-resources/",
+        "title": "Visitor Resources",
+        "category": "visitor"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/commuting/",
+        "title": "Commuting Options & Resources",
+        "category": "general"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/",
+        "title": "Parking Information",
+        "category": "permits"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (visitor, general, transit, permits)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "To travel"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " from Forest Hills to the UMass Boston Campus Center, you can use MBTA Route 16,"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " which is available during peak commuting hours. Once you arrive at the JFK/UMass station, you can take the campus"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " shuttle, which runs regularly between the station and several points on campus, including the Campus Center. Alternatively, you can use the MB"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "TA Trip Planner to find the best route."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/mbta/",
+            "title": "MBTA",
+            "category": "transit"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/visitor-resources/",
+            "title": "Visitor Resources",
+            "category": "visitor"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/commuting/",
+            "title": "Commuting Options & Resources",
+            "category": "general"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/",
+            "title": "Parking Information",
+            "category": "permits"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 4,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "red_line_outage_fallback",
+    "type": "detour_fallback",
+    "question": "if the red line to JFK is down how should I still get to UMass Boston?",
+    "status_code": 200,
+    "elapsed_ms": 12,
+    "answer": "If the Red Line is unavailable, you can still reach UMass Boston using the following alternatives:\n\n*   **Commuter Rail (Purple):** JFK/UMass station is served by the Greenbush, Kingston, and Middleborough/Lakeville commuter rail lines.\n*   **Bus Routes:** Route 8 operates daily from Kenmore Square, and Route 16 operates during peak commuting hours from Forest Hills.\n*   **Driving/Ride-share:** You can drive to campus and park in the West Garage, Quad Lot, Lot D, or the Campus Center Garage, or use ride-share services which have drop-off points at the Integrated Sciences Complex (ISC) and behind the Campus Center.\n*   **Cycling:** You can bike to campus and take advantage of the free e-bike and e-scooter charging available at the West Garage Secured Shelter.\n\nOnce you reach the JFK/UMass station area, the UMass Boston shuttle continues to run regularly between the station and various points on campus.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/mbta/",
+        "title": "MBTA",
+        "category": "transit"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/visitor-resources/",
+        "title": "Visitor Resources",
+        "category": "visitor"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/fines/",
+        "title": "Parking Fines",
+        "category": "enforcement"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/shuttle-bus-information/",
+        "title": "Shuttle Bus Information",
+        "category": "transit"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (visitor, transit, enforcement)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "If the"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " Red Line is unavailable, you can still reach UMass Boston using the following alternatives:\n\n*   **"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "Commuter Rail (Purple):** JFK/UMass station is served by the Greenbush, Kingston, and Middleborough/Lake"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "ville commuter rail lines.\n*   **Bus Routes:** Route 8 operates daily from Kenmore Square, and Route 1"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "6 operates during peak commuting hours from Forest Hills.\n*   **Driving/Ride-share:** You can drive to campus and"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " park in the West Garage, Quad Lot, Lot D, or the Campus Center Garage, or use ride-share services which"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " have drop-off points at the Integrated Sciences Complex (ISC) and behind the Campus Center.\n*   **Cycling:**"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " You can bike to campus and take advantage of the free e-bike and e-scooter charging available at the West"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " Garage Secured Shelter.\n\nOnce you reach the JFK/UMass station area, the UMass Boston shuttle continues to run"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " regularly between the station and various points on campus."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/mbta/",
+            "title": "MBTA",
+            "category": "transit"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/visitor-resources/",
+            "title": "Visitor Resources",
+            "category": "visitor"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/fines/",
+            "title": "Parking Fines",
+            "category": "enforcement"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/shuttle-bus-information/",
+            "title": "Shuttle Bus Information",
+            "category": "transit"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 4,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "semester_pass",
+    "type": "rag_policy",
+    "question": "what should I know about UMass Boston MBTA semester passes?",
+    "status_code": 200,
+    "elapsed_ms": 29,
+    "answer": "UMass Boston offers MBTA semester passes that are paid for via your term bill; cash, checks, and credit cards are not accepted for these purchases. Passes are non-refundable and non-exchangeable.\n\nKey details include:\n*   **Pass Types:** Link and Bus passes are issued on CharlieCards and can be replaced if lost. Commuter Rail and Boat passes are issued monthly on CharlieTickets and cannot be replaced if lost or damaged.\n*   **Subsidies:** Undergraduate students pay a nonrefundable $20 fee on their term bill to access potential subsidies, which are allocated on a first-come, first-served basis.\n*   **Deadlines & Policies:** Sales occur once per semester with strict deadlines. If you miss the university's program deadline, you must purchase monthly passes directly through the MBTA at standard rates without a university subsidy. \n*   **Liability:** The university is not liable for lost or damaged passes, particularly for Commuter Rail or Boat passes, which are strictly non-replaceable.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/mbta/",
+        "title": "MBTA",
+        "category": "transit"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/",
+        "title": "Transportation",
+        "category": "general"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (general, transit)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "UMass"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " Boston offers MBTA semester passes that are paid for via your term bill; cash, checks"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": ", and credit cards are not accepted for these purchases. Passes are non-refundable and non-exchangeable.\n\nKey"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " details include:\n*   **Pass Types:** Link and Bus passes are issued on CharlieCards and can be replaced if lost. Commuter Rail"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " and Boat passes are issued monthly on CharlieTickets and cannot be replaced if lost or damaged.\n*   **Subsidies:** Undergraduate students pay"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " a nonrefundable $20 fee on their term bill to access potential subsidies, which are allocated on a first-come"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": ", first-served basis.\n*   **Deadlines & Policies:** Sales occur once per semester with strict deadlines."
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " If you miss the university's program deadline, you must purchase monthly passes directly through the MBTA at standard rates without a"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " university subsidy. \n*   **Liability:** The university is not liable for lost or damaged passes, particularly for Commuter Rail or Boat"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " passes, which are strictly non-replaceable."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/mbta/",
+            "title": "MBTA",
+            "category": "transit"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/",
+            "title": "Transportation",
+            "category": "general"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 2,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "parking_ticket_21_days",
+    "type": "rag_policy",
+    "question": "what happens if I do not pay or appeal a parking ticket within 21 days?",
+    "status_code": 200,
+    "elapsed_ms": 24,
+    "answer": "If you do not pay or appeal a parking ticket within 21 calendar days, a delinquent notice will be issued. Furthermore, the university will notify the Registry of Motor Vehicles (RMV), which will result in the mandatory non-renewal of the registered owner\u2019s driver\u2019s license and/or vehicle registration until all fines and penalties are paid in full.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/fines/",
+        "title": "Parking Fines",
+        "category": "enforcement"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/",
+        "title": "Parking Information",
+        "category": "permits"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (permits, enforcement)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "If you"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " do not pay or appeal a parking ticket within 21 calendar days, a delinquent"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " notice will be issued. Furthermore, the university will notify the Registry of Motor Vehicles (RMV), which will result in the"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " mandatory non-renewal of the registered owner\u2019s driver\u2019s license and/or vehicle registration until all fines and penalties are paid in full."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/fines/",
+            "title": "Parking Fines",
+            "category": "enforcement"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/",
+            "title": "Parking Information",
+            "category": "permits"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 2,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "ev_charging_ports",
+    "type": "rag_fact",
+    "question": "how many EV charging ports are on campus and where are they?",
+    "status_code": 200,
+    "elapsed_ms": 20,
+    "answer": "UMass Boston offers 23 shared ChargePoint EV charging ports across campus at the following locations:\n\n*   **West Garage (First Floor):** 15 ports\n*   **Campus Center Garage (Lower Level):** 4 ports\n*   **Quad Lot:** 4 ports\n\nCharging costs $0.22 per kWh with a 4-hour maximum charge per session, and standard parking fees also apply. Please note that non-charging vehicles parked in these EV spaces are subject to a $75 fine.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/",
+        "title": "Parking Information",
+        "category": "permits"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/commuting/",
+        "title": "Commuting Options & Resources",
+        "category": "general"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/biking/",
+        "title": "Biking",
+        "category": "transit"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (permits, general, transit)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "UMass"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " Boston offers 23 shared ChargePoint EV charging ports across campus at the following locations:\n\n*"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "   **West Garage (First Floor):** 15 ports\n*   **Campus Center Garage (Lower Level):"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "** 4 ports\n*   **Quad Lot:** 4 ports\n\nCharging costs $0.22 per kWh"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " with a 4-hour maximum charge per session, and standard parking fees also apply. Please note that non-charging vehicles parked in these"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " EV spaces are subject to a $75 fine."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/",
+            "title": "Parking Information",
+            "category": "permits"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/commuting/",
+            "title": "Commuting Options & Resources",
+            "category": "general"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/biking/",
+            "title": "Biking",
+            "category": "transit"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 3,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "bluebikes_price",
+    "type": "rag_fact",
+    "question": "how much is the annual Bluebikes membership for UMass Boston affiliates?",
+    "status_code": 200,
+    "elapsed_ms": 7,
+    "answer": "The annual Bluebikes membership for UMass Boston affiliates is $101.50 when using the promo code \"BikeUMB.\" To join, you can register or log in at bluebikes.com, select \"Annual Membership,\" and verify your UMass Boston email address.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/biking/",
+        "title": "Biking",
+        "category": "transit"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/commuting/",
+        "title": "Commuting Options & Resources",
+        "category": "general"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/visitor-resources/",
+        "title": "Visitor Resources",
+        "category": "visitor"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (visitor, general, transit)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "The annual"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " Bluebikes membership for UMass Boston affiliates is $101.50"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " when using the promo code \"BikeUMB.\" To join, you can register or log in at bluebikes.com, select"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " \"Annual Membership,\" and verify your UMass Boston email address."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/biking/",
+            "title": "Biking",
+            "category": "transit"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/commuting/",
+            "title": "Commuting Options & Resources",
+            "category": "general"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/visitor-resources/",
+            "title": "Visitor Resources",
+            "category": "visitor"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 3,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "bike_locker",
+    "type": "rag_fact",
+    "question": "how can a student access a bike locker?",
+    "status_code": 200,
+    "elapsed_ms": 6,
+    "answer": "As a student, you can access bike lockers located at the McCormack and Wheatley halls, which are managed by Student Activities on a first-come, first-served basis. If you are referring to the secure indoor bike storage at the West Garage, you must first register your bicycle through Project 529; once confirmed, you will receive access to that shelter using your Beaconcard.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/biking/",
+        "title": "Biking",
+        "category": "transit"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/commuting/",
+        "title": "Commuting Options & Resources",
+        "category": "general"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (general, transit)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "As a"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " student, you can access bike lockers located at the McCormack and Wheatley halls, which are managed by Student"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " Activities on a first-come, first-served basis. If you are referring to the secure indoor bike storage at the West Garage,"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " you must first register your bicycle through Project 529; once confirmed, you will receive access to that shelter using your Beaconcard."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/biking/",
+            "title": "Biking",
+            "category": "transit"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/commuting/",
+            "title": "Commuting Options & Resources",
+            "category": "general"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 2,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "shuttle_ads",
+    "type": "rag_process",
+    "question": "how can I advertise on the UMass shuttle buses?",
+    "status_code": 200,
+    "elapsed_ms": 6,
+    "answer": "To advertise on UMass Boston shuttle buses, you must design your ad as a 11x17-inch landscape PDF. You need to order 10\u201320 prints from Quinn Graphics (Quinn.graphics@umb.edu) on index stock with lamination, specifying \"shuttle ad\" in your order comments and having them delivered to Transportation Services in the Service & Supply building, Lower Level.\n\nYour ad must comply with university policy and the student code of conduct. Once received by Transportation Services, ads are reviewed and forwarded to the shuttle contractor on the next available Friday for installation the following Saturday. For further questions or design assistance, you can email TransDM@umb.edu or complete a Creative Services Request Form.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/shuttle-bus-information/",
+        "title": "Shuttle Bus Information",
+        "category": "transit"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/visitor-resources/",
+        "title": "Visitor Resources",
+        "category": "visitor"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/",
+        "title": "Transportation",
+        "category": "general"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/biking/",
+        "title": "Biking",
+        "category": "transit"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (visitor, general, transit)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "To advertise"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " on UMass Boston shuttle buses, you must design your ad as a 11x17"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "-inch landscape PDF. You need to order 10\u201320 prints from Quinn Graphics (Quinn.graphics@umb."
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "edu) on index stock with lamination, specifying \"shuttle ad\" in your order comments and having them delivered to Transportation Services in"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " the Service & Supply building, Lower Level.\n\nYour ad must comply with university policy and the student code of conduct. Once received by Transportation Services"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": ", ads are reviewed and forwarded to the shuttle contractor on the next available Friday for installation the following Saturday. For further questions"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " or design assistance, you can email TransDM@umb.edu or complete a Creative Services Request Form."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/shuttle-bus-information/",
+            "title": "Shuttle Bus Information",
+            "category": "transit"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/visitor-resources/",
+            "title": "Visitor Resources",
+            "category": "visitor"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/",
+            "title": "Transportation",
+            "category": "general"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/biking/",
+            "title": "Biking",
+            "category": "transit"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 4,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "off_topic",
+    "type": "off_topic",
+    "question": "what is the best pizza topping?",
+    "status_code": 200,
+    "elapsed_ms": 4,
+    "answer": "I am the parking and transportation assistant for UMass Boston. I do not have information regarding food or pizza toppings; I am here to assist you with parking permits, fines, rates, MBTA passes, shuttles, biking, and visitor parking.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/biking/",
+        "title": "Biking",
+        "category": "transit"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 2 chunks (transit)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "I am"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " the parking and transportation assistant for UMass Boston. I do not have information regarding food"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " or pizza toppings; I am here to assist you with parking permits, fines, rates, MBTA passes, shuttles,"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " biking, and visitor parking."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/biking/",
+            "title": "Biking",
+            "category": "transit"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  }
+]

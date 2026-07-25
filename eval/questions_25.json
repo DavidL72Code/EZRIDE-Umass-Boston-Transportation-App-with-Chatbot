@@ -1,0 +1,156 @@
+[
+  {
+    "id": "live_shuttle_campus_center",
+    "type": "live_shuttle_arrival",
+    "question": "when is the campus center shuttle coming",
+    "location": {"latitude": 42.3207, "longitude": -71.0524},
+    "expect": {"must_include_any": ["shuttle", "arriving", "prediction"], "must_not_source_media": true, "must_not_map_focus": true}
+  },
+  {
+    "id": "live_shuttle_jfk",
+    "type": "live_shuttle_arrival",
+    "question": "next UMass shuttle at JFK/UMass station?",
+    "location": {"latitude": 42.3207, "longitude": -71.0524},
+    "expect": {"must_include_any": ["shuttle", "arriving", "prediction"], "must_not_source_media": true, "must_not_map_focus": true}
+  },
+  {
+    "id": "live_red_line_ashmont",
+    "type": "live_mbta_arrival",
+    "question": "when is the next red line train at Ashmont?",
+    "expect": {"must_include_any": ["Red", "Ashmont", "train", "arriving"], "must_not_source_media": true}
+  },
+  {
+    "id": "live_route_16_forest_hills",
+    "type": "live_mbta_arrival",
+    "question": "what time is the route 16 bus coming at Forest Hills?",
+    "expect": {"must_include_any": ["16", "Forest Hills", "bus", "arriving"], "must_not_source_media": true}
+  },
+  {
+    "id": "ambiguous_parking_cost",
+    "type": "parking_clarification",
+    "question": "how much is parking?",
+    "expect": {"must_include_all": ["Which parking location", "West Garage"], "must_not_source_media": true}
+  },
+  {
+    "id": "west_garage_cost",
+    "type": "parking_rate_specific",
+    "question": "how much is parking at west garage for 2 hours?",
+    "expect": {"must_include_all": ["West Garage", "$9"], "must_not_source_media": true}
+  },
+  {
+    "id": "quad_lot_cost",
+    "type": "parking_rate_specific",
+    "question": "how much for parking at the Quad Lot?",
+    "expect": {"must_include_any": ["$15", "$10", "Quad"], "must_not_source_media": true}
+  },
+  {
+    "id": "nearest_parking_with_location",
+    "type": "parking_near_me",
+    "question": "where is the closest parking near me?",
+    "location": {"latitude": 42.3133, "longitude": -71.0386},
+    "expect": {"must_include_any": ["closest", "nearest", "garage", "lot"], "must_not_source_media": true}
+  },
+  {
+    "id": "nearest_parking_without_location",
+    "type": "parking_near_me_no_location",
+    "question": "where is the nearest parking near me?",
+    "expect": {"must_include_any": ["location", "allow", "GPS"], "must_not_source_media": true}
+  },
+  {
+    "id": "campus_map_media",
+    "type": "media_request",
+    "question": "show me the UMass campus map pdf and image",
+    "expect": {"must_include_any": ["map files", "Campus Map"], "must_source_media": true, "must_source_image": true, "must_source_pdf": true}
+  },
+  {
+    "id": "mbta_subway_map_media",
+    "type": "media_request",
+    "question": "can you show me the MBTA subway map for red orange and green lines",
+    "expect": {"must_include_any": ["MBTA Subway Map", "map files"], "must_source_media": true, "must_source_pdf": true}
+  },
+  {
+    "id": "commuter_rail_map_media",
+    "type": "media_request",
+    "question": "show me the purple line commuter rail map",
+    "expect": {"must_include_any": ["Commuter Rail Map", "map files"], "must_source_media": true, "must_source_pdf": true}
+  },
+  {
+    "id": "ferry_map_media",
+    "type": "media_request",
+    "question": "do you have the ferry map pdf?",
+    "expect": {"must_include_any": ["Ferry Map", "map files"], "must_source_media": true, "must_source_pdf": true}
+  },
+  {
+    "id": "bike_map_media",
+    "type": "media_request",
+    "question": "show me the UMass Boston bike map",
+    "expect": {"must_include_any": ["Bike Map", "map files"], "must_source_media": true, "must_source_pdf": true}
+  },
+  {
+    "id": "campus_center_directions",
+    "type": "directions_intent",
+    "question": "how do I get directions to campus center?",
+    "location": {"latitude": 42.3207, "longitude": -71.0524},
+    "expect": {"must_include_any": ["Campus Center", "directions", "map"], "allow_media": false}
+  },
+  {
+    "id": "ashmont_to_campus_route",
+    "type": "route_knowledge",
+    "question": "how should I get from Ashmont to UMass Boston by transit?",
+    "expect": {"must_include_any": ["Red Line", "JFK", "UMass", "shuttle"], "must_not_source_media": true}
+  },
+  {
+    "id": "forest_hills_to_campus_route",
+    "type": "route_knowledge",
+    "question": "how do I get from Forest Hills to campus center?",
+    "expect": {"must_include_any": ["Route 16", "Orange Line", "Red Line", "shuttle"], "must_not_source_media": true}
+  },
+  {
+    "id": "red_line_outage_fallback",
+    "type": "detour_fallback",
+    "question": "if the red line to JFK is down how should I still get to UMass Boston?",
+    "expect": {"must_include_any": ["shuttle", "Andrew", "Route 16", "replacement"], "must_not_source_media": true}
+  },
+  {
+    "id": "semester_pass",
+    "type": "rag_policy",
+    "question": "what should I know about UMass Boston MBTA semester passes?",
+    "expect": {"must_include_any": ["semester", "MBTA", "pass"], "must_not_source_media": true}
+  },
+  {
+    "id": "parking_ticket_21_days",
+    "type": "rag_policy",
+    "question": "what happens if I do not pay or appeal a parking ticket within 21 days?",
+    "expect": {"must_include_any": ["21", "RMV", "non-renewal", "delinquent"], "must_not_source_media": true}
+  },
+  {
+    "id": "ev_charging_ports",
+    "type": "rag_fact",
+    "question": "how many EV charging ports are on campus and where are they?",
+    "expect": {"must_include_any": ["23", "West Garage", "Campus Center", "Quad"], "must_not_source_media": true}
+  },
+  {
+    "id": "bluebikes_price",
+    "type": "rag_fact",
+    "question": "how much is the annual Bluebikes membership for UMass Boston affiliates?",
+    "expect": {"must_include_any": ["101.50", "BikeUMB", "Bluebikes"], "must_not_source_media": true}
+  },
+  {
+    "id": "bike_locker",
+    "type": "rag_fact",
+    "question": "how can a student access a bike locker?",
+    "expect": {"must_include_any": ["locker", "Student Activities", "McCormack", "Wheatley"], "must_not_source_media": true}
+  },
+  {
+    "id": "shuttle_ads",
+    "type": "rag_process",
+    "question": "how can I advertise on the UMass shuttle buses?",
+    "expect": {"must_include_any": ["11x17", "PDF", "Quinn", "Transportation Services"], "must_not_source_media": true}
+  },
+  {
+    "id": "off_topic",
+    "type": "off_topic",
+    "question": "what is the best pizza topping?",
+    "expect": {"must_include_any": ["couldn't find", "transportation", "specific information"], "must_not_source_media": true}
+  }
+]

@@ -1,0 +1,4275 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T06:40:00-04:00",
+        "departure_time": "2026-07-23T06:40:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76673038-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76673038",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T08:04:00-04:00",
+        "departure_time": "2026-07-23T08:04:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76676187-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676187",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T06:56:00-04:00",
+        "departure_time": "2026-07-23T06:56:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76676189-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676189",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T09:45:00-04:00",
+        "departure_time": "2026-07-23T09:45:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76676191-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676191",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T08:18:00-04:00",
+        "departure_time": "2026-07-23T08:18:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76676192-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676192",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T08:33:00-04:00",
+        "departure_time": "2026-07-23T08:33:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76676196-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676196",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T14:45:00-04:00",
+        "departure_time": "2026-07-23T14:45:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76676208-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676208",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T15:10:00-04:00",
+        "departure_time": "2026-07-23T15:10:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76676210-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676210",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T16:08:00-04:00",
+        "departure_time": "2026-07-23T16:08:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76676214-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676214",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T16:45:00-04:00",
+        "departure_time": "2026-07-23T16:45:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76676221-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676221",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T18:07:00-04:00",
+        "departure_time": "2026-07-23T18:07:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76676222-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676222",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T11:17:00-04:00",
+        "departure_time": "2026-07-23T11:17:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 4,
+        "timepoint": false
+      },
+      "id": "schedule-76676563-121-4",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676563",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T10:17:00-04:00",
+        "departure_time": "2026-07-23T10:17:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 4,
+        "timepoint": false
+      },
+      "id": "schedule-76676567-121-4",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676567",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T09:32:00-04:00",
+        "departure_time": "2026-07-23T09:32:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 4,
+        "timepoint": false
+      },
+      "id": "schedule-76676568-121-4",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676568",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T11:47:00-04:00",
+        "departure_time": "2026-07-23T11:47:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 4,
+        "timepoint": false
+      },
+      "id": "schedule-76676570-121-4",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676570",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T13:17:00-04:00",
+        "departure_time": "2026-07-23T13:17:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 4,
+        "timepoint": false
+      },
+      "id": "schedule-76676572-121-4",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676572",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T12:47:00-04:00",
+        "departure_time": "2026-07-23T12:47:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 4,
+        "timepoint": false
+      },
+      "id": "schedule-76676573-121-4",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676573",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T14:38:00-04:00",
+        "departure_time": "2026-07-23T14:38:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 4,
+        "timepoint": false
+      },
+      "id": "schedule-76676574-121-4",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676574",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T07:18:00-04:00",
+        "departure_time": "2026-07-23T07:18:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76676938-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676938",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T09:01:00-04:00",
+        "departure_time": "2026-07-23T09:01:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76676943-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676943",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T06:53:00-04:00",
+        "departure_time": "2026-07-23T06:53:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76676944-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676944",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T07:43:00-04:00",
+        "departure_time": "2026-07-23T07:43:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76676947-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676947",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T15:03:00-04:00",
+        "departure_time": "2026-07-23T15:03:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76676948-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676948",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T17:01:00-04:00",
+        "departure_time": "2026-07-23T17:01:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76676949-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676949",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T08:46:00-04:00",
+        "departure_time": "2026-07-23T08:46:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76676950-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676950",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T16:33:00-04:00",
+        "departure_time": "2026-07-23T16:33:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76676951-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676951",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T10:02:00-04:00",
+        "departure_time": "2026-07-23T10:02:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76676953-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676953",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T15:29:00-04:00",
+        "departure_time": "2026-07-23T15:29:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76676954-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76676954",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T08:07:00-04:00",
+        "departure_time": "2026-07-23T08:07:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677298-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677298",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T08:19:00-04:00",
+        "departure_time": "2026-07-23T08:19:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677300-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677300",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T06:26:00-04:00",
+        "departure_time": "2026-07-23T06:26:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677303-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677303",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T07:11:00-04:00",
+        "departure_time": "2026-07-23T07:11:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76677305-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677305",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T07:06:00-04:00",
+        "departure_time": "2026-07-23T07:06:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677306-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677306",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T08:48:00-04:00",
+        "departure_time": "2026-07-23T08:48:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76677307-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677307",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T07:55:00-04:00",
+        "departure_time": "2026-07-23T07:55:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677309-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677309",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T07:51:00-04:00",
+        "departure_time": "2026-07-23T07:51:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76677310-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677310",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T17:15:00-04:00",
+        "departure_time": "2026-07-23T17:15:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677416-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677416",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T17:39:00-04:00",
+        "departure_time": "2026-07-23T17:39:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677423-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677423",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T18:07:00-04:00",
+        "departure_time": "2026-07-23T18:07:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677424-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677424",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T17:21:00-04:00",
+        "departure_time": "2026-07-23T17:21:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76677449-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677449",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T16:57:00-04:00",
+        "departure_time": "2026-07-23T16:57:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76677451-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677451",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T17:43:00-04:00",
+        "departure_time": "2026-07-23T17:43:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76677462-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677462",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T15:39:00-04:00",
+        "departure_time": "2026-07-23T15:39:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 4,
+        "timepoint": false
+      },
+      "id": "schedule-76677467-121-4",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677467",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T16:05:00-04:00",
+        "departure_time": "2026-07-23T16:05:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677485-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677485",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T15:40:00-04:00",
+        "departure_time": "2026-07-23T15:40:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76677486-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677486",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T13:51:00-04:00",
+        "departure_time": "2026-07-23T13:51:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 4,
+        "timepoint": false
+      },
+      "id": "schedule-76677510-121-4",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677510",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T09:16:00-04:00",
+        "departure_time": "2026-07-23T09:16:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677521-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677521",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T07:30:00-04:00",
+        "departure_time": "2026-07-23T07:30:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677523-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677523",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T07:40:00-04:00",
+        "departure_time": "2026-07-23T07:40:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76677551-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677551",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T09:03:00-04:00",
+        "departure_time": "2026-07-23T09:03:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76677553-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677553",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T10:47:00-04:00",
+        "departure_time": "2026-07-23T10:47:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 4,
+        "timepoint": false
+      },
+      "id": "schedule-76677603-121-4",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677603",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T12:17:00-04:00",
+        "departure_time": "2026-07-23T12:17:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 4,
+        "timepoint": false
+      },
+      "id": "schedule-76677616-121-4",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677616",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T08:32:00-04:00",
+        "departure_time": "2026-07-23T08:32:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76678804-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76678804",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T07:26:00-04:00",
+        "departure_time": "2026-07-23T07:26:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 31,
+        "timepoint": false
+      },
+      "id": "schedule-76678834-121-31",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76678834",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    }
+  ],
+  "included": [
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-184",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676951",
+      "links": {
+        "self": "/trips/76676951"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-162",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676953",
+      "links": {
+        "self": "/trips/76676953"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-160",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676947",
+      "links": {
+        "self": "/trips/76676947"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-186",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676208",
+      "links": {
+        "self": "/trips/76676208"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-165",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677305",
+      "links": {
+        "self": "/trips/76677305"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-168",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76678834",
+      "links": {
+        "self": "/trips/76678834"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-163",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76678804",
+      "links": {
+        "self": "/trips/76678804"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-186",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676948",
+      "links": {
+        "self": "/trips/76676948"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-180",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676189",
+      "links": {
+        "self": "/trips/76676189"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-162",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677300",
+      "links": {
+        "self": "/trips/76677300"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-165",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677553",
+      "links": {
+        "self": "/trips/76677553"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-160",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676568",
+      "links": {
+        "self": "/trips/76676568"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-5-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160382",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-167",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676210",
+      "links": {
+        "self": "/trips/76676210"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-161",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677310",
+      "links": {
+        "self": "/trips/76677310"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-180",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677521",
+      "links": {
+        "self": "/trips/76677521"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-186",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676572",
+      "links": {
+        "self": "/trips/76676572"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-5-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160382",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-182",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677486",
+      "links": {
+        "self": "/trips/76677486"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-161",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677303",
+      "links": {
+        "self": "/trips/76677303"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-180",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677616",
+      "links": {
+        "self": "/trips/76677616"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-5-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160382",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-163",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676944",
+      "links": {
+        "self": "/trips/76676944"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-180",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677449",
+      "links": {
+        "self": "/trips/76677449"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-60",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677424",
+      "links": {
+        "self": "/trips/76677424"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-184",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676214",
+      "links": {
+        "self": "/trips/76676214"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-163",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676192",
+      "links": {
+        "self": "/trips/76676192"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-186",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676570",
+      "links": {
+        "self": "/trips/76676570"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-5-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160382",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-180",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677603",
+      "links": {
+        "self": "/trips/76677603"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-5-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160382",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-166",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677309",
+      "links": {
+        "self": "/trips/76677309"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-162",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676187",
+      "links": {
+        "self": "/trips/76676187"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-184",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676222",
+      "links": {
+        "self": "/trips/76676222"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-183",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676574",
+      "links": {
+        "self": "/trips/76676574"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-5-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160382",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-182",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677462",
+      "links": {
+        "self": "/trips/76677462"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-187",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677451",
+      "links": {
+        "self": "/trips/76677451"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-161",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677298",
+      "links": {
+        "self": "/trips/76677298"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-162",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76673038",
+      "links": {
+        "self": "/trips/76673038"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-59",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676938",
+      "links": {
+        "self": "/trips/76676938"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-59",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677307",
+      "links": {
+        "self": "/trips/76677307"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-164",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676196",
+      "links": {
+        "self": "/trips/76676196"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-162",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676191",
+      "links": {
+        "self": "/trips/76676191"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-164",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676567",
+      "links": {
+        "self": "/trips/76676567"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-5-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160382",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-166",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677551",
+      "links": {
+        "self": "/trips/76677551"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-55",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676943",
+      "links": {
+        "self": "/trips/76676943"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-164",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676950",
+      "links": {
+        "self": "/trips/76676950"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-186",
+        "direction_id": 1,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676221",
+      "links": {
+        "self": "/trips/76676221"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160398",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-182",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677485",
+      "links": {
+        "self": "/trips/76677485"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-187",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677416",
+      "links": {
+        "self": "/trips/76677416"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-180",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677467",
+      "links": {
+        "self": "/trips/76677467"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-5-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160382",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-164",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677306",
+      "links": {
+        "self": "/trips/76677306"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-183",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676573",
+      "links": {
+        "self": "/trips/76676573"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-5-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160382",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-167",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676954",
+      "links": {
+        "self": "/trips/76676954"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-180",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677423",
+      "links": {
+        "self": "/trips/76677423"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-186",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676949",
+      "links": {
+        "self": "/trips/76676949"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-180",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677510",
+      "links": {
+        "self": "/trips/76677510"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-5-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160382",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-165",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677523",
+      "links": {
+        "self": "/trips/76677523"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-8-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160377",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C16-183",
+        "direction_id": 0,
+        "headsign": "Forest Hills via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76676563",
+      "links": {
+        "self": "/trips/76676563"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "16-5-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "160382",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    }
+  ],
+  "jsonapi": {
+    "version": "1.0"
+  }
+}

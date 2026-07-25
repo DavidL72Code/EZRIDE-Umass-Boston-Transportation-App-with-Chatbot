@@ -1,0 +1,181 @@
+{
+  "description": "Official MBTA map PDFs plus MBTA V3 map geometry for subway and commuter rail.",
+  "routes": {
+    "rapid_transit": [
+      "Red",
+      "Mattapan",
+      "Orange",
+      "Blue",
+      "Green-B",
+      "Green-C",
+      "Green-D",
+      "Green-E"
+    ],
+    "commuter_rail": [
+      "CR-Fairmount",
+      "CR-Fitchburg",
+      "CR-Worcester",
+      "CR-Franklin",
+      "CR-Greenbush",
+      "CR-Haverhill",
+      "CR-Kingston",
+      "CR-Lowell",
+      "CR-Middleborough",
+      "CR-Needham",
+      "CR-Newburyport",
+      "CR-Providence"
+    ]
+  },
+  "assets": [
+    {
+      "kind": "pdf",
+      "name": "full_system_map",
+      "url": "https://cdn.mbta.com/sites/default/files/2026-06/2026-06-14-system-map_0.pdf",
+      "filename": "2026-06-14-system-map_0.pdf",
+      "status": "downloaded",
+      "bytes": 13198179,
+      "records": 1,
+      "error": ""
+    },
+    {
+      "kind": "pdf",
+      "name": "downtown_map",
+      "url": "https://cdn.mbta.com/sites/default/files/2026-06/2026-06-14-downtown-map_0.pdf",
+      "filename": "2026-06-14-downtown-map_0.pdf",
+      "status": "downloaded",
+      "bytes": 1022872,
+      "records": 1,
+      "error": ""
+    },
+    {
+      "kind": "pdf",
+      "name": "subway_map",
+      "url": "https://cdn.mbta.com/sites/default/files/2026-06/2026-06-14-subway-map-v01.pdf",
+      "filename": "2026-06-14-subway-map-v01.pdf",
+      "status": "downloaded",
+      "bytes": 2372268,
+      "records": 1,
+      "error": ""
+    },
+    {
+      "kind": "pdf",
+      "name": "frequent_bus_route_map",
+      "url": "https://cdn.mbta.com/sites/default/files/2025-08/2025-8-25-frequent-bus-map.pdf",
+      "filename": "2025-8-25-frequent-bus-map.pdf",
+      "status": "downloaded",
+      "bytes": 366154,
+      "records": 1,
+      "error": ""
+    },
+    {
+      "kind": "pdf",
+      "name": "ferry_map",
+      "url": "https://cdn.mbta.com/sites/default/files/2024-05-ferry-map.pdf",
+      "filename": "2024-05-ferry-map.pdf",
+      "status": "downloaded",
+      "bytes": 1002827,
+      "records": 1,
+      "error": ""
+    },
+    {
+      "kind": "pdf",
+      "name": "commuter_rail_map",
+      "url": "https://cdn.mbta.com/sites/default/files/2025-03/2025-03-24-commuter-rail-map-v.42f.pdf",
+      "filename": "2025-03-24-commuter-rail-map-v.42f.pdf",
+      "status": "downloaded",
+      "bytes": 3215893,
+      "records": 1,
+      "error": ""
+    },
+    {
+      "kind": "pdf",
+      "name": "commuter_rail_zones_map",
+      "url": "https://cdn.mbta.com/sites/default/files/2025-06/2025-06-30-commuter-rail-zones-v43.pdf",
+      "filename": "2025-06-30-commuter-rail-zones-v43.pdf",
+      "status": "downloaded",
+      "bytes": 158573,
+      "records": 1,
+      "error": ""
+    },
+    {
+      "kind": "json",
+      "name": "rapid_transit_routes",
+      "url": "https://api-v3.mbta.com/routes?filter%5Bid%5D=Red%2CMattapan%2COrange%2CBlue%2CGreen-B%2CGreen-C%2CGreen-D%2CGreen-E",
+      "filename": "map_rapid_transit_routes.json",
+      "status": "downloaded",
+      "bytes": 6994,
+      "records": 8,
+      "error": ""
+    },
+    {
+      "kind": "json",
+      "name": "rapid_transit_stops",
+      "url": "https://api-v3.mbta.com/stops?filter%5Broute%5D=Red;https://api-v3.mbta.com/stops?filter%5Broute%5D=Mattapan;https://api-v3.mbta.com/stops?filter%5Broute%5D=Orange;https://api-v3.mbta.com/stops?filter%5Broute%5D=Blue;https://api-v3.mbta.com/stops?filter%5Broute%5D=Green-B;https://api-v3.mbta.com/stops?filter%5Broute%5D=Green-C;https://api-v3.mbta.com/stops?filter%5Broute%5D=Green-D;https://api-v3.mbta.com/stops?filter%5Broute%5D=Green-E",
+      "filename": "map_rapid_transit_stops.json",
+      "status": "downloaded",
+      "bytes": 108004,
+      "records": 124,
+      "error": ""
+    },
+    {
+      "kind": "json",
+      "name": "rapid_transit_route_patterns",
+      "url": "https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=Red;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=Mattapan;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=Orange;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=Blue;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=Green-B;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=Green-C;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=Green-D;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=Green-E",
+      "filename": "map_rapid_transit_route_patterns.json",
+      "status": "downloaded",
+      "bytes": 27312,
+      "records": 41,
+      "error": ""
+    },
+    {
+      "kind": "json",
+      "name": "rapid_transit_shapes",
+      "url": "https://api-v3.mbta.com/shapes?filter%5Broute%5D=Red;https://api-v3.mbta.com/shapes?filter%5Broute%5D=Mattapan;https://api-v3.mbta.com/shapes?filter%5Broute%5D=Orange;https://api-v3.mbta.com/shapes?filter%5Broute%5D=Blue;https://api-v3.mbta.com/shapes?filter%5Broute%5D=Green-B;https://api-v3.mbta.com/shapes?filter%5Broute%5D=Green-C;https://api-v3.mbta.com/shapes?filter%5Broute%5D=Green-D;https://api-v3.mbta.com/shapes?filter%5Broute%5D=Green-E",
+      "filename": "map_rapid_transit_shapes.json",
+      "status": "downloaded",
+      "bytes": 66135,
+      "records": 62,
+      "error": ""
+    },
+    {
+      "kind": "json",
+      "name": "commuter_rail_routes",
+      "url": "https://api-v3.mbta.com/routes?filter%5Bid%5D=CR-Fairmount%2CCR-Fitchburg%2CCR-Worcester%2CCR-Franklin%2CCR-Greenbush%2CCR-Haverhill%2CCR-Kingston%2CCR-Lowell%2CCR-Middleborough%2CCR-Needham%2CCR-Newburyport%2CCR-Providence",
+      "filename": "map_commuter_rail_routes.json",
+      "status": "downloaded",
+      "bytes": 9914,
+      "records": 11,
+      "error": ""
+    },
+    {
+      "kind": "json",
+      "name": "commuter_rail_stops",
+      "url": "https://api-v3.mbta.com/stops?filter%5Broute%5D=CR-Fairmount;https://api-v3.mbta.com/stops?filter%5Broute%5D=CR-Fitchburg;https://api-v3.mbta.com/stops?filter%5Broute%5D=CR-Worcester;https://api-v3.mbta.com/stops?filter%5Broute%5D=CR-Franklin;https://api-v3.mbta.com/stops?filter%5Broute%5D=CR-Greenbush;https://api-v3.mbta.com/stops?filter%5Broute%5D=CR-Haverhill;https://api-v3.mbta.com/stops?filter%5Broute%5D=CR-Kingston;https://api-v3.mbta.com/stops?filter%5Broute%5D=CR-Lowell;https://api-v3.mbta.com/stops?filter%5Broute%5D=CR-Middleborough;https://api-v3.mbta.com/stops?filter%5Broute%5D=CR-Needham;https://api-v3.mbta.com/stops?filter%5Broute%5D=CR-Newburyport;https://api-v3.mbta.com/stops?filter%5Broute%5D=CR-Providence",
+      "filename": "map_commuter_rail_stops.json",
+      "status": "downloaded",
+      "bytes": 123596,
+      "records": 132,
+      "error": ""
+    },
+    {
+      "kind": "json",
+      "name": "commuter_rail_route_patterns",
+      "url": "https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=CR-Fairmount;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=CR-Fitchburg;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=CR-Worcester;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=CR-Franklin;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=CR-Greenbush;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=CR-Haverhill;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=CR-Kingston;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=CR-Lowell;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=CR-Middleborough;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=CR-Needham;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=CR-Newburyport;https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=CR-Providence",
+      "filename": "map_commuter_rail_route_patterns.json",
+      "status": "downloaded",
+      "bytes": 98534,
+      "records": 142,
+      "error": ""
+    },
+    {
+      "kind": "json",
+      "name": "commuter_rail_shapes",
+      "url": "https://api-v3.mbta.com/shapes?filter%5Broute%5D=CR-Fairmount;https://api-v3.mbta.com/shapes?filter%5Broute%5D=CR-Fitchburg;https://api-v3.mbta.com/shapes?filter%5Broute%5D=CR-Worcester;https://api-v3.mbta.com/shapes?filter%5Broute%5D=CR-Franklin;https://api-v3.mbta.com/shapes?filter%5Broute%5D=CR-Greenbush;https://api-v3.mbta.com/shapes?filter%5Broute%5D=CR-Haverhill;https://api-v3.mbta.com/shapes?filter%5Broute%5D=CR-Kingston;https://api-v3.mbta.com/shapes?filter%5Broute%5D=CR-Lowell;https://api-v3.mbta.com/shapes?filter%5Broute%5D=CR-Middleborough;https://api-v3.mbta.com/shapes?filter%5Broute%5D=CR-Needham;https://api-v3.mbta.com/shapes?filter%5Broute%5D=CR-Newburyport;https://api-v3.mbta.com/shapes?filter%5Broute%5D=CR-Providence",
+      "filename": "map_commuter_rail_shapes.json",
+      "status": "downloaded",
+      "bytes": 175798,
+      "records": 64,
+      "error": ""
+    }
+  ]
+}

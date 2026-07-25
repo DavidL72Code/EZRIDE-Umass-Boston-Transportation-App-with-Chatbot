@@ -1,0 +1,1208 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 0,
+        "name": "Wonderland - Bowdoin",
+        "sort_order": 100400000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Blue-6-0",
+      "links": {
+        "self": "/route_patterns/Blue-6-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Blue-C1-0",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Blue",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 1,
+        "name": "Bowdoin - Wonderland",
+        "sort_order": 100401000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Blue-6-1",
+      "links": {
+        "self": "/route_patterns/Blue-6-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Blue-C1-1",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Blue",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Orient Heights - Bowdoin",
+        "sort_order": 100400040,
+        "time_desc": "Early mornings only",
+        "typicality": 3
+      },
+      "id": "Blue-8-0",
+      "links": {
+        "self": "/route_patterns/Blue-8-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "77154644",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Blue",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Bowdoin - Orient Heights",
+        "sort_order": 100401040,
+        "time_desc": "Weekday middays only",
+        "typicality": 3
+      },
+      "id": "Blue-8-1",
+      "links": {
+        "self": "/route_patterns/Blue-8-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "77154737",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Blue",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 0,
+        "name": "Government Center - Boston College",
+        "sort_order": 100320000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Green-B-812-0",
+      "links": {
+        "self": "/route_patterns/Green-B-812-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Green-B-C1-0",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-B",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 1,
+        "name": "Boston College - Government Center",
+        "sort_order": 100321000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Green-B-812-1",
+      "links": {
+        "self": "/route_patterns/Green-B-812-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Green-B-C1-1",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-B",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Medford/Tufts - Boston College",
+        "sort_order": 100320040,
+        "time_desc": "Mornings only",
+        "typicality": 3
+      },
+      "id": "Green-B-816-0",
+      "links": {
+        "self": "/route_patterns/Green-B-816-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76510735",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-B",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Boston College - Medford/Tufts",
+        "sort_order": 100321040,
+        "time_desc": "Early mornings only",
+        "typicality": 3
+      },
+      "id": "Green-B-816-1",
+      "links": {
+        "self": "/route_patterns/Green-B-816-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76510734",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-B",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 0,
+        "name": "Government Center - Cleveland Circle",
+        "sort_order": 100330000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Green-C-832-0",
+      "links": {
+        "self": "/route_patterns/Green-C-832-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Green-C-C1-0",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-C",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 1,
+        "name": "Cleveland Circle - Government Center",
+        "sort_order": 100331000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Green-C-832-1",
+      "links": {
+        "self": "/route_patterns/Green-C-832-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Green-C-C1-1",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-C",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Medford/Tufts - Cleveland Circle",
+        "sort_order": 100330040,
+        "time_desc": "Mornings only",
+        "typicality": 3
+      },
+      "id": "Green-C-836-0",
+      "links": {
+        "self": "/route_patterns/Green-C-836-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76509565",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-C",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Cleveland Circle - Medford/Tufts",
+        "sort_order": 100331040,
+        "time_desc": "Early mornings only",
+        "typicality": 3
+      },
+      "id": "Green-C-836-1",
+      "links": {
+        "self": "/route_patterns/Green-C-836-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76509695",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-C",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Union Square - Reservoir",
+        "sort_order": 100340040,
+        "time_desc": "Weekday late nights only",
+        "typicality": 3
+      },
+      "id": "Green-D-845-0",
+      "links": {
+        "self": "/route_patterns/Green-D-845-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76510136",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-D",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Reservoir - Union Square",
+        "sort_order": 100341040,
+        "time_desc": "Weekday early mornings only",
+        "typicality": 3
+      },
+      "id": "Green-D-845-1",
+      "links": {
+        "self": "/route_patterns/Green-D-845-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76509728",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-D",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 0,
+        "name": "Union Square - Riverside",
+        "sort_order": 100340000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Green-D-855-0",
+      "links": {
+        "self": "/route_patterns/Green-D-855-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Green-D-C1-0",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-D",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 1,
+        "name": "Riverside - Union Square",
+        "sort_order": 100341000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Green-D-855-1",
+      "links": {
+        "self": "/route_patterns/Green-D-855-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Green-D-C1-1",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-D",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "East Somerville - Medford/Tufts",
+        "sort_order": 100351040,
+        "time_desc": null,
+        "typicality": 3
+      },
+      "id": "Green-E-86-1",
+      "links": {
+        "self": "/route_patterns/Green-E-86-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76509525",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-E",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Union Square - Heath Street",
+        "sort_order": 100350040,
+        "time_desc": "Early mornings only",
+        "typicality": 3
+      },
+      "id": "Green-E-885-0",
+      "links": {
+        "self": "/route_patterns/Green-E-885-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76509921",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-E",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Medford/Tufts - Heath Street",
+        "sort_order": 100350000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Green-E-886-0",
+      "links": {
+        "self": "/route_patterns/Green-E-886-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76509516",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-E",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Heath Street - Medford/Tufts",
+        "sort_order": 100351000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Green-E-886-1",
+      "links": {
+        "self": "/route_patterns/Green-E-886-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76509531",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-E",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 0,
+        "name": "Medford/Tufts - Heath Street",
+        "sort_order": 100350994,
+        "time_desc": null,
+        "typicality": 5
+      },
+      "id": "Green-E-C1-0",
+      "links": {
+        "self": "/route_patterns/Green-E-C1-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Green-E-C1-0",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-E",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 1,
+        "name": "Heath Street - Medford/Tufts",
+        "sort_order": 100351994,
+        "time_desc": null,
+        "typicality": 5
+      },
+      "id": "Green-E-C1-1",
+      "links": {
+        "self": "/route_patterns/Green-E-C1-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Green-E-C1-1",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Green-E",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 0,
+        "name": "Ashmont - Mattapan",
+        "sort_order": 100110000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Mattapan-_-0",
+      "links": {
+        "self": "/route_patterns/Mattapan-_-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Mattapan-C1-0",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Mattapan",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 1,
+        "name": "Mattapan - Ashmont",
+        "sort_order": 100111000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Mattapan-_-1",
+      "links": {
+        "self": "/route_patterns/Mattapan-_-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Mattapan-C1-1",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Mattapan",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Wellington - Forest Hills",
+        "sort_order": 100200040,
+        "time_desc": "Weekday middays only",
+        "typicality": 3
+      },
+      "id": "Orange-0-0",
+      "links": {
+        "self": "/route_patterns/Orange-0-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "78016193",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Orange",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Forest Hills - Wellington",
+        "sort_order": 100201040,
+        "time_desc": "Weekday middays only",
+        "typicality": 3
+      },
+      "id": "Orange-0-1",
+      "links": {
+        "self": "/route_patterns/Orange-0-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "78016157",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Orange",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 0,
+        "name": "Oak Grove - Forest Hills",
+        "sort_order": 100200000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Orange-3-0",
+      "links": {
+        "self": "/route_patterns/Orange-3-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Orange-C1-0",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Orange",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 1,
+        "name": "Forest Hills - Oak Grove",
+        "sort_order": 100201000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Orange-3-1",
+      "links": {
+        "self": "/route_patterns/Orange-3-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Orange-C1-1",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Orange",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Wellington - Oak Grove",
+        "sort_order": 100201050,
+        "time_desc": "Weekday middays only",
+        "typicality": 3
+      },
+      "id": "Orange-B-1",
+      "links": {
+        "self": "/route_patterns/Orange-B-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "78281782",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Orange",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 0,
+        "name": "Alewife - Ashmont",
+        "sort_order": 100100041,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Red-1-0",
+      "links": {
+        "self": "/route_patterns/Red-1-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Red-C2-0",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 1,
+        "name": "Ashmont - Alewife",
+        "sort_order": 100101001,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Red-1-1",
+      "links": {
+        "self": "/route_patterns/Red-1-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Red-C2-1",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 0,
+        "name": "Alewife - Braintree",
+        "sort_order": 100100040,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Red-3-0",
+      "links": {
+        "self": "/route_patterns/Red-3-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Red-C1-0",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": true,
+        "direction_id": 1,
+        "name": "Braintree - Alewife",
+        "sort_order": 100101000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "Red-3-1",
+      "links": {
+        "self": "/route_patterns/Red-3-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "canonical-Red-C1-1",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Park Street - Braintree",
+        "sort_order": 100100080,
+        "time_desc": null,
+        "typicality": 3
+      },
+      "id": "Red-H-0",
+      "links": {
+        "self": "/route_patterns/Red-H-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "77805344",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Braintree - Park Street",
+        "sort_order": 100101080,
+        "time_desc": null,
+        "typicality": 3
+      },
+      "id": "Red-H-1",
+      "links": {
+        "self": "/route_patterns/Red-H-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "77805258",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Park Street - Ashmont",
+        "sort_order": 100100090,
+        "time_desc": null,
+        "typicality": 3
+      },
+      "id": "Red-I-0",
+      "links": {
+        "self": "/route_patterns/Red-I-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "77805171",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Ashmont - Park Street",
+        "sort_order": 100101090,
+        "time_desc": null,
+        "typicality": 3
+      },
+      "id": "Red-I-1",
+      "links": {
+        "self": "/route_patterns/Red-I-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "77804185",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Red",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Alewife - Alewife",
+        "sort_order": 626020990,
+        "time_desc": null,
+        "typicality": 4
+      },
+      "id": "Shuttle-ParkStreetAlewife-0-0",
+      "links": {
+        "self": "/route_patterns/Shuttle-ParkStreetAlewife-0-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "Red-37-Weekday-080d6-0-05:15:00",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Shuttle-ParkStreetAlewife",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Alewife - Alewife",
+        "sort_order": 626021990,
+        "time_desc": null,
+        "typicality": 4
+      },
+      "id": "Shuttle-ParkStreetAlewife-0-1",
+      "links": {
+        "self": "/route_patterns/Shuttle-ParkStreetAlewife-0-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "Red-37-Weekday-080d6-1-05:34:00",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Shuttle-ParkStreetAlewife",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "South Station - South Station (Express)",
+        "sort_order": 626010990,
+        "time_desc": null,
+        "typicality": 4
+      },
+      "id": "Shuttle-SouthStationHarvardExpress-0-0",
+      "links": {
+        "self": "/route_patterns/Shuttle-SouthStationHarvardExpress-0-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "Red-38-Weekday-080d6-0-05:30:00",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Shuttle-SouthStationHarvardExpress",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "South Station - South Station (Express)",
+        "sort_order": 626011990,
+        "time_desc": null,
+        "typicality": 4
+      },
+      "id": "Shuttle-SouthStationHarvardExpress-0-1",
+      "links": {
+        "self": "/route_patterns/Shuttle-SouthStationHarvardExpress-0-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "Red-38-Weekday-080d6-1-05:30:00",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "Shuttle-SouthStationHarvardExpress",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    }
+  ],
+  "meta": {
+    "source": "MBTA V3 API",
+    "route_count": 8,
+    "routes": [
+      "Red",
+      "Mattapan",
+      "Orange",
+      "Blue",
+      "Green-B",
+      "Green-C",
+      "Green-D",
+      "Green-E"
+    ],
+    "request_count": 8
+  }
+}

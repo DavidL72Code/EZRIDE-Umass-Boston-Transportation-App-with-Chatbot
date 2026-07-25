@@ -1,0 +1,45 @@
+{
+  "data": {
+    "attributes": {
+      "color": "DA291C",
+      "description": "Rapid Transit",
+      "direction_destinations": [
+        "Ashmont/Braintree",
+        "Alewife"
+      ],
+      "direction_names": [
+        "South",
+        "North"
+      ],
+      "fare_class": "Rapid Transit",
+      "listed_route": true,
+      "long_name": "Red Line",
+      "short_name": "",
+      "sort_order": 10010,
+      "text_color": "FFFFFF",
+      "type": 1
+    },
+    "id": "Red",
+    "links": {
+      "self": "/routes/Red"
+    },
+    "relationships": {
+      "agency": {
+        "data": {
+          "id": "1",
+          "type": "agency"
+        }
+      },
+      "line": {
+        "data": {
+          "id": "line-Red",
+          "type": "line"
+        }
+      }
+    },
+    "type": "route"
+  },
+  "jsonapi": {
+    "version": "1.0"
+  }
+}

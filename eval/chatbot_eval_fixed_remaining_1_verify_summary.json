@@ -1,0 +1,15 @@
+{
+  "run_at": "2026-07-24T23:07:30",
+  "question_file": "eval/questions_final_remaining_1.json",
+  "total": 1,
+  "passed": 1,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "by_type": {
+    "clarification": {
+      "total": 1,
+      "passed": 1
+    }
+  },
+  "failures": []
+}

@@ -1,0 +1,431 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "active_period": [
+          {
+            "end": "2026-07-31T03:00:00-04:00",
+            "start": "2026-07-21T03:00:00-04:00"
+          }
+        ],
+        "banner": null,
+        "cause": "MAINTENANCE",
+        "closed_timestamp": null,
+        "created_at": "2026-07-17T09:08:44-04:00",
+        "description": "Accessibility:\r\nAll shuttle buses are accessible to riders with disabilities, however, the majority of buses used during weekdays will be lift-equipped, coach-style buses. Accessible van service will also be available on weekdays between Alewife and Park Street for those who prefer it \u2013 riders should see station personnel to request this service. The majority of shuttle bus service on weekends are low-floor, ramp-buses.\r\n\r\nExpress Shuttles Between Harvard and South Station:\r\nFree and accessible express shuttles will be operating between Harvard (Eliot St @ Bennett St) and the South Station Bus Terminal (Gate 37). They will run every 15 minutes.\r\n\r\nAlternative Bus Service:\r\nRiders can use Bus Routes 69, 87, 88, 89, 91, and 109 from Davis Square, Harvard Square, and Central Square to connect with the Green Line\u2019s Medford/Tufts and Union Square branches.\r\n\r\nAlternate Rail Service:\r\nRiders can use fare-free Commuter Rail service between Porter Sq and North Station. Regular fares should be purchased for travel beyond Porter. \r\n\r\nTravel Times:\r\nRiders using shuttle bus service should budget ample extra travel time. A rider traveling between Alewife and Park Street should budget at least 70 minutes of travel time in addition to their regular commute.\r\n\r\nShuttle Locations:\r\n\r\nAlewife:\r\nAlewife Busway - Berths B1-4\r\n\r\nDavis:\r\nNorthbound - Davis Busway\r\nSouthbound - Holland St @ Dover St\u200b\r\n\r\nPorter:\r\nNorthbound - Massachusetts Ave @ Porter Station\u200b\r\nSouthbound - 1868 Massachusetts Ave\r\n\r\nHarvard Local:\r\nNorthbound - Massachusetts Ave @ Holyoke St\u200b\r\nSouthbound - Brattle St @ Palmer St\u200b\r\n\r\nHarvard Express to South Station:\r\nEliot St @ Bennett St\r\n\r\nCentral:\r\nNorthbound - Massachusetts Ave opp Pearl St\u200b\r\nSouthbound - Massachusetts Ave @ Pearl St\u200b\r\n\r\nKendall/MIT:\r\nNorthbound - 255 Main St\u200b\r\nSouthbound - 290 Main St\u200b\r\n\r\nCharles/MGH:\r\nNorthbound - 325 Cambridge St\u200b\r\nSouthbound - Cambridge St @ Lindall Pl\u200b\r\n\r\nPark Street:\r\nTremont St @ Park St\r\n\r\nSouth Station Express to Harvard:\r\nSouth Station Terminal - Gate 37",
+        "duration_certainty": "KNOWN",
+        "effect": "SHUTTLE",
+        "header": "Red Line: Shuttle buses are replacing service between Alewife and Park Street for infrastructure upgrades. Riders can also use Commuter Rail, and existing bus routes, as alternatives. Regular service will resume on July 31.",
+        "image": "https://cdn.mbta.com/sites/default/files/styles/max_2600x2600/public/media/2026-06/RL_SurgeMap_Alewife-ParkSt_July21-30.png",
+        "image_alternative_text": "Alternative service options during the work on the Red Line between Alewife and Park Street on July 21 - 30. ",
+        "informed_entity": [
+          {
+            "stop": "place-chmnl",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-cntsq",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-harsq",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-portr",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70068",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70066",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70064",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70061",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-alfcl",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-davis",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-alfcl",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-davis",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-portr",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-harsq",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-cntsq",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-knncl",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-chmnl",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-pktrm",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-pktrm",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-knncl",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70061",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70063",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70065",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70067",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70069",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70071",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70073",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70075",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70076",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70074",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70072",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "70070",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-alfcl",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-alfcl",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-pktrm",
+            "direction_id": 0,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          },
+          {
+            "stop": "place-pktrm",
+            "direction_id": 1,
+            "route_type": 1,
+            "route": "Red",
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ]
+          }
+        ],
+        "last_push_notification_timestamp": "2026-07-17T09:08:43-04:00",
+        "lifecycle": "NEW",
+        "reminder_times": null,
+        "service_effect": "Red Line shuttle",
+        "severity": 7,
+        "short_header": "",
+        "timeframe": null,
+        "updated_at": "2026-07-21T12:04:25-04:00",
+        "url": "http://platform.remix.com/project/02ecb2a5/line/3deb755d-e15b-4648-8966-b0bb7988b222"
+      },
+      "id": "1022528",
+      "links": {
+        "self": "/alerts/1022528"
+      },
+      "type": "alert"
+    }
+  ],
+  "jsonapi": {
+    "version": "1.0"
+  }
+}

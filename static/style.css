@@ -97,12 +97,11 @@ body.map-page { overflow: hidden; }
 .pin-building{ background: #6d4c41; color: #fff; }
 .pin-dropoff { background: #f57c00; color: #fff; }
 
-/* ── Locate me button ───────────────────────────────────────── */
-.locate-btn {
+/* ── Map action buttons ─────────────────────────────────────── */
+.locate-btn,
+.route-launch-btn {
   position: absolute;
-  top: 80px;
   right: 12px;
-  width: 36px;
   height: 36px;
   border-radius: 8px;
   background: rgba(255,255,255,0.95);
@@ -116,22 +115,39 @@ body.map-page { overflow: hidden; }
   transition: background 0.15s, box-shadow 0.15s;
   padding: 0;
 }
-.locate-btn svg {
+.locate-btn {
+  top: 80px;
+  width: 36px;
+}
+.route-launch-btn {
+  top: 124px;
+  width: auto;
+  min-width: 118px;
+  gap: 8px;
+  padding: 0 12px;
+  color: var(--navy);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+.locate-btn svg,
+.route-launch-btn svg {
   width: 18px;
   height: 18px;
   stroke: var(--text-muted);
   transition: stroke 0.15s;
 }
-.locate-btn:hover { background: var(--white); box-shadow: 0 3px 12px rgba(0,0,0,0.16); }
-.locate-btn:hover svg { stroke: var(--navy); }
+.locate-btn:hover,
+.route-launch-btn:hover { background: var(--white); box-shadow: 0 3px 12px rgba(0,0,0,0.16); }
+.locate-btn:hover svg,
+.route-launch-btn:hover svg { stroke: var(--navy); }
 
 .locate-btn.waiting svg { stroke: #9ab0d8; animation: spin 1s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 .locate-btn.active { background: #eff6ff; border-color: #2563eb; }
 .locate-btn.active svg { stroke: #2563eb; }
-.locate-btn:focus-visible, .panel-close:focus-visible, .chat-widget-close:focus-visible,
-.chat-fab:focus-visible, .quick-reply:focus-visible, .directions-btn:focus-visible,
+.locate-btn:focus-visible, .route-launch-btn:focus-visible, .panel-close:focus-visible, .chat-widget-close:focus-visible,
+.chat-fab:focus-visible, .quick-reply:focus-visible, .directions-btn:focus-visible, .dir-choice:focus-visible,
 .hamburger-btn:focus-visible, .side-menu-close:focus-visible, .chat-widget-form button:focus-visible {
   outline: 3px solid #fbbf24;
   outline-offset: 2px;
@@ -1106,6 +1122,9 @@ body.info-page { overflow-y: auto; }
 .badge-transit     { background: #edf9e0; color: #2e6600; border: 1px solid #b0df80; }
 .badge-visitor     { background: #fff8e0; color: #7a4f00; border: 1px solid #f0d080; }
 .badge-general     { background: #f0f0f0; color: #444;    border: 1px solid #ccc;    }
+.source-media { flex-basis: 100%; display: flex; gap: 8px; margin-top: 6px; }
+.source-media a { display: block; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--white); }
+.source-media img { display: block; width: 140px; height: 92px; object-fit: cover; }
 
 @media (max-width: 640px) {
   .header { padding: 9px 12px; gap: 9px; }
@@ -1118,6 +1137,7 @@ body.info-page { overflow-y: auto; }
   .legend-pin { width: 21px !important; height: 21px !important; font-size: 9px !important; }
   .coord-display { display: none; }
   .locate-btn { top: 64px; right: 8px; }
+  .route-launch-btn { top: 106px; right: 8px; min-width: 112px; }
   .detail-panel { top: auto; right: 0; bottom: -100%; width: 100%; height: min(72dvh, 560px); border-left: 0; border-top: 1px solid var(--border); border-radius: 16px 16px 0 0; padding: 16px 16px 24px; transition: bottom 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
   .detail-panel.open { right: 0; bottom: 0; }
   .chat-fab { right: 14px; bottom: 14px; }
@@ -1125,6 +1145,7 @@ body.info-page { overflow-y: auto; }
   .chat-widget.open { transform: none; }
   .quick-replies { margin-left: 0; }
   .transit-context { max-width: 100%; margin-left: 0; }
+  .source-media img { width: 118px; height: 78px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1158,6 +1179,67 @@ body.info-page { overflow-y: auto; }
   transition: background 0.15s;
 }
 .directions-btn:hover { background: var(--blue); }
+
+.dir-dest-search {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+  margin-bottom: 14px;
+}
+.dir-dest-label {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.dir-choice-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.dir-choice-group h3 {
+  margin: 0 0 7px 0;
+}
+.dir-choice-list {
+  display: grid;
+  gap: 6px;
+}
+.dir-choice {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-left-width: 4px;
+  border-radius: 8px;
+  background: var(--white);
+  padding: 9px 10px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.dir-choice:hover {
+  background: var(--bg);
+  border-color: #b8c7e6;
+}
+.dir-choice-name {
+  color: var(--text);
+  font-size: 0.84rem;
+  font-weight: 650;
+  line-height: 1.25;
+}
+.dir-choice-meta {
+  color: var(--text-muted);
+  font-size: 0.74rem;
+  flex-shrink: 0;
+}
+.dir-choice-parking { border-left-color: #003087; }
+.dir-choice-building { border-left-color: #6d4c41; }
+.dir-choice-bus { border-left-color: #2e7d32; }
+.dir-choice-train { border-left-color: #b71c1c; }
 
 .dir-back-btn {
   background: none;
@@ -1252,10 +1334,30 @@ body.info-page { overflow-y: auto; }
 .dir-seg-walk    { background: #eff6ff; color: #1e40af; }
 .dir-seg-drive   { background: #f0fdf4; color: #15803d; }
 .dir-seg-redline { background: #fff1f1; color: #9b1c1c; }
+.dir-seg-orange  { background: #fff4e6; color: #9a4d00; }
+.dir-seg-green   { background: #ecfdf3; color: #047857; }
 .dir-seg-shuttle { background: #f0fdf4; color: #15803d; }
+.dir-seg-bus     { background: #f5f3ff; color: #6d28d9; }
 .dir-seg-meta    { font-weight: 400; opacity: 0.8; font-size: 0.79rem; }
 .dir-same-stop   { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 10px; padding: 0 4px; }
 .input-form button svg { width: 18px; height: 18px; }
+.dir-service-alert {
+  display: grid;
+  gap: 2px;
+  margin: 0 0 6px;
+  padding: 8px 10px;
+  border-left: 4px solid #dc2626;
+  border-radius: 8px;
+  background: #fff7ed;
+  color: #7c2d12;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+.dir-service-alert strong {
+  color: #991b1b;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+}
 
 /* ── Origin / Destination bar ──────────────────────────────────────────────── */
 .dir-orig-dest {

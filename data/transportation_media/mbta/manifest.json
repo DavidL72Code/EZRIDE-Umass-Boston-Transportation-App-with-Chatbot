@@ -1,0 +1,193 @@
+{
+  "description": "Official MBTA V3 API data relevant to UMass Boston transportation.",
+  "api_base": "https://api-v3.mbta.com",
+  "focus": {
+    "campus_center": {
+      "lat": 42.3135,
+      "lon": -71.0384
+    },
+    "routes": [
+      "Red",
+      "8",
+      "16"
+    ],
+    "stops": [
+      "place-jfk"
+    ],
+    "nearby_radius_miles": 1.6
+  },
+  "output_root": "data/transportation_media/mbta",
+  "datasets": [
+    {
+      "name": "nearby_stops_umass_boston",
+      "url": "https://api-v3.mbta.com/stops?filter%5Blatitude%5D=42.3135&filter%5Blongitude%5D=-71.0384&filter%5Bradius%5D=1.6&include=route",
+      "filename": "nearby_stops_umass_boston.json",
+      "status": "downloaded",
+      "records": 298,
+      "bytes": 289174,
+      "error": ""
+    },
+    {
+      "name": "stop_place-jfk",
+      "url": "https://api-v3.mbta.com/stops/place-jfk",
+      "filename": "stop_place-jfk.json",
+      "status": "downloaded",
+      "records": 1,
+      "bytes": 898,
+      "error": ""
+    },
+    {
+      "name": "facilities_place-jfk",
+      "url": "https://api-v3.mbta.com/facilities?filter%5Bstop%5D=place-jfk",
+      "filename": "facilities_place-jfk.json",
+      "status": "downloaded",
+      "records": 12,
+      "bytes": 27180,
+      "error": ""
+    },
+    {
+      "name": "alerts_place-jfk",
+      "url": "https://api-v3.mbta.com/alerts?filter%5Bstop%5D=place-jfk",
+      "filename": "alerts_place-jfk.json",
+      "status": "downloaded",
+      "records": 0,
+      "bytes": 58,
+      "error": ""
+    },
+    {
+      "name": "route_Red",
+      "url": "https://api-v3.mbta.com/routes/Red",
+      "filename": "route_red.json",
+      "status": "downloaded",
+      "records": 1,
+      "bytes": 828,
+      "error": ""
+    },
+    {
+      "name": "route_patterns_Red",
+      "url": "https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=Red",
+      "filename": "route_patterns_red.json",
+      "status": "downloaded",
+      "records": 12,
+      "bytes": 8038,
+      "error": ""
+    },
+    {
+      "name": "stops_Red",
+      "url": "https://api-v3.mbta.com/stops?filter%5Broute%5D=Red",
+      "filename": "stops_red.json",
+      "status": "downloaded",
+      "records": 22,
+      "bytes": 19367,
+      "error": ""
+    },
+    {
+      "name": "schedules_Red_jfk",
+      "url": "https://api-v3.mbta.com/schedules?filter%5Broute%5D=Red&filter%5Bstop%5D=place-jfk&include=trip",
+      "filename": "schedules_red_jfk.json",
+      "status": "downloaded",
+      "records": 332,
+      "bytes": 573867,
+      "error": ""
+    },
+    {
+      "name": "alerts_Red",
+      "url": "https://api-v3.mbta.com/alerts?filter%5Broute%5D=Red",
+      "filename": "alerts_red.json",
+      "status": "downloaded",
+      "records": 1,
+      "bytes": 12722,
+      "error": ""
+    },
+    {
+      "name": "route_8",
+      "url": "https://api-v3.mbta.com/routes/8",
+      "filename": "route_8.json",
+      "status": "downloaded",
+      "records": 1,
+      "bytes": 845,
+      "error": ""
+    },
+    {
+      "name": "route_patterns_8",
+      "url": "https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=8",
+      "filename": "route_patterns_8.json",
+      "status": "downloaded",
+      "records": 8,
+      "bytes": 5237,
+      "error": ""
+    },
+    {
+      "name": "stops_8",
+      "url": "https://api-v3.mbta.com/stops?filter%5Broute%5D=8",
+      "filename": "stops_8.json",
+      "status": "downloaded",
+      "records": 83,
+      "bytes": 75159,
+      "error": ""
+    },
+    {
+      "name": "schedules_8_jfk",
+      "url": "https://api-v3.mbta.com/schedules?filter%5Broute%5D=8&filter%5Bstop%5D=place-jfk&include=trip",
+      "filename": "schedules_8_jfk.json",
+      "status": "downloaded",
+      "records": 75,
+      "bytes": 129531,
+      "error": ""
+    },
+    {
+      "name": "alerts_8",
+      "url": "https://api-v3.mbta.com/alerts?filter%5Broute%5D=8",
+      "filename": "alerts_8.json",
+      "status": "downloaded",
+      "records": 1,
+      "bytes": 2125,
+      "error": ""
+    },
+    {
+      "name": "route_16",
+      "url": "https://api-v3.mbta.com/routes/16",
+      "filename": "route_16.json",
+      "status": "downloaded",
+      "records": 1,
+      "bytes": 895,
+      "error": ""
+    },
+    {
+      "name": "route_patterns_16",
+      "url": "https://api-v3.mbta.com/route_patterns?filter%5Broute%5D=16",
+      "filename": "route_patterns_16.json",
+      "status": "downloaded",
+      "records": 10,
+      "bytes": 6603,
+      "error": ""
+    },
+    {
+      "name": "stops_16",
+      "url": "https://api-v3.mbta.com/stops?filter%5Broute%5D=16",
+      "filename": "stops_16.json",
+      "status": "downloaded",
+      "records": 73,
+      "bytes": 65920,
+      "error": ""
+    },
+    {
+      "name": "schedules_16_jfk",
+      "url": "https://api-v3.mbta.com/schedules?filter%5Broute%5D=16&filter%5Bstop%5D=place-jfk&include=trip",
+      "filename": "schedules_16_jfk.json",
+      "status": "downloaded",
+      "records": 54,
+      "bytes": 94022,
+      "error": ""
+    },
+    {
+      "name": "alerts_16",
+      "url": "https://api-v3.mbta.com/alerts?filter%5Broute%5D=16",
+      "filename": "alerts_16.json",
+      "status": "downloaded",
+      "records": 1,
+      "bytes": 28283,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "run_at": "2026-07-23T20:06:05",
+  "question_file": "eval/questions_100.json",
+  "total": 100,
+  "passed": 94,
+  "failed": 6,
+  "pass_rate": 0.94,
+  "by_type": {
+    "live_shuttle_arrival": {
+      "total": 6,
+      "passed": 6
+    },
+    "live_mbta_arrival": {
+      "total": 9,
+      "passed": 8
+    },
+    "parking_clarification": {
+      "total": 1,
+      "passed": 1
+    },
+    "parking_rate_specific": {
+      "total": 7,
+      "passed": 6
+    },
+    "parking_process": {
+      "total": 2,
+      "passed": 2
+    },
+    "parking_near_me": {
+      "total": 2,
+      "passed": 2
+    },
+    "parking_near_me_no_location": {
+      "total": 1,
+      "passed": 1
+    },
+    "parking_info": {
+      "total": 3,
+      "passed": 3
+    },
+    "rag_policy": {
+      "total": 11,
+      "passed": 10
+    },
+    "rag_fact": {
+      "total": 12,
+      "passed": 11
+    },
+    "media_request": {
+      "total": 15,
+      "passed": 15
+    },
+    "directions_intent": {
+      "total": 3,
+      "passed": 3
+    },
+    "route_knowledge": {
+      "total": 7,
+      "passed": 7
+    },
+    "detour_fallback": {
+      "total": 3,
+      "passed": 3
+    },
+    "rag_process": {
+      "total": 3,
+      "passed": 2
+    },
+    "rag_contact": {
+      "total": 3,
+      "passed": 3
+    },
+    "rag_accessibility": {
+      "total": 2,
+      "passed": 1
+    },
+    "rag_shuttle": {
+      "total": 3,
+      "passed": 3
+    },
+    "off_topic": {
+      "total": 3,
+      "passed": 3
+    },
+    "clarification": {
+      "total": 2,
+      "passed": 2
+    },
+    "security": {
+      "total": 2,
+      "passed": 2
+    }
+  },
+  "failures": [
+    {
+      "id": "live_train_nearest_13",
+      "type": "live_mbta_arrival",
+      "question": "what train is coming nearest me?",
+      "status_code": 200,
+      "checks": {
+        "must_include_any": false,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 3,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      },
+      "answer": "The JFK/UMass station is the nearest transit hub, which is served by the MBTA Red Line and the Commuter Rail (Purple). The Commuter Rail service at this station includes the Fall River/New Bedford, Greenbush, and Kingston lines. For live arrival times and service updates, you can download the official MBTA Go app.",
+      "sources": [
+        {
+          "url": "https://www.umb.edu/transportation/biking/",
+          "title": "Biking",
+          "category": "transit"
+        },
+        {
+          "url": "https://www.umb.edu/transportation/mbta/",
+          "title": "MBTA",
+          "category": "transit"
+        },
+        {
+          "url": "https://hr.umb.edu/benefits/parking-mbta-passes",
+          "title": "Pre-Tax Parking & Transit",
+          "category": "transit"
+        }
+      ]
+    },
+    {
+      "id": "parking_evening_23",
+      "type": "parking_rate_specific",
+      "question": "what is the evening parking rate on campus?",
+      "status_code": 200,
+      "checks": {
+        "must_include_any": false,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      },
+      "answer": "Which parking location do you mean?\n\n- West Garage\n- Campus Center Garage\n- Lot D\n- Quad Lot\n- Bayside Lot",
+      "sources": [
+        {
+          "url": "https://www.umb.edu/transportation/parking-rates/",
+          "title": "Parking Rates",
+          "category": "permits"
+        }
+      ]
+    },
+    {
+      "id": "parking_permit_38",
+      "type": "rag_fact",
+      "question": "what is the dorm resident reserved parking rate?",
+      "status_code": 200,
+      "checks": {
+        "must_include_any": false,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      },
+      "answer": "Which parking location do you mean?\n\n- West Garage\n- Campus Center Garage\n- Lot D\n- Quad Lot\n- Bayside Lot",
+      "sources": [
+        {
+          "url": "https://www.umb.edu/transportation/parking-rates/",
+          "title": "Parking Rates",
+          "category": "permits"
+        }
+      ]
+    },
+    {
+      "id": "rag_71",
+      "type": "rag_policy",
+      "question": "when are Spring 2026 MBTA semester passes valid?",
+      "status_code": 200,
+      "checks": {
+        "must_include_any": false,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      },
+      "answer": "I need your location or a transit stop to check live arrivals. Please allow location access, or tell me the stop name.",
+      "sources": [
+        {
+          "url": "https://www.umb.edu/transportation/shuttle-bus-information/",
+          "title": "UMass shuttle stops",
+          "category": "transit"
+        }
+      ]
+    },
+    {
+      "id": "rag_85",
+      "type": "rag_process",
+      "question": "where do shuttle ads get delivered?",
+      "status_code": 200,
+      "checks": {
+        "must_include_any": false,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      },
+      "answer": "I recognized that as a live shuttle arrival question, but live shuttle predictions are not available right now. Please try again in a moment or check TransLoc.",
+      "sources": [
+        {
+          "url": "https://umb.transloc.com/",
+          "title": "TransLoc live shuttle tracking",
+          "category": "transit"
+        }
+      ]
+    },
+    {
+      "id": "rag_90",
+      "type": "rag_accessibility",
+      "question": "what number does MBTA provide for schedule and route information?",
+      "status_code": 200,
+      "checks": {
+        "must_include_any": false,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      },
+      "answer": "I need your location or a transit stop to check live arrivals. Please allow location access, or tell me the stop name.",
+      "sources": [
+        {
+          "url": "https://www.umb.edu/transportation/shuttle-bus-information/",
+          "title": "UMass shuttle stops",
+          "category": "transit"
+        }
+      ]
+    }
+  ]
+}

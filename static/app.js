@@ -12,6 +12,7 @@ const BADGE_CLASS = {
   enforcement:"badge-enforcement",
   transit:    "badge-transit",
   visitor:    "badge-visitor",
+  transportation_media: "badge-transit",
   general:    "badge-general",
 };
 
@@ -48,7 +49,7 @@ function renderSources(sources) {
   el.className = "sources";
   el.innerHTML = `<span class="sources-label">Sources:</span>`;
   for (const s of sources) {
-    if (!s || !/^https?:\/\//i.test(s.url || "")) continue;
+    if (!s || !/^(https?:\/\/|\/)/i.test(s.url || "")) continue;
     const cls = BADGE_CLASS[s.category] || "badge-general";
     const a = document.createElement("a");
     a.className = `badge ${cls}`;
@@ -57,6 +58,23 @@ function renderSources(sources) {
     a.rel = "noopener noreferrer";
     a.textContent = s.title;
     el.appendChild(a);
+  }
+  const images = sources.filter((s) => s?.media_type === "image" && /^(https?:\/\/|\/)/i.test(s.url || ""));
+  if (images.length) {
+    const media = document.createElement("div");
+    media.className = "source-media";
+    for (const s of images.slice(0, 3)) {
+      const link = document.createElement("a");
+      link.href = s.url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      const img = document.createElement("img");
+      img.src = s.url;
+      img.alt = s.title || "Transportation image";
+      link.appendChild(img);
+      media.appendChild(link);
+    }
+    el.appendChild(media);
   }
   return el;
 }
@@ -88,6 +106,11 @@ function isLiveTransitQuestion(text) {
     /when|next|arriv|depart|soon|live|schedule|what time|nearest|closest|how long|until|come/.test(q);
 }
 
+function isParkingLocationQuestion(text) {
+  const q = text.toLowerCase();
+  return /parking/.test(q) && /near me|nearest|closest|nearby|near my location|where can i park near/.test(q);
+}
+
 function requestLocation() {
   return new Promise((resolve) => {
     if (!navigator.geolocation) return resolve(null);
@@ -115,7 +138,7 @@ async function sendMessage(text) {
   let sourcesEl = null;
 
   try {
-    const location = (isLiveTransitQuestion(text) || isDirectionsQuestion(text)) ? await requestLocation() : null;
+    const location = (isLiveTransitQuestion(text) || isDirectionsQuestion(text) || isParkingLocationQuestion(text)) ? await requestLocation() : null;
     const res = await fetch("/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },

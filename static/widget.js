@@ -93,6 +93,7 @@
     enforcement: "badge-enforcement",
     transit:     "badge-transit",
     visitor:     "badge-visitor",
+    transportation_media: "badge-transit",
     general:     "badge-general",
   };
 
@@ -189,7 +190,7 @@
     el.className = "sources";
     el.innerHTML = `<span class="sources-label">Sources:</span>`;
     for (const s of sources) {
-      if (!s || !/^https?:\/\//i.test(s.url || "")) continue;
+      if (!s || !/^(https?:\/\/|\/)/i.test(s.url || "")) continue;
       const cls = BADGE_CLASS[s.category] || "badge-general";
       const a = document.createElement("a");
       a.className = `badge ${cls}`;
@@ -198,6 +199,23 @@
       a.rel = "noopener noreferrer";
       a.textContent = s.title;
       el.appendChild(a);
+    }
+    const images = sources.filter((s) => s?.media_type === "image" && /^(https?:\/\/|\/)/i.test(s.url || ""));
+    if (images.length) {
+      const media = document.createElement("div");
+      media.className = "source-media";
+      for (const s of images.slice(0, 3)) {
+        const link = document.createElement("a");
+        link.href = s.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        const img = document.createElement("img");
+        img.src = s.url;
+        img.alt = s.title || "Transportation image";
+        link.appendChild(img);
+        media.appendChild(link);
+      }
+      el.appendChild(media);
     }
     return el;
   }
@@ -214,6 +232,11 @@
     const q = text.toLowerCase();
     return /bus|train|subway|mbta|shuttle|route|line|umass/.test(q) &&
       /when|next|arriv|depart|soon|live|schedule|what time|nearest|closest|how long|until|come/.test(q);
+  }
+
+  function isParkingLocationQuestion(text) {
+    const q = text.toLowerCase();
+    return /parking/.test(q) && /near me|nearest|closest|nearby|near my location|where can i park near/.test(q);
   }
 
   function requestLocation() {
@@ -235,7 +258,7 @@
     if (messagesEl.querySelector(".location-notice")) return;
     const row = document.createElement("div");
     row.className = "message bot location-notice";
-    row.innerHTML = '<div class="avatar" aria-hidden="true">T</div><div class="bubble"><strong>Location helps me choose the closest stop.</strong><br>Allow location access when your browser asks. If you decline, I’ll ask you for a stop name instead.</div>';
+    row.innerHTML = '<div class="avatar" aria-hidden="true">T</div><div class="bubble"><strong>Location helps me choose the closest stop or parking lot.</strong><br>Allow location access when your browser asks. If you decline, I’ll ask for the missing location detail instead.</div>';
     messagesEl.appendChild(row);
     scrollBottom();
   }
@@ -280,7 +303,7 @@
     history.push({ role: "user", content: text });
     setEnabled(false);
 
-    const needsLocation = isLiveTransitQuestion(text) || Boolean(destinationFromText(text));
+    const needsLocation = isLiveTransitQuestion(text) || isParkingLocationQuestion(text) || Boolean(destinationFromText(text));
     if (needsLocation) addLocationNotice();
     const { bubble, status, stopCycle } = createBotBubble();
     let accumulated = "";
@@ -290,7 +313,7 @@
 
     try {
       const destinationId = destinationFromText(text);
-      const location = (isLiveTransitQuestion(text) || destinationId) ? await requestLocation() : null;
+      const location = (isLiveTransitQuestion(text) || isParkingLocationQuestion(text) || destinationId) ? await requestLocation() : null;
       if (destinationId) {
         window.dispatchEvent(new CustomEvent("transit:directions", {
           detail: { destinationId, location },

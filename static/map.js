@@ -9,6 +9,7 @@ let _dirFromCoords = null;   // null = use GPS
 let _dirFromLabel  = "My Location";
 let _dirActiveTab  = "walking";
 let _autoTimer     = null;
+let _lastLocationRouteAt = 0;
 
 function getDirOrigin() {
   return _dirFromCoords || lastUserLocation;
@@ -722,6 +723,151 @@ function isNearCampus(coords) {
   return haversine(coords[0], coords[1], 42.3135, -71.0384) < 1000;
 }
 
+const RED_LINE_SEQUENCES = [
+  [
+    "place-alfcl", "place-davis", "place-portr", "place-harsq", "place-cntsq",
+    "place-knncl", "place-chmnl", "place-pktrm", "place-dwnxg", "place-sstat",
+    "place-brdwy", "place-andrw", "place-jfk", "place-shmnl", "place-fldcr",
+    "place-smmnl", "place-asmnl",
+  ],
+  [
+    "place-alfcl", "place-davis", "place-portr", "place-harsq", "place-cntsq",
+    "place-knncl", "place-chmnl", "place-pktrm", "place-dwnxg", "place-sstat",
+    "place-brdwy", "place-andrw", "place-jfk", "place-nqncy", "place-wlsta",
+    "place-qnctr", "place-qamnl", "place-brntn",
+  ],
+];
+
+const ORANGE_LINE_SEQUENCE = [
+  "place-ogmnl", "place-mlmnl", "place-welln", "place-sull", "place-ccmnl",
+  "place-north", "place-haecl", "place-state", "place-dwnxg", "place-chncl",
+  "place-tumnl", "place-bbsta", "place-masta", "place-rugg", "place-rcmnl",
+  "place-jaksn", "place-sbmnl", "place-grmnl", "place-forhl",
+];
+
+const GREEN_LINE_SEQUENCES = [
+  {
+    route: "Green-B",
+    stops: ["place-lech", "place-spmnl", "place-gover", "place-pktrm", "place-boyls", "place-armnl", "place-coecl", "place-hymnl", "place-kencl", "place-buest", "place-bucen", "place-buwst", "place-lake"],
+  },
+  {
+    route: "Green-C",
+    stops: ["place-lech", "place-spmnl", "place-gover", "place-pktrm", "place-boyls", "place-armnl", "place-coecl", "place-hymnl", "place-kencl", "place-cool", "place-clmnl"],
+  },
+  {
+    route: "Green-D",
+    stops: ["place-lech", "place-spmnl", "place-gover", "place-pktrm", "place-boyls", "place-armnl", "place-coecl", "place-hymnl", "place-kencl", "place-bvmnl", "place-river"],
+  },
+  {
+    route: "Green-E",
+    stops: ["place-lech", "place-spmnl", "place-gover", "place-pktrm", "place-boyls", "place-armnl", "place-coecl", "place-nuniv", "place-mfa", "place-lngmd", "place-hsmnl"],
+  },
+];
+
+function stationById(stopId) {
+  const known = MBTA_STATIONS.find(station => station.stopId === stopId);
+  if (known) return known;
+  if (stopId === "place-dwnxg") return { name: "Downtown Crossing", coords: [42.3553, -71.0598], stopId, line: "Orange", lineColor: "#ed8b00", route: "Orange" };
+  if (stopId === "place-pktrm") return { name: "Park Street", coords: [42.3563, -71.0628], stopId, line: "Green", lineColor: "#00843d", route: "Green-B,Green-C,Green-D,Green-E" };
+  return null;
+}
+
+function addSequenceEdges(graph, stops, line, route, color, forwardDirection, reverseDirection) {
+  for (let i = 0; i < stops.length - 1; i++) {
+    const from = stops[i], to = stops[i + 1];
+    if (!stationById(from) || !stationById(to)) continue;
+    graph[from] ||= [];
+    graph[to] ||= [];
+    graph[from].push({ to, line, route, color, direction: forwardDirection });
+    graph[to].push({ to: from, line, route, color, direction: reverseDirection });
+  }
+}
+
+function buildMbtaGraph() {
+  const graph = {};
+  RED_LINE_SEQUENCES.forEach(stops => addSequenceEdges(graph, stops, "Red", "Red", "#da291c", 0, 1));
+  addSequenceEdges(graph, ORANGE_LINE_SEQUENCE, "Orange", "Orange", "#ed8b00", 0, 1);
+  GREEN_LINE_SEQUENCES.forEach(({ route, stops }) => addSequenceEdges(graph, stops, "Green", route, "#00843d", 0, 1));
+  return graph;
+}
+
+function findMbtaPath(fromStopId, toStopId) {
+  if (!fromStopId || !toStopId) return null;
+  if (fromStopId === toStopId) return { stations: [fromStopId], edges: [] };
+  const graph = buildMbtaGraph();
+  const queue = [{ stopId: fromStopId, stations: [fromStopId], edges: [] }];
+  const seen = new Set([fromStopId]);
+  while (queue.length) {
+    const current = queue.shift();
+    for (const edge of graph[current.stopId] || []) {
+      if (seen.has(edge.to)) continue;
+      const next = {
+        stopId: edge.to,
+        stations: [...current.stations, edge.to],
+        edges: [...current.edges, edge],
+      };
+      if (edge.to === toStopId) return { stations: next.stations, edges: next.edges };
+      seen.add(edge.to);
+      queue.push(next);
+    }
+  }
+  return null;
+}
+
+function mbtaPathSegments(path) {
+  if (!path || path.edges.length === 0) return [];
+  const segments = [];
+  for (let i = 0; i < path.edges.length; i++) {
+    const edge = path.edges[i];
+    const startStation = stationById(path.stations[i]);
+    const endStation = stationById(path.stations[i + 1]);
+    const last = segments[segments.length - 1];
+    const canMergeGreen =
+      last &&
+      last.line === "Green" &&
+      edge.line === "Green" &&
+      last.direction === edge.direction;
+    if (
+      last &&
+      last.direction === edge.direction &&
+      (last.route === edge.route || canMergeGreen)
+    ) {
+      last.to = endStation;
+      last.coords.push(endStation.coords);
+      last.stopIds.push(path.stations[i + 1]);
+      if (canMergeGreen && edge.direction === 0 && /^Green-[BCDE]$/.test(edge.route)) {
+        last.route = edge.route;
+      }
+    } else {
+      segments.push({
+        line: edge.line,
+        route: edge.route,
+        color: edge.color,
+        direction: edge.direction,
+        from: startStation,
+        to: endStation,
+        coords: [startStation.coords, endStation.coords],
+        stopIds: [path.stations[i], path.stations[i + 1]],
+      });
+    }
+  }
+  return segments;
+}
+
+function lineSegmentClass(line) {
+  if (line === "Red") return "dir-seg-redline";
+  if (line === "Orange") return "dir-seg-orange";
+  if (line === "Green") return "dir-seg-green";
+  return "dir-seg-transfer";
+}
+
+function lineLabel(segment) {
+  if (/^Green-[BCDE]$/.test(segment.route)) {
+    return `Green ${segment.route.slice(-1)} → ${segment.to.name}`;
+  }
+  return `${segment.line} Line → ${segment.to.name}`;
+}
+
 async function fetchMbtaAt(stopId, route, direction) {
   try {
     let url = `${window.API_BASE || ""}/api/mbta/predictions?stop=${stopId}&route=${route}`;
@@ -751,6 +897,65 @@ async function fetchMbtaAt(stopId, route, direction) {
   }
 }
 
+async function fetchMbtaAlerts(route, stopIds = []) {
+  try {
+    const params = new URLSearchParams();
+    if (route) params.set("route", route);
+    const stops = [...new Set((stopIds || []).filter(Boolean))];
+    if (stops.length) params.set("stop", stops.join(","));
+    const res = await fetch(`${window.API_BASE || ""}/api/mbta/alerts?${params.toString()}`);
+    const data = await res.json();
+    return Array.isArray(data.data) ? data.data : [];
+  } catch {
+    return [];
+  }
+}
+
+function _alertText(alert) {
+  const attrs = alert?.attributes || {};
+  return [
+    attrs.header,
+    attrs.short_header,
+    attrs.description,
+    attrs.effect,
+  ].filter(Boolean).join(" ");
+}
+
+function isMajorDisruption(alert) {
+  const attrs = alert?.attributes || {};
+  const effect = String(attrs.effect || "").toUpperCase();
+  const text = _alertText(alert).toLowerCase();
+  const severity = Number(attrs.severity || 0);
+  return (
+    severity >= 7 ||
+    ["SUSPENSION", "SHUTTLE", "STOP_CLOSURE", "STATION_CLOSURE"].includes(effect) ||
+    /\b(closed|closure|suspended|suspension|shuttle buses|bus shuttle|bypassing)\b/.test(text)
+  );
+}
+
+function alertLabel(alert) {
+  const attrs = alert?.attributes || {};
+  return attrs.short_header || attrs.header || attrs.effect || "Service alert";
+}
+
+function renderAlertHtml(alerts) {
+  const unique = [];
+  const seen = new Set();
+  for (const alert of alerts || []) {
+    const label = alertLabel(alert);
+    if (seen.has(label)) continue;
+    seen.add(label);
+    unique.push(label);
+    if (unique.length >= 2) break;
+  }
+  if (!unique.length) return "";
+  return `
+    <div class="dir-service-alert">
+      <strong>Service alert</strong>
+      <span>${unique.map(escapeHtml).join(" ")}</span>
+    </div>`;
+}
+
 async function withRetry(fn, retries = 2, delayMs = 800) {
   for (let i = 0; i <= retries; i++) {
     try { return await fn(); }
@@ -762,13 +967,30 @@ async function withRetry(fn, retries = 2, delayMs = 800) {
 }
 
 async function osrmRoute(profile, from, to) {
+  const baseUrl = `https://router.project-osrm.org/route/v1/${profile}/${from[1]},${from[0]};${to[1]},${to[0]}?overview=full&geometries=geojson&steps=true`;
+  const url = profile === "car" ? `${baseUrl}&exclude=ferry` : baseUrl;
+  const res = await fetch(url);
+  if (!res.ok && url !== baseUrl) return osrmRouteWithoutExclusions(profile, from, to);
+  if (!res.ok) throw new Error(`OSRM ${res.status}`);
+  const data = await res.json();
+  if (data.code === "InvalidOptions" && url !== baseUrl) return osrmRouteWithoutExclusions(profile, from, to);
+  if (data.code !== "Ok" || !data.routes?.length) throw new Error("No route found");
+  const r = data.routes[0];
+  const route = { distance: r.distance, duration: r.duration, geometry: r.geometry.coordinates, steps: r.legs[0].steps };
+  if (routeUsesFerry(route)) throw new Error("Route includes ferry");
+  return route;
+}
+
+async function osrmRouteWithoutExclusions(profile, from, to) {
   const url = `https://router.project-osrm.org/route/v1/${profile}/${from[1]},${from[0]};${to[1]},${to[0]}?overview=full&geometries=geojson&steps=true`;
   const res = await fetch(url);
   if (!res.ok) throw new Error(`OSRM ${res.status}`);
   const data = await res.json();
   if (data.code !== "Ok" || !data.routes?.length) throw new Error("No route found");
   const r = data.routes[0];
-  return { distance: r.distance, duration: r.duration, geometry: r.geometry.coordinates, steps: r.legs[0].steps };
+  const route = { distance: r.distance, duration: r.duration, geometry: r.geometry.coordinates, steps: r.legs[0].steps };
+  if (routeUsesFerry(route)) throw new Error("Route includes ferry");
+  return route;
 }
 
 function fmtDist(m) {
@@ -813,6 +1035,7 @@ async function valhallaWalkRoute(from, to) {
         pedestrian: {
           shortest: true,
           walkway_factor: 0.1,
+          use_ferry: 0,
           use_tracks: 1.0,
           service_penalty: 0,
           alley_factor: 1.0,
@@ -827,7 +1050,7 @@ async function valhallaWalkRoute(from, to) {
   if (!data.trip) throw new Error("No route found");
   const leg = data.trip.legs[0];
   const summary = data.trip.summary;
-  return {
+  const route = {
     distance: summary.length * 1000,
     duration: summary.time,
     geometry: decodePolyline6(leg.shape),
@@ -838,6 +1061,15 @@ async function valhallaWalkRoute(from, to) {
       name: m.street_names?.[0] || "",
     })),
   };
+  if (routeUsesFerry(route)) throw new Error("Route includes ferry");
+  return route;
+}
+
+function routeUsesFerry(route) {
+  return (route.steps || []).some(step => {
+    const text = `${step._instruction || ""} ${step.name || ""}`.toLowerCase();
+    return text.includes("ferry") || text.includes("water taxi");
+  });
 }
 
 function stepArrow(type, modifier) {
@@ -919,6 +1151,12 @@ function showDirFromInput() {
     _autoTimer = setTimeout(() => _fetchAutocomplete(q), 300);
   });
   inp.addEventListener("keydown", e => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      const q = inp.value.trim();
+      if (q.length >= 2) selectDirFromSearch(q);
+      return;
+    }
     if (e.key === "Escape") { _hideDropdown(); const b = document.getElementById("dirFromBar"); if (b) b.outerHTML = renderDirFromBar(); }
   });
 }
@@ -945,6 +1183,26 @@ async function _fetchAutocomplete(q) {
     }).join("");
   } catch {
     dd.innerHTML = `<div class="dir-dd-item dir-dd-empty">Search failed</div>`;
+  }
+}
+
+async function selectDirFromSearch(q) {
+  const dd = document.getElementById("dirDropdown");
+  if (dd) {
+    dd.innerHTML = `<div class="dir-dd-item dir-dd-loading">Searching…</div>`;
+    dd.style.display = "block";
+  }
+  try {
+    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(q)}&limit=1&addressdetails=1&viewbox=-71.4,42.2,-70.8,42.5&bounded=0`;
+    const res = await fetch(url, { headers: { "Accept-Language": "en" } });
+    const data = await res.json();
+    if (!data.length) {
+      if (dd) dd.innerHTML = `<div class="dir-dd-item dir-dd-empty">No results</div>`;
+      return;
+    }
+    selectDirFrom(data[0].lat, data[0].lon, data[0].display_name);
+  } catch {
+    if (dd) dd.innerHTML = `<div class="dir-dd-item dir-dd-empty">Search failed</div>`;
   }
 }
 
@@ -998,6 +1256,136 @@ function drawMultiRoute(segments) {
 
 function startDirections() {
   renderDirPanel("walking");
+}
+
+function _directionDestinationGroups() {
+  return [
+    {
+      category: "Parking Lots",
+      className: "dir-choice-parking",
+      items: PARKING_LOTS.map(lot => ({
+        name: lot.name,
+        meta: lot.type === "garage" ? "Garage" : "Surface lot",
+        coords: lot.driveCoords || lot.coords,
+      })).sort((a, b) => a.name.localeCompare(b.name)),
+    },
+    {
+      category: "Buildings",
+      className: "dir-choice-building",
+      items: BUILDINGS.map(bldg => ({
+        name: bldg.name,
+        meta: "Campus building",
+        coords: bldg.coords,
+      })).sort((a, b) => a.name.localeCompare(b.name)),
+    },
+    {
+      category: "Bus Stops",
+      className: "dir-choice-bus",
+      items: [...SHUTTLE_STOPS, ...MBTA_BUS_STOPS].map(stop => ({
+        name: stop.name,
+        meta: stop.routes?.join(" · ") || "Bus stop",
+        coords: stop.coords,
+      })).sort((a, b) => a.name.localeCompare(b.name)),
+    },
+    {
+      category: "Train Stations",
+      className: "dir-choice-train",
+      items: MBTA_STATIONS.map(station => ({
+        name: station.name,
+        meta: `${station.line} Line`,
+        coords: station.coords,
+      })).sort((a, b) => a.name.localeCompare(b.name)),
+    },
+  ];
+}
+
+function showDirectionsLauncher() {
+  _lastPanelFn = showDirectionsLauncher;
+  clearRoute();
+  const groups = _directionDestinationGroups();
+  const groupsHtml = groups.map((group, groupIndex) => `
+    <section class="dir-choice-group">
+      <h3>${escapeHtml(group.category)}</h3>
+      <div class="dir-choice-list">
+        ${group.items.map((item, itemIndex) => `
+          <button class="dir-choice ${group.className}" onclick="selectDirectionDestination(${groupIndex}, ${itemIndex})">
+            <span class="dir-choice-name">${escapeHtml(item.name)}</span>
+            <span class="dir-choice-meta">${escapeHtml(item.meta)}</span>
+          </button>
+        `).join("")}
+      </div>
+    </section>
+  `).join("");
+
+  openPanel(`
+    <div class="panel-badge badge-building">Directions</div>
+    <h2>Choose Destination</h2>
+    <div class="dir-dest-search">
+      <label class="dir-dest-label" for="dirDestInput">Enter a destination</label>
+      <div class="dir-autocomplete-wrap">
+        <input class="dir-from-text" id="dirDestInput" type="text" placeholder="Search address or place…" autocomplete="off">
+        <div class="dir-dropdown" id="dirDestDropdown"></div>
+      </div>
+    </div>
+    <div class="dir-choice-groups">${groupsHtml}</div>`);
+
+  const input = document.getElementById("dirDestInput");
+  if (!input) return;
+  input.addEventListener("input", () => {
+    clearTimeout(_autoTimer);
+    const q = input.value.trim();
+    if (q.length < 2) { _hideDestDropdown(); return; }
+    _autoTimer = setTimeout(() => _fetchDestAutocomplete(q), 300);
+  });
+}
+
+function selectDirectionDestination(groupIndex, itemIndex) {
+  const group = _directionDestinationGroups()[groupIndex];
+  const item = group?.items?.[itemIndex];
+  if (!item) return;
+  _dirDestCoords = item.coords;
+  _dirDestName = item.name;
+  _lastPanelFn = showDirectionsLauncher;
+  if (_map) _map.setView(item.coords, 17, { animate: true });
+  startDirections();
+}
+
+async function _fetchDestAutocomplete(q) {
+  const dd = document.getElementById("dirDestDropdown");
+  if (!dd) return;
+  dd.innerHTML = `<div class="dir-dd-item dir-dd-loading">Searching…</div>`;
+  dd.style.display = "block";
+  try {
+    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(q)}&limit=6&addressdetails=1&viewbox=-71.4,42.2,-70.8,42.5&bounded=0`;
+    const res = await fetch(url, { headers: { "Accept-Language": "en" } });
+    const data = await res.json();
+    if (!data.length) { dd.innerHTML = `<div class="dir-dd-item dir-dd-empty">No results</div>`; return; }
+    dd.innerHTML = data.map(r => {
+      const parts = r.display_name.split(", ");
+      const main = parts.slice(0, 2).join(", ");
+      const sub  = parts.slice(2, 5).join(", ");
+      const safe = r.display_name.replace(/\\/g, "\\\\").replace(/'/g, "\\'");
+      return `<div class="dir-dd-item" onclick="selectManualDirectionDestination(${r.lat},${r.lon},'${safe}')">
+        <div class="dir-dd-main">${escapeHtml(main)}</div>
+        ${sub ? `<div class="dir-dd-sub">${escapeHtml(sub)}</div>` : ""}
+      </div>`;
+    }).join("");
+  } catch {
+    dd.innerHTML = `<div class="dir-dd-item dir-dd-empty">Search failed</div>`;
+  }
+}
+
+function selectManualDirectionDestination(lat, lon, label) {
+  _dirDestCoords = [parseFloat(lat), parseFloat(lon)];
+  _dirDestName = _shortenLabel(label);
+  _lastPanelFn = showDirectionsLauncher;
+  if (_map) _map.setView(_dirDestCoords, 16, { animate: true });
+  startDirections();
+}
+
+function _hideDestDropdown() {
+  const dd = document.getElementById("dirDestDropdown");
+  if (dd) dd.style.display = "none";
 }
 
 function renderDirPanel(activeTab) {
@@ -1099,6 +1487,88 @@ function _predsHtml(preds) {
   ).join(" &nbsp;·&nbsp; ");
 }
 
+async function buildMbtaRailTrip(originCoords, destCoords, boardStation, destStation) {
+  const path = findMbtaPath(boardStation?.stopId, destStation?.stopId);
+  if (!path) throw new Error("No MBTA path found");
+
+  const trainSegments = mbtaPathSegments(path);
+  const [walkToStation, walkFromStation, trainPreds, trainAlerts] = await Promise.all([
+    withRetry(() => valhallaWalkRoute(originCoords, boardStation.coords)),
+    withRetry(() => valhallaWalkRoute(destStation.coords, destCoords)),
+    Promise.all(trainSegments.map(segment =>
+      fetchMbtaAt(segment.from.stopId, segment.route, segment.direction).catch(() => null)
+    )),
+    Promise.all(trainSegments.map(segment =>
+      fetchMbtaAlerts(segment.route, segment.stopIds).catch(() => [])
+    )),
+  ]);
+  const segmentAlerts = trainAlerts.map(alerts => (alerts || []).filter(isMajorDisruption));
+  const majorAlerts = segmentAlerts.flat();
+
+  const segments = [];
+  if (walkToStation.distance > 35) {
+    segments.push({ coords: walkToStation.geometry, color: "#1d4ed8", weight: 4 });
+  }
+  trainSegments.forEach((segment, idx) => {
+    const disrupted = segmentAlerts[idx]?.length > 0;
+    segments.push({
+      coords: segment.coords.map(([lat, lng]) => [lng, lat]),
+      color: disrupted ? "#7c3aed" : segment.color,
+      weight: disrupted ? 4 : 5,
+      dashed: true,
+    });
+  });
+  if (walkFromStation.distance > 35) {
+    segments.push({ coords: walkFromStation.geometry, color: "#1d4ed8", weight: 4 });
+  }
+
+  let html = "";
+  if (walkToStation.distance > 35) {
+    html += `
+      <div class="dir-segment-label dir-seg-walk">
+        <span>Walk to ${boardStation.name}</span>
+        <span class="dir-seg-meta">${fmtTime(walkToStation.duration)} · ${fmtDist(walkToStation.distance)}</span>
+      </div>
+      <div class="dir-steps">${buildStepsHtml(walkToStation.steps)}</div>`;
+  } else {
+    html += `<div class="dir-same-stop">Start at ${boardStation.name}</div>`;
+  }
+
+  trainSegments.forEach((segment, idx) => {
+    const previous = trainSegments[idx - 1];
+    if (previous && previous.line !== segment.line) {
+      html += `
+        <div class="dir-segment-label dir-seg-transfer">
+          <span>Transfer at ${previous.to.name}</span>
+        </div>`;
+    }
+    const disrupted = segmentAlerts[idx]?.length > 0;
+    const label = disrupted
+      ? `MBTA shuttle bus → ${segment.to.name}`
+      : lineLabel(segment);
+    const meta = disrupted
+      ? `Replaces ${lineLabel(segment)}`
+      : _predsHtml(trainPreds[idx]);
+    html += `
+      ${renderAlertHtml(segmentAlerts[idx])}
+      <div class="dir-segment-label ${disrupted ? "dir-seg-bus" : lineSegmentClass(segment.line)}">
+        <span>${label}</span>
+        <span class="dir-seg-meta">${meta}</span>
+      </div>`;
+  });
+
+  if (walkFromStation.distance > 35) {
+    html += `
+      <div class="dir-segment-label dir-seg-walk">
+        <span>Walk to destination</span>
+        <span class="dir-seg-meta">${fmtTime(walkFromStation.duration)} · ${fmtDist(walkFromStation.distance)}</span>
+      </div>
+      <div class="dir-steps">${buildStepsHtml(walkFromStation.steps)}</div>`;
+  }
+
+  return { segments, html, walkToStation, walkFromStation, trainSegments, majorAlerts, segmentAlerts };
+}
+
 async function loadTransitDir(destCoords, el) {
   const JFK_COORDS = [42.3204, -71.0518];
   const JFK_TRANSLOC_ID = 104;
@@ -1111,6 +1581,14 @@ async function loadTransitDir(destCoords, el) {
     // Savin Hill station than to JFK — without this second condition they'd be routed via Red Line.
     const onCampus = boardStation.stopId === "place-jfk" || isNearCampus(origin);
     const destOnCampus = isNearCampus(destCoords);
+    const { station: destStation } = nearestMbtaStation(destCoords[0], destCoords[1]);
+
+    if (!onCampus && !destOnCampus) {
+      const railTrip = await buildMbtaRailTrip(origin, destCoords, boardStation, destStation);
+      drawMultiRoute(railTrip.segments);
+      el.innerHTML = railTrip.html;
+      return;
+    }
 
     // ── Shuttle-only (origin on or near campus, dest on campus) ─────────────
     if (onCampus && destOnCampus) {
@@ -1173,48 +1651,26 @@ async function loadTransitDir(destCoords, el) {
     // ── Reverse: origin on campus, dest off-campus ───────────────────────────
     if (onCampus && !destOnCampus) {
       const { stop: boardShuttleStop } = nearestShuttleStop(origin[0], origin[1]);
-      const { station: destStation } = nearestMbtaStation(destCoords[0], destCoords[1]);
-      const [walkToShuttle, walkFromStation] = await Promise.all([
+      const jfkStation = stationById("place-jfk");
+      const [walkToShuttle, railTrip] = await Promise.all([
         withRetry(() => valhallaWalkRoute(origin, boardShuttleStop.coords)),
-        withRetry(() => valhallaWalkRoute(destStation.coords, destCoords)),
+        buildMbtaRailTrip(JFK_COORDS, destCoords, jfkStation, destStation),
       ]);
-      const [shuttleArrivals, redPreds] = await Promise.all([
+      const [shuttleArrivals, shuttleCoords] = await Promise.all([
         fetchArrivals(boardShuttleStop.routeStopId).catch(() => null),
-        (() => {
-          // direction of Red Line from JFK to destStation's Red Line stop
-          let redStop = destStation.transfer ? destStation.transfer : destStation;
-          const dir = redStop.dir === 0 ? 1 : redStop.dir === 1 ? 0 : null;
-          return dir === null ? Promise.resolve(null)
-            : fetchMbtaAt("place-jfk", "Red", dir).catch(() => null);
-        })(),
+        withRetry(() => shuttleRouteGeometry(boardShuttleStop.id, "stop-jfk"), 1).catch(() => null),
       ]);
       const nextShuttle = shuttleArrivals?.length
         ? formatArrival(shuttleArrivals[0].seconds)
         : '<span class="arrival-none">No arrivals scheduled</span>';
+      const shuttleSeg = shuttleCoords
+        || [[boardShuttleStop.coords[1], boardShuttleStop.coords[0]], [JFK_COORDS[1], JFK_COORDS[0]]];
 
-      const hasTransfer = !!destStation.transfer;
-      const xfer = destStation.transfer || { coords: destStation.coords, name: destStation.name };
-      // Determine Red Line direction from JFK toward the transfer/destination
-      const redDirFromJfk = hasTransfer ? 1
-        : destStation.dir === 0 ? 1 : destStation.dir === 1 ? 0 : null;
-      const redSegEnd = hasTransfer ? xfer.coords : destStation.coords;
-
-      const segments = [
+      drawMultiRoute([
         { coords: walkToShuttle.geometry, color: "#1d4ed8", weight: 4 },
-        { coords: [[JFK_COORDS[1], JFK_COORDS[0]], [boardShuttleStop.coords[1], boardShuttleStop.coords[0]]], color: "#15803d", weight: 4, dashed: true },
-      ];
-      if (redDirFromJfk !== null) {
-        segments.push({ coords: [[JFK_COORDS[1], JFK_COORDS[0]], [redSegEnd[1], redSegEnd[0]]], color: "#da291c", weight: 5, dashed: true });
-      }
-      if (hasTransfer) {
-        segments.push({ coords: [[xfer.coords[1], xfer.coords[0]], [destStation.coords[1], destStation.coords[0]]], color: destStation.lineColor, weight: 4, dashed: true });
-      }
-      segments.push({ coords: walkFromStation.geometry, color: "#1d4ed8", weight: 4 });
-      drawMultiRoute(segments);
-
-      const lineLabel = hasTransfer
-        ? `Red Line → ${xfer.name}, transfer to ${destStation.line} Line → ${destStation.name}`
-        : `Red Line → ${destStation.name}`;
+        { coords: shuttleSeg, color: "#15803d", weight: 4, dashed: true },
+        ...railTrip.segments,
+      ]);
 
       el.innerHTML = `
         <div class="dir-segment-label dir-seg-walk">
@@ -1225,15 +1681,7 @@ async function loadTransitDir(destCoords, el) {
           <span>UMass Shuttle → JFK/UMass Station</span>
           <span class="dir-seg-meta">Next: ${nextShuttle}</span>
         </div>
-        <div class="dir-segment-label dir-seg-redline">
-          <span>${lineLabel}</span>
-          <span class="dir-seg-meta">${_predsHtml(redPreds)}</span>
-        </div>
-        <div class="dir-segment-label dir-seg-walk">
-          <span>Walk to destination</span>
-          <span class="dir-seg-meta">${fmtTime(walkFromStation.duration)} · ${fmtDist(walkFromStation.distance)}</span>
-        </div>
-        <div class="dir-steps">${buildStepsHtml(walkFromStation.steps)}</div>`;
+        ${railTrip.html}`;
       return;
     }
 
@@ -1288,17 +1736,12 @@ async function loadTransitDir(destCoords, el) {
       return;
     }
 
-    const [walkToStation, walkToDest] = await Promise.all([
-      withRetry(() => valhallaWalkRoute(origin, boardStation.coords)),
+    const jfkStation = stationById("place-jfk");
+    const [railTrip, walkToDest] = await Promise.all([
+      buildMbtaRailTrip(origin, JFK_COORDS, boardStation, jfkStation),
       withRetry(() => valhallaWalkRoute(alightStop.coords, destCoords)),
     ]);
-
-    const hasTransfer = !!boardStation.transfer;
-    const xfer = boardStation.transfer;
-
-    const [boardPreds, xferPreds, shuttleArrivals, shuttleCoords] = await Promise.all([
-      fetchMbtaAt(boardStation.stopId, boardStation.route, boardStation.dir).catch(() => null),
-      hasTransfer ? fetchMbtaAt(xfer.stopId, "Red", xfer.dir).catch(() => null) : Promise.resolve(null),
+    const [shuttleArrivals, shuttleCoords] = await Promise.all([
       fetchArrivals(JFK_TRANSLOC_ID).catch(() => null),
       withRetry(() => shuttleRouteGeometry("stop-jfk", alightStop.id), 1).catch(() => null),
     ]);
@@ -1308,61 +1751,12 @@ async function loadTransitDir(destCoords, el) {
       : '<span class="arrival-none">No arrivals scheduled</span>';
     const shuttleSeg = shuttleCoords || [[JFK_COORDS[1], JFK_COORDS[0]], [alightStop.coords[1], alightStop.coords[0]]];
 
-    let segments, html;
-
-    if (!hasTransfer) {
-      // Red Line direct
-      const redSeg = [[boardStation.coords[1], boardStation.coords[0]], [JFK_COORDS[1], JFK_COORDS[0]]];
-      segments = [
-        { coords: walkToStation.geometry, color: "#1d4ed8", weight: 4 },
-        { coords: redSeg, color: "#da291c", weight: 5, dashed: true },
-        { coords: shuttleSeg, color: "#15803d", weight: 4, dashed: true },
-        { coords: walkToDest.geometry, color: "#1d4ed8", weight: 4 },
-      ];
-      html = `
-        <div class="dir-segment-label dir-seg-walk">
-          <span>Walk to ${boardStation.name}</span>
-          <span class="dir-seg-meta">${fmtTime(walkToStation.duration)} · ${fmtDist(walkToStation.distance)}</span>
-        </div>
-        <div class="dir-steps">${buildStepsHtml(walkToStation.steps)}</div>
-        <div class="dir-segment-label dir-seg-redline">
-          <span>Red Line → JFK/UMass Station</span>
-          <span class="dir-seg-meta">${_predsHtml(boardPreds)}</span>
-        </div>`;
-    } else {
-      // Orange or Green Line → transfer to Red Line at xfer
-      const boardSeg = [[boardStation.coords[1], boardStation.coords[0]], [xfer.coords[1], xfer.coords[0]]];
-      const redSeg   = [[xfer.coords[1], xfer.coords[0]], [JFK_COORDS[1], JFK_COORDS[0]]];
-      const lineLabel = `${boardStation.line} Line → ${xfer.name}`;
-      const redLabel  = `Red Line → JFK/UMass Station`;
-      segments = [
-        { coords: walkToStation.geometry, color: "#1d4ed8", weight: 4 },
-        { coords: boardSeg, color: boardStation.lineColor, weight: 5, dashed: true },
-        { coords: redSeg,   color: "#da291c", weight: 5, dashed: true },
-        { coords: shuttleSeg, color: "#15803d", weight: 4, dashed: true },
-        { coords: walkToDest.geometry, color: "#1d4ed8", weight: 4 },
-      ];
-      html = `
-        <div class="dir-segment-label dir-seg-walk">
-          <span>Walk to ${boardStation.name}</span>
-          <span class="dir-seg-meta">${fmtTime(walkToStation.duration)} · ${fmtDist(walkToStation.distance)}</span>
-        </div>
-        <div class="dir-steps">${buildStepsHtml(walkToStation.steps)}</div>
-        <div class="dir-segment-label" style="background:#fff3cd;color:#7d5a00;">
-          <span>${lineLabel}</span>
-          <span class="dir-seg-meta">${_predsHtml(boardPreds)}</span>
-        </div>
-        <div class="dir-segment-label dir-seg-transfer">
-          <span>Transfer → Red Line at ${xfer.name}</span>
-          <span class="dir-seg-meta">${_predsHtml(xferPreds)}</span>
-        </div>
-        <div class="dir-segment-label dir-seg-redline">
-          <span>${redLabel}</span>
-        </div>`;
-    }
-
-    drawMultiRoute(segments);
-    el.innerHTML = html + `
+    drawMultiRoute([
+      ...railTrip.segments,
+      { coords: shuttleSeg, color: "#15803d", weight: 4, dashed: true },
+      { coords: walkToDest.geometry, color: "#1d4ed8", weight: 4 },
+    ]);
+    el.innerHTML = railTrip.html + `
       <div class="dir-segment-label dir-seg-shuttle">
         <span>UMass Shuttle → ${alightStop.name}</span>
         <span class="dir-seg-meta">Next at JFK: ${nextShuttle}</span>
@@ -1454,6 +1848,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.getElementById("closePanel").addEventListener("click", closePanel);
+  document.getElementById("routeLauncherBtn").addEventListener("click", showDirectionsLauncher);
 
   // ── Map location control ────────────────────────────────────
   const locateBtn = document.getElementById("locateBtn");
@@ -1470,6 +1865,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function updateLocation(lat, lng, accuracy, recenter = true) {
     const latlng = [lat, lng];
+    lastUserLocation = latlng;
     locateBtn.classList.remove("waiting");
     locateBtn.classList.add("active");
     locateBtn.title = "Location active — click to stop";
@@ -1487,11 +1883,18 @@ document.addEventListener("DOMContentLoaded", () => {
       locationMarker.setLatLng(latlng);
       locationCircle.setLatLng(latlng).setRadius(accuracy || 30);
     }
+    const directionsWaitingForGps = document.getElementById("dirContent") && _dirFromCoords === null && _dirDestCoords;
+    const now = Date.now();
+    if (directionsWaitingForGps && now - _lastLocationRouteAt > 2000) {
+      _lastLocationRouteAt = now;
+      renderDirPanel(_dirActiveTab);
+    }
   }
 
   function stopLocation() {
     if (watchId !== null) navigator.geolocation.clearWatch(watchId);
     watchId = null;
+    lastUserLocation = null;
     if (locationMarker) { map.removeLayer(locationMarker); locationMarker = null; }
     if (locationCircle) { map.removeLayer(locationCircle); locationCircle = null; }
     locateBtn.classList.remove("active", "waiting");

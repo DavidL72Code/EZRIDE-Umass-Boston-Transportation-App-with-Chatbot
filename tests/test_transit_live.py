@@ -2,6 +2,7 @@ import unittest
 
 from src.transit_live import (
     is_live_transit_question,
+    is_shuttle_question,
     lookup_live_arrivals,
     requested_route,
     resolve_shuttle_stops,
@@ -29,6 +30,14 @@ class TransitResolutionTests(unittest.TestCase):
 
     def test_live_lookup_never_defaults_to_jfk_without_location(self):
         self.assertIsNone(lookup_live_arrivals("when is the red line coming", location=None))
+
+    def test_policy_questions_are_not_live_arrivals(self):
+        self.assertFalse(is_live_transit_question("when are Spring 2026 MBTA semester passes valid?"))
+        self.assertFalse(is_live_transit_question("what number does MBTA provide for schedule and route information?"))
+        self.assertFalse(is_shuttle_question("where do shuttle ads get delivered?"))
+        self.assertFalse(is_live_transit_question("what are the UMass shuttle operating hours on weekends?"))
+        self.assertFalse(is_live_transit_question("what cards are accepted when paying tickets online?"))
+        self.assertFalse(is_shuttle_question("what time does weekday shuttle service start and end?"))
 
 
 if __name__ == "__main__":

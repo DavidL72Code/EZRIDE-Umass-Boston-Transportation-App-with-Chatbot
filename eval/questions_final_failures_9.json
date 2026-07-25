@@ -1,0 +1,85 @@
+[
+  {
+    "id": "final_parking_023",
+    "type": "parking_rate_specific",
+    "question": "after 4 pm what parking rate applies?",
+    "expect": {
+      "must_include_any": ["$10", "4:00", "evening"],
+      "must_not_source_media": true
+    }
+  },
+  {
+    "id": "final_parking_028",
+    "type": "parking_near_me_no_location",
+    "question": "find parking close to me without using a map pin",
+    "expect": {
+      "must_include_any": ["location", "allow", "starting"],
+      "must_not_source_media": true
+    }
+  },
+  {
+    "id": "final_parking_033",
+    "type": "rag_policy",
+    "question": "what cards are accepted when paying tickets online?",
+    "expect": {
+      "must_include_any": ["Visa", "MasterCard", "Discover", "American Express"],
+      "must_not_source_media": true
+    }
+  },
+  {
+    "id": "final_parking_036",
+    "type": "rag_fact",
+    "question": "what is the fall spring cost for commuter parking on campus?",
+    "expect": {
+      "must_include_any": ["$550", "Fall/Spring", "semester"],
+      "must_not_source_media": true
+    }
+  },
+  {
+    "id": "final_parking_037",
+    "type": "rag_fact",
+    "question": "what does off-campus commuter parking cost for fall spring?",
+    "expect": {
+      "must_include_any": ["$504", "semester"],
+      "must_not_source_media": true
+    }
+  },
+  {
+    "id": "final_media_051",
+    "type": "media_request",
+    "question": "do you have a PDF for the Red Orange Green Blue subway lines?",
+    "expect": {
+      "must_include_any": ["Subway Map", "map files"],
+      "must_source_media": true,
+      "must_source_pdf": true
+    }
+  },
+  {
+    "id": "final_media_053",
+    "type": "media_request",
+    "question": "show an image related to UMass Boston transportation",
+    "expect": {
+      "must_include_any": ["Campus Map", "map files"],
+      "must_source_media": true,
+      "must_source_image": true
+    }
+  },
+  {
+    "id": "final_rag_088",
+    "type": "rag_contact",
+    "question": "which email is for commute-related transportation help?",
+    "expect": {
+      "must_include_any": ["TransDM@umb.edu"],
+      "must_not_source_media": true
+    }
+  },
+  {
+    "id": "final_rag_091",
+    "type": "rag_shuttle",
+    "question": "what time does weekday shuttle service start and end?",
+    "expect": {
+      "must_include_any": ["5:30", "1:30", "Monday"],
+      "must_not_source_media": true
+    }
+  }
+]

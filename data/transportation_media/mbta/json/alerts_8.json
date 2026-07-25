@@ -1,0 +1,73 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "active_period": [
+          {
+            "end": "2026-07-25T22:00:00-04:00",
+            "start": "2026-07-25T06:00:00-04:00"
+          }
+        ],
+        "banner": null,
+        "cause": "SPECIAL_EVENT",
+        "closed_timestamp": null,
+        "created_at": "2026-07-22T11:11:51-04:00",
+        "description": "Skipped outbound stops:\r\nWashington St opp Ruggles St\r\n\r\nSkipped inbound stops:\r\nWashington St @ Williams St\r\nWashington St @ Ruggles St",
+        "duration_certainty": "KNOWN",
+        "effect": "DETOUR",
+        "header": "Route 8 will be detoured from 6:00 AM to 10:00 PM on Sat, Jul 25 due to the Nubian Sq Block Party. Inbound: connect at Nubian Station and Harrison Ave @ Malnea Cass Blvd. Outbound: connect at Nubian Station and Washington St @ Malnea Class Blvd.",
+        "image": null,
+        "image_alternative_text": null,
+        "informed_entity": [
+          {
+            "stop": "63",
+            "direction_id": 1,
+            "route_type": 3,
+            "route": "8",
+            "activities": [
+              "BOARD",
+              "EXIT"
+            ]
+          },
+          {
+            "stop": "62",
+            "direction_id": 1,
+            "route_type": 3,
+            "route": "8",
+            "activities": [
+              "BOARD",
+              "EXIT"
+            ]
+          },
+          {
+            "stop": "1",
+            "direction_id": 1,
+            "route_type": 3,
+            "route": "8",
+            "activities": [
+              "BOARD",
+              "EXIT"
+            ]
+          }
+        ],
+        "last_push_notification_timestamp": "2026-07-22T11:11:51-04:00",
+        "lifecycle": "UPCOMING",
+        "reminder_times": null,
+        "service_effect": "Route 8 detour",
+        "severity": 7,
+        "short_header": "",
+        "timeframe": "Saturday",
+        "updated_at": "2026-07-22T11:11:51-04:00",
+        "url": null
+      },
+      "id": "1023475",
+      "links": {
+        "self": "/alerts/1023475"
+      },
+      "type": "alert"
+    }
+  ],
+  "jsonapi": {
+    "version": "1.0"
+  }
+}

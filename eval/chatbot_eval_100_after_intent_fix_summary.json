@@ -1,0 +1,156 @@
+{
+  "run_at": "2026-07-23T20:23:07",
+  "question_file": "eval/questions_100.json",
+  "total": 100,
+  "passed": 98,
+  "failed": 2,
+  "pass_rate": 0.98,
+  "by_type": {
+    "live_shuttle_arrival": {
+      "total": 6,
+      "passed": 6
+    },
+    "live_mbta_arrival": {
+      "total": 9,
+      "passed": 9
+    },
+    "parking_clarification": {
+      "total": 1,
+      "passed": 1
+    },
+    "parking_rate_specific": {
+      "total": 7,
+      "passed": 7
+    },
+    "parking_process": {
+      "total": 2,
+      "passed": 2
+    },
+    "parking_near_me": {
+      "total": 2,
+      "passed": 2
+    },
+    "parking_near_me_no_location": {
+      "total": 1,
+      "passed": 1
+    },
+    "parking_info": {
+      "total": 3,
+      "passed": 3
+    },
+    "rag_policy": {
+      "total": 11,
+      "passed": 10
+    },
+    "rag_fact": {
+      "total": 12,
+      "passed": 12
+    },
+    "media_request": {
+      "total": 15,
+      "passed": 15
+    },
+    "directions_intent": {
+      "total": 3,
+      "passed": 3
+    },
+    "route_knowledge": {
+      "total": 7,
+      "passed": 7
+    },
+    "detour_fallback": {
+      "total": 3,
+      "passed": 3
+    },
+    "rag_process": {
+      "total": 3,
+      "passed": 3
+    },
+    "rag_contact": {
+      "total": 3,
+      "passed": 3
+    },
+    "rag_accessibility": {
+      "total": 2,
+      "passed": 2
+    },
+    "rag_shuttle": {
+      "total": 3,
+      "passed": 3
+    },
+    "off_topic": {
+      "total": 3,
+      "passed": 3
+    },
+    "clarification": {
+      "total": 2,
+      "passed": 1
+    },
+    "security": {
+      "total": 2,
+      "passed": 2
+    }
+  },
+  "failures": [
+    {
+      "id": "rag_73",
+      "type": "rag_policy",
+      "question": "what happens if I lose a commuter rail semester pass?",
+      "status_code": 200,
+      "checks": {
+        "must_include_any": false,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 2,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      },
+      "answer": "Commuter Rail semester passes are non-refundable and non-replaceable if lost or stolen. The university is not liable for lost or damaged passes, even if they are lost during mail transit.",
+      "sources": [
+        {
+          "url": "https://www.umb.edu/transportation/mbta/",
+          "title": "MBTA",
+          "category": "transit"
+        },
+        {
+          "url": "https://www.umb.edu/transportation/biking/",
+          "title": "Biking",
+          "category": "transit"
+        }
+      ]
+    },
+    {
+      "id": "clarify_98",
+      "type": "clarification",
+      "question": "where is it?",
+      "status_code": 200,
+      "checks": {
+        "must_include_any": false,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 2,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      },
+      "answer": "Because your question is broad, here is where various UMass Boston transportation facilities are located:\n\n*   **EV Charging:** You can find 23 ChargePoint ports at the West Garage (15 on the first floor), the Campus Center Garage (4 on the lower level), and the Quad Lot (4).\n*   **Bike Parking & Charging:** There are over 740 bike parking spaces campus-wide. The West Garage contains a secure shelter with 125 indoor spaces, a maintenance station, and 13 Saris Power Posts (26 ports) for free e-bi",
+      "sources": [
+        {
+          "url": "https://www.umb.edu/transportation/parking-rates/",
+          "title": "Parking Information",
+          "category": "permits"
+        },
+        {
+          "url": "https://www.umb.edu/transportation/biking/",
+          "title": "Biking",
+          "category": "transit"
+        }
+      ]
+    }
+  ]
+}

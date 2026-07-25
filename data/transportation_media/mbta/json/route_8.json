@@ -1,0 +1,45 @@
+{
+  "data": {
+    "attributes": {
+      "color": "FFC72C",
+      "description": "Local Bus",
+      "direction_destinations": [
+        "Harbor Point",
+        "Kenmore Station"
+      ],
+      "direction_names": [
+        "Outbound",
+        "Inbound"
+      ],
+      "fare_class": "Local Bus",
+      "listed_route": true,
+      "long_name": "Harbor Point - Kenmore Station",
+      "short_name": "8",
+      "sort_order": 50080,
+      "text_color": "000000",
+      "type": 3
+    },
+    "id": "8",
+    "links": {
+      "self": "/routes/8"
+    },
+    "relationships": {
+      "agency": {
+        "data": {
+          "id": "1",
+          "type": "agency"
+        }
+      },
+      "line": {
+        "data": {
+          "id": "line-8",
+          "type": "line"
+        }
+      }
+    },
+    "type": "route"
+  },
+  "jsonapi": {
+    "version": "1.0"
+  }
+}

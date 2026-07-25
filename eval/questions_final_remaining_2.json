@@ -1,0 +1,21 @@
+[
+  {
+    "id": "final_media_045",
+    "type": "media_request",
+    "question": "I want the MBTA downtown map document",
+    "expect": {
+      "must_include_any": ["Downtown Map", "map files"],
+      "must_source_media": true,
+      "must_source_pdf": true
+    }
+  },
+  {
+    "id": "final_route_066",
+    "type": "detour_fallback",
+    "question": "if Green Line service is disrupted on Huntington Ave, how should routing adapt?",
+    "expect": {
+      "must_include_any": ["shuttle", "replacement", "Red", "alternate"],
+      "must_not_source_media": true
+    }
+  }
+]

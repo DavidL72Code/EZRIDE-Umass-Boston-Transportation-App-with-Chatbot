@@ -1,0 +1,39 @@
+{
+  "run_at": "2026-07-24T23:06:48",
+  "question_file": "eval/questions_final_failures_9.json",
+  "total": 9,
+  "passed": 9,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "by_type": {
+    "parking_rate_specific": {
+      "total": 1,
+      "passed": 1
+    },
+    "parking_near_me_no_location": {
+      "total": 1,
+      "passed": 1
+    },
+    "rag_policy": {
+      "total": 1,
+      "passed": 1
+    },
+    "rag_fact": {
+      "total": 2,
+      "passed": 2
+    },
+    "media_request": {
+      "total": 2,
+      "passed": 2
+    },
+    "rag_contact": {
+      "total": 1,
+      "passed": 1
+    },
+    "rag_shuttle": {
+      "total": 1,
+      "passed": 1
+    }
+  },
+  "failures": []
+}

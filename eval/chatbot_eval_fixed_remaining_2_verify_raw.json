@@ -1,0 +1,105 @@
+[
+  {
+    "id": "final_media_045",
+    "type": "media_request",
+    "question": "I want the MBTA downtown map document",
+    "status_code": 200,
+    "elapsed_ms": 30,
+    "attempts": 1,
+    "answer": "Here are the relevant transportation map files: MBTA Downtown Map.",
+    "sources": [
+      {
+        "url": "/media/transportation/mbta/pdf/2026-06-14-downtown-map_0.pdf",
+        "title": "MBTA Downtown Map",
+        "category": "transportation_media",
+        "media_type": "pdf"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "Here are the relevant transportation map files: MBTA Downtown Map."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "/media/transportation/mbta/pdf/2026-06-14-downtown-map_0.pdf",
+            "title": "MBTA Downtown Map",
+            "category": "transportation_media",
+            "media_type": "pdf"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_source_media": true,
+        "must_source_pdf": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 1,
+        "pdf_source_count": 1,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "final_route_066",
+    "type": "detour_fallback",
+    "question": "if Green Line service is disrupted on Huntington Ave, how should routing adapt?",
+    "status_code": 200,
+    "elapsed_ms": 2,
+    "attempts": 1,
+    "answer": "If Green Line service is disrupted, do not walk a long rail segment. Use the Green Line replacement shuttle or an MBTA alternate bus through the affected Huntington Ave segment, then connect to the Red Line at Park Street, Downtown Crossing, or South Station and ride to JFK/UMass. From JFK/UMass, finish with the UMass shuttle; if the Green replacement points you to Orange Line service, transfer back to the Red Line downtown. Check current MBTA alerts because replacement shuttle stops can change by outage.",
+    "sources": [
+      {
+        "url": "https://www.mbta.com/alerts",
+        "title": "MBTA service alerts",
+        "category": "transit"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "If Green Line service is disrupted, do not walk a long rail segment. Use the Green Line replacement shuttle or an MBTA alternate bus through the affected Huntington Ave segment, then connect to the Red Line at Park Street, Downtown Crossing, or South Station and ride to JFK/UMass. From JFK/UMass, finish with the UMass shuttle; if the Green replacement points you to Orange Line service, transfer back to the Red Line downtown. Check current MBTA alerts because replacement shuttle stops can change by outage."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.mbta.com/alerts",
+            "title": "MBTA service alerts",
+            "category": "transit"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  }
+]

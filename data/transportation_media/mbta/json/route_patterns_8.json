@@ -1,0 +1,239 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Kenmore Station - Harbor Point via South Bay Center",
+        "sort_order": 500800000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "8-9-0",
+      "links": {
+        "self": "/route_patterns/8-9-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76677407",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Kenmore Station - Harbor Point",
+        "sort_order": 500800040,
+        "time_desc": null,
+        "typicality": 2
+      },
+      "id": "8-1-0",
+      "links": {
+        "self": "/route_patterns/8-1-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76677402",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Kenmore Station - Ruggles Station",
+        "sort_order": 500800080,
+        "time_desc": "AM peak hours only",
+        "typicality": 3
+      },
+      "id": "8-D-0",
+      "links": {
+        "self": "/route_patterns/8-D-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76303201_2",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Harbor Point - Kenmore Station via South Bay Center",
+        "sort_order": 500801000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "8-9-1",
+      "links": {
+        "self": "/route_patterns/8-9-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76677401",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Harbor Point - Kenmore Station",
+        "sort_order": 500801040,
+        "time_desc": null,
+        "typicality": 2
+      },
+      "id": "8-1-1",
+      "links": {
+        "self": "/route_patterns/8-1-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76677396",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Ruggles Station - Kenmore Station",
+        "sort_order": 500801080,
+        "time_desc": "AM peak hours only",
+        "typicality": 3
+      },
+      "id": "8-D-1",
+      "links": {
+        "self": "/route_patterns/8-D-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76302852_2",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Warren St & Quincy St - Nubian Station",
+        "sort_order": 502301040,
+        "time_desc": "Weekday middays only",
+        "typicality": 3
+      },
+      "id": "23-G-1",
+      "links": {
+        "self": "/route_patterns/23-G-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76303128_1",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "23",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Nubian Station - Union Square, Boston",
+        "sort_order": 506600100,
+        "time_desc": "Weekday middays only",
+        "typicality": 3
+      },
+      "id": "66-B-0",
+      "links": {
+        "self": "/route_patterns/66-B-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76303128_2",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "66",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    }
+  ],
+  "jsonapi": {
+    "version": "1.0"
+  }
+}

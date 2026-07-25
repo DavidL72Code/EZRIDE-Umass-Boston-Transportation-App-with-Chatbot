@@ -1,0 +1,11 @@
+[
+  {
+    "id": "final_clarify_097",
+    "type": "clarification",
+    "question": "how much does that cost?",
+    "expect": {
+      "must_include_any": ["which", "parking", "specific", "location"],
+      "must_not_source_media": true
+    }
+  }
+]

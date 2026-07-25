@@ -1,0 +1,115 @@
+{
+  "source_pages": [
+    "https://www.umb.edu/transportation/",
+    "https://www.umb.edu/transportation/shuttle-bus-information/",
+    "https://www.umb.edu/transportation/visitor-resources/",
+    "https://www.umb.edu/transportation/parking-rates/",
+    "https://www.umb.edu/transportation/parking-rates/parking-rates/",
+    "https://www.umb.edu/transportation/biking/",
+    "https://www.umb.edu/admissions/visit/maps/",
+    "https://www.umb.edu/map-archive/"
+  ],
+  "output_root": "data/transportation_media",
+  "assets": [
+    {
+      "kind": "image",
+      "url": "https://www.umb.edu/media/umassboston/content-assets/images/Campus-Map-1-16-24-900x900-min.png",
+      "filename": "Campus-Map-1-16-24-900x900-min.png",
+      "source_page": "https://www.umb.edu/admissions/visit/maps/",
+      "label": "Directions Public Transportation Subway: Take the MBTA Red Line",
+      "status": "downloaded",
+      "bytes": 94628,
+      "error": ""
+    },
+    {
+      "kind": "image",
+      "url": "https://www.umb.edu/media/umassboston/editor-uploads/transportation/bike-parking-743x342.png",
+      "filename": "bike-parking-743x342.png",
+      "source_page": "https://www.umb.edu/transportation/biking/",
+      "label": "To use the West Garage secure shelter, you must first register your bicycle through Project 529",
+      "status": "downloaded",
+      "bytes": 91956,
+      "error": ""
+    },
+    {
+      "kind": "image",
+      "url": "https://www.umb.edu/media/umassboston/editor-uploads/transportation/biking-2024.7.10Summer24Photoshoot-307-1800x600.jpg",
+      "filename": "biking-2024.7.10Summer24Photoshoot-307-1800x600.jpg",
+      "source_page": "https://www.umb.edu/transportation/biking/",
+      "label": "Biking Home",
+      "status": "downloaded",
+      "bytes": 323329,
+      "error": ""
+    },
+    {
+      "kind": "image",
+      "url": "https://www.umb.edu/media/umassboston/editor-uploads/transportation/tranportation-shuttle_2JA4508-900x60.jpg",
+      "filename": "tranportation-shuttle_2JA4508-900x60.jpg",
+      "source_page": "https://www.umb.edu/transportation/",
+      "label": "",
+      "status": "downloaded",
+      "bytes": 67797,
+      "error": ""
+    },
+    {
+      "kind": "image",
+      "url": "https://www.umb.edu/media/umassboston/editor-uploads/transportation/transportation-mbta-DSC_0632-900x600.jpg",
+      "filename": "transportation-mbta-DSC_0632-900x600.jpg",
+      "source_page": "https://www.umb.edu/transportation/",
+      "label": "",
+      "status": "downloaded",
+      "bytes": 80544,
+      "error": ""
+    },
+    {
+      "kind": "image",
+      "url": "https://www.umb.edu/media/umassboston/editor-uploads/transportation/transportation-parking-IMG_3678-900x600.jpg",
+      "filename": "transportation-parking-IMG_3678-900x600.jpg",
+      "source_page": "https://www.umb.edu/transportation/",
+      "label": "",
+      "status": "downloaded",
+      "bytes": 83720,
+      "error": ""
+    },
+    {
+      "kind": "pdf",
+      "url": "https://www.umb.edu/media/umassboston/editor-uploads/administration-and-finance/documents/Micromobility-Transportation-Device-Policy-remediated.pdf",
+      "filename": "Micromobility-Transportation-Device-Policy-remediated.pdf",
+      "source_page": "https://www.umb.edu/transportation/biking/",
+      "label": "Read the full Micromobility Policy",
+      "status": "failed",
+      "bytes": 0,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "kind": "pdf",
+      "url": "https://www.umb.edu/media/umassboston/content-assets/documents/pdfs/UMassBoston-campusmap.pdf",
+      "filename": "UMassBoston-campusmap.pdf",
+      "source_page": "https://www.umb.edu/transportation/visitor-resources/",
+      "label": "Access Campus Map (pdf)",
+      "status": "downloaded",
+      "bytes": 284345,
+      "error": ""
+    },
+    {
+      "kind": "pdf",
+      "url": "https://www.umb.edu/media/umassboston/content-assets/documents/chaser-how-to.pdf",
+      "filename": "chaser-how-to.pdf",
+      "source_page": "https://www.umb.edu/transportation/visitor-resources/",
+      "label": "parking chaser tickets",
+      "status": "downloaded",
+      "bytes": 45810,
+      "error": ""
+    },
+    {
+      "kind": "pdf",
+      "url": "https://www.umb.edu/media/umassboston/editor-uploads/transportation/umass-boston-bike-map.pdf",
+      "filename": "umass-boston-bike-map.pdf",
+      "source_page": "https://www.umb.edu/transportation/biking/",
+      "label": "Campus Bike Map (pdf)",
+      "status": "downloaded",
+      "bytes": 492050,
+      "error": ""
+    }
+  ]
+}

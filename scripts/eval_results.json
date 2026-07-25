@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "question": "How many EV charging ports does UMass Boston have on campus, and where are they located?",
+    "expected": "23 total \u2014 15 at West Garage, 4 at Campus Center Garage, 4 at Quad Lot",
+    "category": "general",
+    "rag_answer": "UMass Boston provides 23 shared ChargePoint EV charging ports across campus. They are located at the following sites:\n*   **West Garage (First Floor):** 15 ports\n*   **Campus Center Garage (Lower Level):** 4 ports\n*   **Quad Lot:** 4 ports",
+    "direct_answer": "UMass Boston has 13 Saris Power Posts available for e-bike and e-scooter charging. These charging ports are located in the West Garage.",
+    "rag_scores": {
+      "accuracy": 5,
+      "completeness": 5,
+      "relevance": 5,
+      "conciseness": 5,
+      "groundedness": 5,
+      "comment": "The chatbot provided a perfectly accurate and well-structured response that matched all the information in the expected answer."
+    },
+    "direct_scores": {
+      "accuracy": 1,
+      "completeness": 1,
+      "relevance": 2,
+      "conciseness": 5,
+      "groundedness": 5,
+      "comment": "The chatbot provided completely incorrect information regarding the number and type of charging ports, failing to address the user's question about EV infrastructure."
+    },
+    "retrieval_hit": true
+  },
+  {
+    "id": 2,
+    "question": "What is the fine for parking in an EV charging space without actually charging?",
+    "expected": "$75",
+    "category": "enforcement",
+    "rag_answer": "The fine for a non-charging vehicle parked in an EV space is $75. Please note that standard parking fees also apply in addition to the EV charging costs.",
+    "direct_answer": "I am sorry, but the provided context does not contain information regarding fines for parking in an EV charging space without actively charging.",
+    "rag_scores": {
+      "accuracy": 5,
+      "completeness": 5,
+      "relevance": 4,
+      "conciseness": 4,
+      "groundedness": 5,
+      "comment": "The answer provides the correct fine while offering helpful additional context, though it is slightly less concise than the expected answer."
+    },
+    "direct_scores": {
+      "accuracy": 2,
+      "completeness": 1,
+      "relevance": 5,
+      "conciseness": 3,
+      "groundedness": 5,
+      "comment": "The chatbot correctly followed its constraints by admitting the information was missing, but it failed to provide the user with the actual requested fact."
+    },
+    "retrieval_hit": false
+  },
+  {
+    "id": 3,
+    "question": "How do I cancel my UMass Boston parking permit?",
+    "expected": "Log into parking portal \u2192 View Permits \u2192 click permit number \u2192 click Return Permit button",
+    "category": "permits",
+    "rag_answer": "To cancel your UMass Boston parking permit, you must log into the online Parking Portal and click on \"Permits\" at the top of the page. From there, select \"View Permits,\" click on your permit number, and click the \"Return Permit\" button at the bottom of the details page to follow the instructions. Please note that cancellations take effect immediately, and you must cancel the permit to stop payroll deductions or receive a pro-rated refund for permits purchased via credit card or student account.",
+    "direct_answer": "I am sorry, but the current information available to me does not provide instructions on how to cancel your UMass Boston parking permit. Please contact the UMass Boston Parking and Transportation office directly for assistance with permit cancellations.",
+    "rag_scores": {
+      "accuracy": 5,
+      "completeness": 5,
+      "relevance": 5,
+      "conciseness": 4,
+      "groundedness": 5,
+      "comment": "The chatbot provides all necessary steps accurately while adding helpful contextual information regarding the refund and payroll process."
+    },
+    "direct_scores": {
+      "accuracy": 3,
+      "completeness": 1,
+      "relevance": 5,
+      "conciseness": 5,
+      "groundedness": 2,
+      "comment": "The chatbot failed to provide the available procedural instructions, defaulting to a generic referral instead."
+    },
+    "retrieval_hit": true
+  },
+  {
+    "id": 4,
+    "question": "What is the carpool subsidy benefit for UMass Boston employees?",
+    "expected": "Each rider switching from driving alone to a carpool can earn up to three months of $15 gas cards",
+    "category": "general",
+    "rag_answer": "Through the A Better City TMA program, UMass Boston employees who switch from driving alone to carpooling can earn up to three months of $15 gas cards. To participate, you can find a carpool group using the GoMassCommute ride-matching tool and register via the UMass Boston Carpool Registration Form.",
+    "direct_answer": "I am sorry, but the current information available to me does not specify the details of a carpool subsidy benefit for UMass Boston employees. I recommend checking the official UMass Boston parking and transportation website or contacting the Parking and Transportation office directly for the most accurate information regarding employee benefits.",
+    "rag_scores": {
+      "accuracy": 5,
+      "completeness": 5,
+      "relevance": 5,
+      "conciseness": 4,
+      "groundedness": 5,
+      "comment": "The chatbot provides the exact information required while adding helpful context for how to participate in the program."
+    },
+    "direct_scores": {
+      "accuracy": 2,
+      "completeness": 1,
+      "relevance": 5,
+      "conciseness": 3,
+      "groundedness": 1,
+      "comment": "The chatbot failed to provide the specific policy information requested, instead defaulting to a generic redirection."
+    },
+    "retrieval_hit": true
+  },
+  {
+    "id": 5,
+    "question": "How long is the maximum charging session at a ChargePoint EV station on campus?",
+    "expected": "4 hours maximum per session",
+    "category": "general",
+    "rag_answer": "The maximum charging session at a ChargePoint EV station on campus is 4 hours. Charging costs $0.22 per kWh, and standard parking fees apply in addition to these costs. Please note that non-charging vehicles parked in EV spaces will be fined $75 (violation 105, 106, or 113).",
+    "direct_answer": "I am sorry, but the provided information does not specify the maximum charging session duration for the ChargePoint EV stations on campus. It only notes that there are 13 Saris Power Posts available for e-bike and e-scooter charging at the West Garage.",
+    "rag_scores": {
+      "accuracy": 5,
+      "completeness": 5,
+      "relevance": 4,
+      "conciseness": 3,
+      "groundedness": 5,
+      "comment": "The answer is factually correct and complete, though it includes extraneous information that slightly impacts conciseness and strict relevance."
+    },
+    "direct_scores": {
+      "accuracy": 1,
+      "completeness": 1,
+      "relevance": 3,
+      "conciseness": 3,
+      "groundedness": 5,
+      "comment": "The chatbot failed to retrieve the correct information, providing irrelevant details about e-bike stations instead of answering the question about EV charging limits."
+    },
+    "retrieval_hit": false
+  },
+  {
+    "id": 6,
+    "question": "What happens if I don't pay or appeal a parking ticket within 21 days?",
+    "expected": "License and registration sent to RMV for non-renewal; delinquent notices issued",
+    "category": "enforcement",
+    "rag_answer": "If you do not pay or appeal a parking ticket within 21 calendar days, it is considered delinquent. Failure to resolve the ticket may result in the university notifying the Registry of Motor Vehicles (RMV), which can lead to the mandatory non-renewal of your driver\u2019s license and vehicle registration. Additionally, unpaid tickets are assessed further penalties that must be paid in full to clear your status with the RMV.",
+    "direct_answer": "If you do not pay or appeal your ticket within 21 days, you will lose your right to appeal the citation. Unpaid fines may lead to additional late fees, the potential for your vehicle to be towed, and an eventual hold placed on your registration at the RMV.",
+    "rag_scores": {
+      "accuracy": 5,
+      "completeness": 5,
+      "relevance": 5,
+      "conciseness": 4,
+      "groundedness": 5,
+      "comment": "The chatbot provides a comprehensive and accurate explanation that covers all key points of the expected answer while adding helpful context regarding penalties."
+    },
+    "direct_scores": {
+      "accuracy": 4,
+      "completeness": 4,
+      "relevance": 5,
+      "conciseness": 4,
+      "groundedness": 4,
+      "comment": "The answer is accurate and relevant, though it adds supplemental information not found in the expected answer while slightly omitting the specific mention of delinquent notices."
+    },
+    "retrieval_hit": false
+  },
+  {
+    "id": 7,
+    "question": "How much does an annual Blue Bikes membership cost for UMass Boston affiliates?",
+    "expected": "$101.50 with promo code BikeUMB",
+    "category": "transit",
+    "rag_answer": "The annual Bluebikes membership for UMass Boston affiliates costs $101.50 when using the promo code BikeUMB.",
+    "direct_answer": "I am sorry, but the provided context does not contain information regarding the specific cost of an annual Blue Bikes membership for UMass Boston affiliates. Please check the official UMass Boston transportation website for the most current partnership pricing.",
+    "rag_scores": {
+      "accuracy": 5,
+      "completeness": 5,
+      "relevance": 5,
+      "conciseness": 5,
+      "groundedness": 5,
+      "comment": "The chatbot provides an accurate, complete, and concise response that perfectly matches the required information."
+    },
+    "direct_scores": {
+      "accuracy": 2,
+      "completeness": 1,
+      "relevance": 5,
+      "conciseness": 5,
+      "groundedness": 5,
+      "comment": "The chatbot failed to retrieve the information provided in the context, resulting in a refusal to answer a query for which data was available."
+    },
+    "retrieval_hit": true
+  },
+  {
+    "id": 8,
+    "question": "What is the Guaranteed Ride Home benefit and how many rides does it include?",
+    "expected": "Up to six free Uber rides home per year under qualifying circumstances",
+    "category": "general",
+    "rag_answer": "The Guaranteed Ride Home (GRH) program provides employees with up to six free Uber rides home per year under qualifying circumstances. To utilize this benefit, you must register for the program in advance.",
+    "direct_answer": "I am sorry, but the provided context does not contain information regarding a \"Guaranteed Ride Home\" benefit. Please check the official UMass Boston transportation website or contact the Parking and Transportation office directly for details on this specific program.",
+    "rag_scores": {
+      "accuracy": 5,
+      "completeness": 5,
+      "relevance": 5,
+      "conciseness": 4,
+      "groundedness": 5,
+      "comment": "The answer is accurate and complete, providing the necessary details while including a helpful extra step regarding registration."
+    },
+    "direct_scores": {
+      "accuracy": 5,
+      "completeness": 1,
+      "relevance": 5,
+      "conciseness": 5,
+      "groundedness": 5,
+      "comment": "The chatbot correctly identified that it lacked the requested information based on its provided context, even though it failed to answer the user's specific question."
+    },
+    "retrieval_hit": true
+  },
+  {
+    "id": 9,
+    "question": "What is the EV charging cost per kWh at UMass Boston campus stations?",
+    "expected": "$0.22 per kWh",
+    "category": "general",
+    "rag_answer": "The cost for EV charging at UMass Boston campus stations is $0.22 per kWh. Please note that there is a 4-hour maximum charge per session, and standard parking fees apply in addition to these charging costs.",
+    "direct_answer": "The provided information does not contain specific details regarding the cost per kWh for EV charging on campus. Please note that the campus does offer 13 Saris Power Posts for e-bike and e-scooter charging located in the West Garage.",
+    "rag_scores": {
+      "accuracy": 5,
+      "completeness": 5,
+      "relevance": 5,
+      "conciseness": 4,
+      "groundedness": 5,
+      "comment": "The chatbot provides the correct information while adding helpful context, though it slightly exceeds the requested brevity."
+    },
+    "direct_scores": {
+      "accuracy": 1,
+      "completeness": 1,
+      "relevance": 3,
+      "conciseness": 4,
+      "groundedness": 5,
+      "comment": "The chatbot failed to retrieve the requested pricing information and instead provided irrelevant details about e-bike charging."
+    },
+    "retrieval_hit": true
+  },
+  {
+    "id": 10,
+    "question": "How can a UMass Boston student get access to a bike locker?",
+    "expected": "Lockers available at McCormack and Wheatley Peters, managed by Student Activities, first-come first-served",
+    "category": "transit",
+    "rag_answer": "Students can access bike lockers at McCormack and Wheatley Peters on a first-come, first-served basis. These lockers are managed by Student Activities.",
+    "direct_answer": "I am sorry, but the provided context does not contain information regarding how a UMass Boston student can access a bike locker. I only have information regarding e-bike/e-scooter charging at the West Garage.",
+    "rag_scores": {
+      "accuracy": 5,
+      "completeness": 5,
+      "relevance": 5,
+      "conciseness": 5,
+      "groundedness": 5,
+      "comment": "The chatbot answer perfectly conveys all required information from the expected answer in a clear and professional manner."
+    },
+    "direct_scores": {
+      "accuracy": 2,
+      "completeness": 1,
+      "relevance": 3,
+      "conciseness": 5,
+      "groundedness": 5,
+      "comment": "The chatbot failed to answer the question due to a lack of context, despite the information being part of the expected knowledge base."
+    },
+    "retrieval_hit": true
+  }
+]

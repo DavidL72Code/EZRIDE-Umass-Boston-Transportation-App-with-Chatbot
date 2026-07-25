@@ -1,0 +1,67 @@
+{
+  "run_at": "2026-07-23T19:51:45",
+  "question_file": "eval/questions_25.json",
+  "total": 25,
+  "passed": 25,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "by_type": {
+    "live_shuttle_arrival": {
+      "total": 2,
+      "passed": 2
+    },
+    "live_mbta_arrival": {
+      "total": 2,
+      "passed": 2
+    },
+    "parking_clarification": {
+      "total": 1,
+      "passed": 1
+    },
+    "parking_rate_specific": {
+      "total": 2,
+      "passed": 2
+    },
+    "parking_near_me": {
+      "total": 1,
+      "passed": 1
+    },
+    "parking_near_me_no_location": {
+      "total": 1,
+      "passed": 1
+    },
+    "media_request": {
+      "total": 5,
+      "passed": 5
+    },
+    "directions_intent": {
+      "total": 1,
+      "passed": 1
+    },
+    "route_knowledge": {
+      "total": 2,
+      "passed": 2
+    },
+    "detour_fallback": {
+      "total": 1,
+      "passed": 1
+    },
+    "rag_policy": {
+      "total": 2,
+      "passed": 2
+    },
+    "rag_fact": {
+      "total": 3,
+      "passed": 3
+    },
+    "rag_process": {
+      "total": 1,
+      "passed": 1
+    },
+    "off_topic": {
+      "total": 1,
+      "passed": 1
+    }
+  },
+  "failures": []
+}

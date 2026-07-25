@@ -1,0 +1,792 @@
+[
+  {
+    "id": "final_parking_023",
+    "type": "parking_rate_specific",
+    "question": "after 4 pm what parking rate applies?",
+    "status_code": 200,
+    "elapsed_ms": 12,
+    "attempts": 1,
+    "answer": "The evening parking rate at all on-campus lots and garages (West Garage, Lot D, Campus Center Garage, and the Quad Lot) is $10.00. This evening rate goes into effect at 4:00 pm.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/biking/",
+        "title": "Biking",
+        "category": "transit"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/parking-rates/",
+        "title": "Parking Rates",
+        "category": "permits"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (transit, permits)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "The evening"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " parking rate at all on-campus lots and garages (West Garage, Lot D, Campus Center Garage"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": ", and the Quad Lot) is $10.00. This evening rate goes into effect at 4:"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "00 pm."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/biking/",
+            "title": "Biking",
+            "category": "transit"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/parking-rates/",
+            "title": "Parking Rates",
+            "category": "permits"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 2,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "final_parking_028",
+    "type": "parking_near_me_no_location",
+    "question": "find parking close to me without using a map pin",
+    "status_code": 200,
+    "elapsed_ms": 14,
+    "attempts": 1,
+    "answer": "For on-campus parking, you can choose from the following locations depending on your destination:\n\n*   **West Garage:** Offers hourly rates ranging from $7.00 to $15.00, with an evening/weekend rate of $10.00. \n*   **Lot D, Campus Center Garage, and Quad Lot:** These locations have a daily rate of $15.00 and an evening/weekend rate of $10.00 (starting at 4:00 p.m.). \n\nAdditionally, off-campus parking is available at the **Bayside lot** for a daily rate of $9.00. Please note that parking validation is handled through your university contact, as Transportation Services does not provide it directly.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/",
+        "title": "Parking Information",
+        "category": "permits"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/visitor-resources/",
+        "title": "Visitor Resources",
+        "category": "visitor"
+      },
+      {
+        "url": "https://hr.umb.edu/benefits/parking-mbta-passes",
+        "title": "Pre-Tax Parking & Transit",
+        "category": "transit"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/biking/",
+        "title": "Biking",
+        "category": "transit"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/parking-rates/",
+        "title": "Parking Rates",
+        "category": "permits"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (transit, visitor, permits)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "For on"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "-campus parking, you can choose from the following locations depending on your destination:\n\n*   **West"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " Garage:** Offers hourly rates ranging from $7.00 to $15.00, with an evening/weekend rate"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " of $10.00. \n*   **Lot D, Campus Center Garage, and Quad Lot:** These locations"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " have a daily rate of $15.00 and an evening/weekend rate of $10.00"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " (starting at 4:00 p.m.). \n\nAdditionally, off-campus parking is available at the **Bayside lot**"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " for a daily rate of $9.00. Please note that parking validation is handled through your university contact, as"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " Transportation Services does not provide it directly."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/",
+            "title": "Parking Information",
+            "category": "permits"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/visitor-resources/",
+            "title": "Visitor Resources",
+            "category": "visitor"
+          },
+          {
+            "url": "https://hr.umb.edu/benefits/parking-mbta-passes",
+            "title": "Pre-Tax Parking & Transit",
+            "category": "transit"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/biking/",
+            "title": "Biking",
+            "category": "transit"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/parking-rates/",
+            "title": "Parking Rates",
+            "category": "permits"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 5,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "final_parking_033",
+    "type": "rag_policy",
+    "question": "what cards are accepted when paying tickets online?",
+    "status_code": 200,
+    "elapsed_ms": 5,
+    "attempts": 1,
+    "answer": "When paying parking tickets online, you can use Visa, MasterCard, Discover, and American Express. Please note that there is a surcharge fee of $3.95 per ticket paid online.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/fines/",
+        "title": "Parking Fines",
+        "category": "enforcement"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (enforcement)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "When paying"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " parking tickets online, you can use Visa, MasterCard, Discover, and American Express. Please"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " note that there is a surcharge fee of $3.95 per ticket paid online."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/fines/",
+            "title": "Parking Fines",
+            "category": "enforcement"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "final_parking_036",
+    "type": "rag_fact",
+    "question": "what is the fall spring cost for commuter parking on campus?",
+    "status_code": 200,
+    "elapsed_ms": 4,
+    "attempts": 1,
+    "answer": "The cost for a commuter student parking permit for the fall/spring semester is $550 per semester for on-campus parking and $504 per semester for off-campus parking. These permits can be paid for via your term bill or by credit card.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/parking-rates/",
+        "title": "Parking Rates",
+        "category": "permits"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/",
+        "title": "Parking Information",
+        "category": "permits"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (permits)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "The cost"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " for a commuter student parking permit for the fall/spring semester is $550 per semester"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " for on-campus parking and $504 per semester for off-campus parking. These permits can be paid for via your"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " term bill or by credit card."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/parking-rates/",
+            "title": "Parking Rates",
+            "category": "permits"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/",
+            "title": "Parking Information",
+            "category": "permits"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 2,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "final_parking_037",
+    "type": "rag_fact",
+    "question": "what does off-campus commuter parking cost for fall spring?",
+    "status_code": 200,
+    "elapsed_ms": 6,
+    "attempts": 1,
+    "answer": "An off-campus commuter student permit costs $504 per semester for the Fall/Spring term. This can be paid via your term bill or by credit card.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/parking-rates/",
+        "title": "Parking Rates",
+        "category": "permits"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/parking-rates/",
+        "title": "Parking Information",
+        "category": "permits"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (permits)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "An"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " off-campus commuter student permit costs $504 per semester for the Fall"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "/Spring term. This can be paid via your term bill or by credit card."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/parking-rates/",
+            "title": "Parking Rates",
+            "category": "permits"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/parking-rates/",
+            "title": "Parking Information",
+            "category": "permits"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 2,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "final_media_051",
+    "type": "media_request",
+    "question": "do you have a PDF for the Red Orange Green Blue subway lines?",
+    "status_code": 200,
+    "elapsed_ms": 421,
+    "attempts": 1,
+    "answer": "Here are the relevant transportation map files: MBTA Subway Map.",
+    "sources": [
+      {
+        "url": "/media/transportation/mbta/pdf/2026-06-14-subway-map-v01.pdf",
+        "title": "MBTA Subway Map",
+        "category": "transportation_media",
+        "media_type": "pdf"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "Here are the relevant transportation map files: MBTA Subway Map."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "/media/transportation/mbta/pdf/2026-06-14-subway-map-v01.pdf",
+            "title": "MBTA Subway Map",
+            "category": "transportation_media",
+            "media_type": "pdf"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_source_media": true,
+        "must_source_pdf": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 1,
+        "pdf_source_count": 1,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "final_media_053",
+    "type": "media_request",
+    "question": "show an image related to UMass Boston transportation",
+    "status_code": 200,
+    "elapsed_ms": 18,
+    "attempts": 1,
+    "answer": "Here are the relevant transportation map files: Campus Map Image.",
+    "sources": [
+      {
+        "url": "/media/transportation/image/Campus-Map-1-16-24-900x900-min.png",
+        "title": "Campus Map Image",
+        "category": "transportation_media",
+        "media_type": "image"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "Here are the relevant transportation map files: Campus Map Image."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "/media/transportation/image/Campus-Map-1-16-24-900x900-min.png",
+            "title": "Campus Map Image",
+            "category": "transportation_media",
+            "media_type": "image"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_source_media": true,
+        "must_source_image": true
+      },
+      "observed": {
+        "source_count": 1,
+        "media_source_count": 1,
+        "pdf_source_count": 0,
+        "image_source_count": 1,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "final_rag_088",
+    "type": "rag_contact",
+    "question": "which email is for commute-related transportation help?",
+    "status_code": 200,
+    "elapsed_ms": 9,
+    "attempts": 1,
+    "answer": "For commute-related transportation inquiries, you can email TransDM@umb.edu.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/commuting/",
+        "title": "Commuting Options & Resources",
+        "category": "general"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/",
+        "title": "Transportation",
+        "category": "general"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 4 chunks (general)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "For commute"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "-related transportation inquiries, you can email TransDM@umb.edu."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/commuting/",
+            "title": "Commuting Options & Resources",
+            "category": "general"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/",
+            "title": "Transportation",
+            "category": "general"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 2,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  },
+  {
+    "id": "final_rag_091",
+    "type": "rag_shuttle",
+    "question": "what time does weekday shuttle service start and end?",
+    "status_code": 200,
+    "elapsed_ms": 6,
+    "attempts": 1,
+    "answer": "Weekday shuttle service operates from 5:30 a.m. to 1:30 a.m., Monday through Friday.",
+    "sources": [
+      {
+        "url": "https://www.umb.edu/transportation/shuttle-bus-information/",
+        "title": "Shuttle Bus Information",
+        "category": "transit"
+      },
+      {
+        "url": "https://www.umb.edu/transportation/biking/",
+        "title": "Biking",
+        "category": "transit"
+      }
+    ],
+    "events": [
+      {
+        "type": "status",
+        "text": "\ud83d\udd0d Searching knowledge base\u2026"
+      },
+      {
+        "type": "status",
+        "text": "\ud83d\udcc4 Found 5 chunks (transit)"
+      },
+      {
+        "type": "status",
+        "text": "\u26a1 Generating response\u2026"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "Weekday shuttle"
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": " service operates from 5:30 a.m. to 1:30 a."
+      },
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "m., Monday through Friday."
+      },
+      {
+        "type": "done",
+        "sources": [
+          {
+            "url": "https://www.umb.edu/transportation/shuttle-bus-information/",
+            "title": "Shuttle Bus Information",
+            "category": "transit"
+          },
+          {
+            "url": "https://www.umb.edu/transportation/biking/",
+            "title": "Biking",
+            "category": "transit"
+          }
+        ]
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 2,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  }
+]

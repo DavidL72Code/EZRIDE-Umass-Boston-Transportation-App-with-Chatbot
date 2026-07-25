@@ -1,0 +1,297 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Andrew Station - City Point",
+        "sort_order": 501000090,
+        "time_desc": "AM peak hours only",
+        "typicality": 3
+      },
+      "id": "10-E-0",
+      "links": {
+        "self": "/route_patterns/10-E-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76303013_2",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "10",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Andrew Station - Forest Hills Station via South Bay Center",
+        "sort_order": 501600000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "16-9-0",
+      "links": {
+        "self": "/route_patterns/16-9-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76673030",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Harbor Point - Forest Hills Station via South Bay Center",
+        "sort_order": 501600040,
+        "time_desc": "Weekdays only",
+        "typicality": 2
+      },
+      "id": "16-8-0",
+      "links": {
+        "self": "/route_patterns/16-8-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76673038",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "McCormack Housing - Forest Hills via South Bay Center",
+        "sort_order": 501600060,
+        "time_desc": null,
+        "typicality": 2
+      },
+      "id": "16-5-0",
+      "links": {
+        "self": "/route_patterns/16-5-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76676563",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 0,
+        "name": "Andrew Station - Forest Hills Station",
+        "sort_order": 501600090,
+        "time_desc": null,
+        "typicality": 2
+      },
+      "id": "16-3-0",
+      "links": {
+        "self": "/route_patterns/16-3-0"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76677398",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Forest Hills Station - Andrew Station via South Bay Center",
+        "sort_order": 501601000,
+        "time_desc": null,
+        "typicality": 1
+      },
+      "id": "16-9-1",
+      "links": {
+        "self": "/route_patterns/16-9-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76676178",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Forest Hills Station - Harbor Point via South Bay Center",
+        "sort_order": 501601040,
+        "time_desc": "Weekdays only",
+        "typicality": 2
+      },
+      "id": "16-8-1",
+      "links": {
+        "self": "/route_patterns/16-8-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76676187",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Forest Hills - McCormack Housing via South Bay Center",
+        "sort_order": 501601060,
+        "time_desc": null,
+        "typicality": 2
+      },
+      "id": "16-5-1",
+      "links": {
+        "self": "/route_patterns/16-5-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76676193",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Forest Hills Station - Andrew Station",
+        "sort_order": 501601090,
+        "time_desc": null,
+        "typicality": 2
+      },
+      "id": "16-3-1",
+      "links": {
+        "self": "/route_patterns/16-3-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76676234",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    },
+    {
+      "attributes": {
+        "canonical": false,
+        "direction_id": 1,
+        "name": "Franklin Park - Andrew Station",
+        "sort_order": 501601130,
+        "time_desc": "AM peak hours only",
+        "typicality": 3
+      },
+      "id": "16-E-1",
+      "links": {
+        "self": "/route_patterns/16-E-1"
+      },
+      "relationships": {
+        "representative_trip": {
+          "data": {
+            "id": "76303013_1",
+            "type": "trip"
+          }
+        },
+        "route": {
+          "data": {
+            "id": "16",
+            "type": "route"
+          }
+        }
+      },
+      "type": "route_pattern"
+    }
+  ],
+  "jsonapi": {
+    "version": "1.0"
+  }
+}

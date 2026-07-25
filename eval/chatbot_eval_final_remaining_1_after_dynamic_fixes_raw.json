@@ -1,0 +1,40 @@
+[
+  {
+    "id": "final_clarify_097",
+    "type": "clarification",
+    "question": "how much does that cost?",
+    "status_code": 200,
+    "elapsed_ms": 7,
+    "attempts": 1,
+    "answer": "Which specific place, stop, parking lot, or transportation service do you mean?",
+    "sources": [],
+    "events": [
+      {
+        "type": "status",
+        "text": ""
+      },
+      {
+        "type": "token",
+        "text": "Which specific place, stop, parking lot, or transportation service do you mean?"
+      },
+      {
+        "type": "done",
+        "sources": []
+      }
+    ],
+    "expectation_result": {
+      "passed": true,
+      "checks": {
+        "must_include_any": true,
+        "must_not_source_media": true
+      },
+      "observed": {
+        "source_count": 0,
+        "media_source_count": 0,
+        "pdf_source_count": 0,
+        "image_source_count": 0,
+        "map_focus_count": 0
+      }
+    }
+  }
+]

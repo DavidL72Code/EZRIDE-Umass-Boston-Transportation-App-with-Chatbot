@@ -1,0 +1,19 @@
+{
+  "run_at": "2026-07-23T21:15:41",
+  "question_file": "eval/questions_final_remaining_2.json",
+  "total": 2,
+  "passed": 2,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "by_type": {
+    "media_request": {
+      "total": 1,
+      "passed": 1
+    },
+    "detour_fallback": {
+      "total": 1,
+      "passed": 1
+    }
+  },
+  "failures": []
+}

@@ -1,0 +1,5934 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T23:43:00-04:00",
+        "departure_time": "2026-07-23T23:43:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677396-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677396",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-24T00:29:00-04:00",
+        "departure_time": "2026-07-24T00:29:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677397-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677397",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T23:09:00-04:00",
+        "departure_time": "2026-07-23T23:09:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677399-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677399",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T22:33:00-04:00",
+        "departure_time": "2026-07-23T22:33:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677401-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677401",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-24T00:53:00-04:00",
+        "departure_time": "2026-07-24T00:53:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 37,
+        "timepoint": false
+      },
+      "id": "schedule-76677402-121-37",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677402",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T23:32:00-04:00",
+        "departure_time": "2026-07-23T23:32:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 37,
+        "timepoint": false
+      },
+      "id": "schedule-76677404-121-37",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677404",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-24T00:11:00-04:00",
+        "departure_time": "2026-07-24T00:11:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 37,
+        "timepoint": false
+      },
+      "id": "schedule-76677406-121-37",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677406",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T23:00:00-04:00",
+        "departure_time": "2026-07-23T23:00:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677407-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677407",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T21:58:00-04:00",
+        "departure_time": "2026-07-23T21:58:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677408-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677408",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T21:24:00-04:00",
+        "departure_time": "2026-07-23T21:24:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677410-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677410",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T21:49:00-04:00",
+        "departure_time": "2026-07-23T21:49:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677412-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677412",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T22:25:00-04:00",
+        "departure_time": "2026-07-23T22:25:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677413-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677413",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T19:14:00-04:00",
+        "departure_time": "2026-07-23T19:14:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677414-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677414",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T16:41:00-04:00",
+        "departure_time": "2026-07-23T16:41:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677417-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677417",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T15:12:00-04:00",
+        "departure_time": "2026-07-23T15:12:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677418-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677418",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T17:54:00-04:00",
+        "departure_time": "2026-07-23T17:54:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677419-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677419",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T14:11:00-04:00",
+        "departure_time": "2026-07-23T14:11:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677420-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677420",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T17:16:00-04:00",
+        "departure_time": "2026-07-23T17:16:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677421-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677421",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T15:41:00-04:00",
+        "departure_time": "2026-07-23T15:41:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677422-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677422",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T19:44:00-04:00",
+        "departure_time": "2026-07-23T19:44:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677425-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677425",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T20:14:00-04:00",
+        "departure_time": "2026-07-23T20:14:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677430-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677430",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T14:36:00-04:00",
+        "departure_time": "2026-07-23T14:36:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677448-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677448",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T16:49:00-04:00",
+        "departure_time": "2026-07-23T16:49:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677455-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677455",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T21:13:00-04:00",
+        "departure_time": "2026-07-23T21:13:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677458-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677458",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T18:12:00-04:00",
+        "departure_time": "2026-07-23T18:12:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677460-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677460",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T19:28:00-04:00",
+        "departure_time": "2026-07-23T19:28:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677461-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677461",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T17:49:00-04:00",
+        "departure_time": "2026-07-23T17:49:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677463-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677463",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T19:55:00-04:00",
+        "departure_time": "2026-07-23T19:55:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677464-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677464",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T17:19:00-04:00",
+        "departure_time": "2026-07-23T17:19:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677466-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677466",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T20:49:00-04:00",
+        "departure_time": "2026-07-23T20:49:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677469-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677469",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T18:59:00-04:00",
+        "departure_time": "2026-07-23T18:59:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677470-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677470",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T20:17:00-04:00",
+        "departure_time": "2026-07-23T20:17:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677471-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677471",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T15:49:00-04:00",
+        "departure_time": "2026-07-23T15:49:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677474-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677474",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T18:34:00-04:00",
+        "departure_time": "2026-07-23T18:34:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677475-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677475",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T16:11:00-04:00",
+        "departure_time": "2026-07-23T16:11:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677476-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677476",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T18:37:00-04:00",
+        "departure_time": "2026-07-23T18:37:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677477-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677477",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T20:38:00-04:00",
+        "departure_time": "2026-07-23T20:38:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677478-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677478",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T12:30:00-04:00",
+        "departure_time": "2026-07-23T12:30:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677490-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677490",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T16:24:00-04:00",
+        "departure_time": "2026-07-23T16:24:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677491-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677491",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T13:48:00-04:00",
+        "departure_time": "2026-07-23T13:48:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677503-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677503",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T14:19:00-04:00",
+        "departure_time": "2026-07-23T14:19:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677505-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677505",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T14:57:00-04:00",
+        "departure_time": "2026-07-23T14:57:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677508-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677508",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T13:21:00-04:00",
+        "departure_time": "2026-07-23T13:21:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677513-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677513",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T11:40:00-04:00",
+        "departure_time": "2026-07-23T11:40:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677514-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677514",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T07:55:00-04:00",
+        "departure_time": "2026-07-23T07:55:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677515-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677515",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T09:40:00-04:00",
+        "departure_time": "2026-07-23T09:40:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677517-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677517",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T09:10:00-04:00",
+        "departure_time": "2026-07-23T09:10:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677519-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677519",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T06:41:00-04:00",
+        "departure_time": "2026-07-23T06:41:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677522-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677522",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T07:15:00-04:00",
+        "departure_time": "2026-07-23T07:15:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677524-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677524",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T08:15:00-04:00",
+        "departure_time": "2026-07-23T08:15:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677525-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677525",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T10:10:00-04:00",
+        "departure_time": "2026-07-23T10:10:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677527-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677527",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T06:58:00-04:00",
+        "departure_time": "2026-07-23T06:58:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677528-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677528",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T07:35:00-04:00",
+        "departure_time": "2026-07-23T07:35:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677529-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677529",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T12:12:00-04:00",
+        "departure_time": "2026-07-23T12:12:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677581-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677581",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T07:56:00-04:00",
+        "departure_time": "2026-07-23T07:56:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 37,
+        "timepoint": false
+      },
+      "id": "schedule-76677583-121-37",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677583",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T07:33:00-04:00",
+        "departure_time": "2026-07-23T07:33:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 37,
+        "timepoint": false
+      },
+      "id": "schedule-76677593-121-37",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677593",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T09:23:00-04:00",
+        "departure_time": "2026-07-23T09:23:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677594-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677594",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T08:38:00-04:00",
+        "departure_time": "2026-07-23T08:38:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 37,
+        "timepoint": false
+      },
+      "id": "schedule-76677596-121-37",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677596",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T08:58:00-04:00",
+        "departure_time": "2026-07-23T08:58:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 37,
+        "timepoint": false
+      },
+      "id": "schedule-76677597-121-37",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677597",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T09:53:00-04:00",
+        "departure_time": "2026-07-23T09:53:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677598-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677598",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T11:27:00-04:00",
+        "departure_time": "2026-07-23T11:27:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677599-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677599",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T08:40:00-04:00",
+        "departure_time": "2026-07-23T08:40:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677631-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677631",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T13:02:00-04:00",
+        "departure_time": "2026-07-23T13:02:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677632-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677632",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T10:41:00-04:00",
+        "departure_time": "2026-07-23T10:41:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 41,
+        "timepoint": false
+      },
+      "id": "schedule-76677636-121-41",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677636",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T10:55:00-04:00",
+        "departure_time": "2026-07-23T10:55:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677637-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677637",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T07:15:00-04:00",
+        "departure_time": "2026-07-23T07:15:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 37,
+        "timepoint": false
+      },
+      "id": "schedule-76677639-121-37",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677639",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T08:17:00-04:00",
+        "departure_time": "2026-07-23T08:17:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 37,
+        "timepoint": false
+      },
+      "id": "schedule-76677640-121-37",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677640",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T06:23:00-04:00",
+        "departure_time": "2026-07-23T06:23:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677646-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677646",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T06:58:00-04:00",
+        "departure_time": "2026-07-23T06:58:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 37,
+        "timepoint": false
+      },
+      "id": "schedule-76677648-121-37",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677648",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T06:08:00-04:00",
+        "departure_time": "2026-07-23T06:08:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677651-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677651",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T06:35:00-04:00",
+        "departure_time": "2026-07-23T06:35:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 37,
+        "timepoint": false
+      },
+      "id": "schedule-76677659-121-37",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677659",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T05:51:00-04:00",
+        "departure_time": "2026-07-23T05:51:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677662-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677662",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T05:34:00-04:00",
+        "departure_time": "2026-07-23T05:34:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677665-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677665",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T05:14:00-04:00",
+        "departure_time": "2026-07-23T05:14:00-04:00",
+        "direction_id": 1,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 5,
+        "timepoint": false
+      },
+      "id": "schedule-76677667-121-5",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677667",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    },
+    {
+      "attributes": {
+        "arrival_time": "2026-07-23T06:05:00-04:00",
+        "departure_time": "2026-07-23T06:05:00-04:00",
+        "direction_id": 0,
+        "drop_off_type": 0,
+        "pickup_type": 0,
+        "stop_headsign": null,
+        "stop_sequence": 37,
+        "timepoint": false
+      },
+      "id": "schedule-76677668-121-37",
+      "relationships": {
+        "added_routes": {
+          "data": []
+        },
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "stop": {
+          "data": {
+            "id": "121",
+            "type": "stop"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "76677668",
+            "type": "trip"
+          }
+        }
+      },
+      "type": "schedule"
+    }
+  ],
+  "included": [
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-62",
+        "direction_id": 0,
+        "headsign": "Harbor Point",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677596",
+      "links": {
+        "self": "/trips/76677596"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080294",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-68",
+        "direction_id": 0,
+        "headsign": "Harbor Point",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677404",
+      "links": {
+        "self": "/trips/76677404"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080294",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-74",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677419",
+      "links": {
+        "self": "/trips/76677419"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-74",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677448",
+      "links": {
+        "self": "/trips/76677448"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-58",
+        "direction_id": 0,
+        "headsign": "Harbor Point",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677668",
+      "links": {
+        "self": "/trips/76677668"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080294",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C47-320",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677503",
+      "links": {
+        "self": "/trips/76677503"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-75",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677422",
+      "links": {
+        "self": "/trips/76677422"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-63",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677581",
+      "links": {
+        "self": "/trips/76677581"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-72",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677470",
+      "links": {
+        "self": "/trips/76677470"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-66",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677476",
+      "links": {
+        "self": "/trips/76677476"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-60",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677463",
+      "links": {
+        "self": "/trips/76677463"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-72",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677417",
+      "links": {
+        "self": "/trips/76677417"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-73",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677455",
+      "links": {
+        "self": "/trips/76677455"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-74",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677466",
+      "links": {
+        "self": "/trips/76677466"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-60",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677418",
+      "links": {
+        "self": "/trips/76677418"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-64",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677490",
+      "links": {
+        "self": "/trips/76677490"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-61",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677505",
+      "links": {
+        "self": "/trips/76677505"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-54",
+        "direction_id": 0,
+        "headsign": "Harbor Point",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677648",
+      "links": {
+        "self": "/trips/76677648"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080294",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-73",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677420",
+      "links": {
+        "self": "/trips/76677420"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-58",
+        "direction_id": 1,
+        "headsign": "Kenmore",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677646",
+      "links": {
+        "self": "/trips/76677646"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080293",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-66",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677474",
+      "links": {
+        "self": "/trips/76677474"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-75",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677460",
+      "links": {
+        "self": "/trips/76677460"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-72",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677491",
+      "links": {
+        "self": "/trips/76677491"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-59",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677519",
+      "links": {
+        "self": "/trips/76677519"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-56",
+        "direction_id": 0,
+        "headsign": "Harbor Point",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677593",
+      "links": {
+        "self": "/trips/76677593"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080294",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-63",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677527",
+      "links": {
+        "self": "/trips/76677527"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-64",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677508",
+      "links": {
+        "self": "/trips/76677508"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-71",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677430",
+      "links": {
+        "self": "/trips/76677430"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-56",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677598",
+      "links": {
+        "self": "/trips/76677598"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-65",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677632",
+      "links": {
+        "self": "/trips/76677632"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-68",
+        "direction_id": 1,
+        "headsign": "Kenmore",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677396",
+      "links": {
+        "self": "/trips/76677396"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080293",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-66",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677513",
+      "links": {
+        "self": "/trips/76677513"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-65",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677637",
+      "links": {
+        "self": "/trips/76677637"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-67",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677410",
+      "links": {
+        "self": "/trips/76677410"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C10-104",
+        "direction_id": 0,
+        "headsign": "Harbor Point",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677597",
+      "links": {
+        "self": "/trips/76677597"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080294",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-73",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677461",
+      "links": {
+        "self": "/trips/76677461"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-68",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677425",
+      "links": {
+        "self": "/trips/76677425"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-54",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677517",
+      "links": {
+        "self": "/trips/76677517"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-58",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677636",
+      "links": {
+        "self": "/trips/76677636"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-75",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677475",
+      "links": {
+        "self": "/trips/76677475"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-58",
+        "direction_id": 1,
+        "headsign": "Kenmore",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677631",
+      "links": {
+        "self": "/trips/76677631"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080293",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-67",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677407",
+      "links": {
+        "self": "/trips/76677407"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-55",
+        "direction_id": 0,
+        "headsign": "Harbor Point",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677639",
+      "links": {
+        "self": "/trips/76677639"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080294",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C10-104",
+        "direction_id": 1,
+        "headsign": "Kenmore",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677528",
+      "links": {
+        "self": "/trips/76677528"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080293",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-68",
+        "direction_id": 0,
+        "headsign": "Harbor Point",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677402",
+      "links": {
+        "self": "/trips/76677402"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080294",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-54",
+        "direction_id": 1,
+        "headsign": "Kenmore",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677524",
+      "links": {
+        "self": "/trips/76677524"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080293",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-62",
+        "direction_id": 1,
+        "headsign": "Kenmore",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677522",
+      "links": {
+        "self": "/trips/76677522"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080293",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-55",
+        "direction_id": 1,
+        "headsign": "Kenmore",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677529",
+      "links": {
+        "self": "/trips/76677529"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080293",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-57",
+        "direction_id": 1,
+        "headsign": "Kenmore",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677651",
+      "links": {
+        "self": "/trips/76677651"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080293",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-69",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677413",
+      "links": {
+        "self": "/trips/76677413"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-54",
+        "direction_id": 1,
+        "headsign": "Kenmore",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677665",
+      "links": {
+        "self": "/trips/76677665"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080293",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-70",
+        "direction_id": 0,
+        "headsign": "Harbor Point",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677406",
+      "links": {
+        "self": "/trips/76677406"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080294",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-70",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677401",
+      "links": {
+        "self": "/trips/76677401"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C23-250",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677414",
+      "links": {
+        "self": "/trips/76677414"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C23-262",
+        "direction_id": 1,
+        "headsign": "Kenmore",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677667",
+      "links": {
+        "self": "/trips/76677667"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080293",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C19-213",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677471",
+      "links": {
+        "self": "/trips/76677471"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-59",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677599",
+      "links": {
+        "self": "/trips/76677599"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-69",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677469",
+      "links": {
+        "self": "/trips/76677469"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-74",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677464",
+      "links": {
+        "self": "/trips/76677464"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-54",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677594",
+      "links": {
+        "self": "/trips/76677594"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-67",
+        "direction_id": 1,
+        "headsign": "Kenmore",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677399",
+      "links": {
+        "self": "/trips/76677399"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080293",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-71",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677408",
+      "links": {
+        "self": "/trips/76677408"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-66",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677477",
+      "links": {
+        "self": "/trips/76677477"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-57",
+        "direction_id": 0,
+        "headsign": "Harbor Point",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677583",
+      "links": {
+        "self": "/trips/76677583"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080294",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-58",
+        "direction_id": 0,
+        "headsign": "Harbor Point",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677640",
+      "links": {
+        "self": "/trips/76677640"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080294",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-75",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677478",
+      "links": {
+        "self": "/trips/76677478"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-56",
+        "direction_id": 1,
+        "headsign": "Kenmore",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677515",
+      "links": {
+        "self": "/trips/76677515"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080293",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-57",
+        "direction_id": 1,
+        "headsign": "Kenmore",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677525",
+      "links": {
+        "self": "/trips/76677525"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080293",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-71",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677412",
+      "links": {
+        "self": "/trips/76677412"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C23-250",
+        "direction_id": 0,
+        "headsign": "Harbor Point via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677458",
+      "links": {
+        "self": "/trips/76677458"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080291",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-56",
+        "direction_id": 1,
+        "headsign": "Kenmore",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677662",
+      "links": {
+        "self": "/trips/76677662"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080293",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-70",
+        "direction_id": 1,
+        "headsign": "Kenmore",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677397",
+      "links": {
+        "self": "/trips/76677397"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080293",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C23-262",
+        "direction_id": 0,
+        "headsign": "Harbor Point",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677659",
+      "links": {
+        "self": "/trips/76677659"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-1-0",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080294",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C08-73",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677421",
+      "links": {
+        "self": "/trips/76677421"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    },
+    {
+      "attributes": {
+        "bikes_allowed": 1,
+        "block_id": "C47-320",
+        "direction_id": 1,
+        "headsign": "Kenmore via South Bay Center",
+        "name": "",
+        "revenue": "REVENUE",
+        "wheelchair_accessible": 1
+      },
+      "id": "76677514",
+      "links": {
+        "self": "/trips/76677514"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "8",
+            "type": "route"
+          }
+        },
+        "route_pattern": {
+          "data": {
+            "id": "8-9-1",
+            "type": "route_pattern"
+          }
+        },
+        "service": {
+          "data": {
+            "id": "BUS20263-hbc36sn1-Weekday-02",
+            "type": "service"
+          }
+        },
+        "shape": {
+          "data": {
+            "id": "080292",
+            "type": "shape"
+          }
+        }
+      },
+      "type": "trip"
+    }
+  ],
+  "jsonapi": {
+    "version": "1.0"
+  }
+}

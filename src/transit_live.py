@@ -85,6 +85,48 @@ STATIC_MBTA_ROUTE_GEO = {
     ],
 }
 
+RETRIEVAL_ONLY_PATTERNS = (
+    r"\bsemester\s+passes?\b",
+    r"\bpasses?\b",
+    r"\bvalid\b",
+    r"\bvalidity\b",
+    r"\brefund",
+    r"\breplace",
+    r"\badvertis",
+    r"\bads?\b",
+    r"\bdelivered?\b",
+    r"\bphone\s+number\b",
+    r"\bwhat\s+number\b",
+    r"\bcontact\b",
+    r"\bemail\b",
+    r"\boperating\s+hours\b",
+    r"\bhours\b",
+    r"\bweekday\b.*\b(start|end)\b",
+    r"\b(start|end)\b.*\bweekday\b",
+    r"\bservice\b.*\b(start|end)\b",
+    r"\b(start|end)\b.*\bservice\b",
+    r"\bstops\s+does\b",
+    r"\bserve\b",
+    r"\broute\s+information\b",
+    r"\bschedule\s+and\s+route\s+information\b",
+    r"\baccepted\b.*\b(pay|payment|tickets?|cards?)",
+    r"\b(pay|payment|tickets?|cards?).*\baccepted\b",
+)
+
+LIVE_TIME_PATTERNS = (
+    r"\bwhen\b",
+    r"\bnext\b",
+    r"\barriv",
+    r"\bdepart",
+    r"\bsoon\b",
+    r"\blive\b",
+    r"\bwhat\s+time\b",
+    r"\bhow\s+long\b",
+    r"\buntil\b",
+    r"\bcoming\b",
+    r"\bcome\b",
+)
+
 SHUTTLE_STOP_ALIASES = {
     "jfk umass": ("stop-jfk",),
     "jfk station": ("stop-jfk",),
@@ -117,27 +159,35 @@ def requested_route(query: str) -> Optional[str]:
     return next(group for group in match.groups() if group is not None)
 
 
+def is_retrieval_transit_question(query: str) -> bool:
+    q = query.lower()
+    return any(re.search(pattern, q) for pattern in RETRIEVAL_ONLY_PATTERNS)
+
+
 def is_live_transit_question(query: str) -> bool:
     q = query.lower()
+    if is_retrieval_transit_question(query):
+        return False
+    has_live_time_intent = any(re.search(pattern, q) for pattern in LIVE_TIME_PATTERNS)
+    nearest_live = bool(re.search(r"\b(nearest|closest)\b", q)) and bool(re.search(r"\b(bus|train|shuttle|mbta|transit)\b", q))
     return (
         (
             any(word in q for word in ("bus", "train", "subway", "mbta", "line", "route", "umass"))
             or bool(re.search(r"\bthe\s+\d{1,3}\b", q))
         )
-        and any(word in q for word in (
-            "when", "next", "arriv", "depart", "soon", "live", "schedule",
-            "what time", "nearest", "closest", "how long", "until", "come",
-        ))
+        and (has_live_time_intent or nearest_live)
     )
 
 
 def is_shuttle_question(query: str) -> bool:
     q = query.lower()
+    if is_retrieval_transit_question(query):
+        return False
     return (
         requested_route(query) is None
         and
         any(word in q for word in ("shuttle", "campus bus", "umass bus", "university bus"))
-        and any(word in q for word in ("when", "next", "arriv", "depart", "soon", "live", "schedule", "time", "come"))
+        and any(re.search(pattern, q) for pattern in LIVE_TIME_PATTERNS)
     )
 
 
